@@ -755,9 +755,10 @@ BattleScript_EffectStuffCheeks::
 BattleScript_StuffCheeksEatBerry:
 	setbyte sBERRY_OVERRIDE, TRUE
 	orword gHitMarker, HITMARKER_NO_ANIMATIONS
-	consumeberry BS_ATTACKER
+	consumeberry BS_ATTACKER, TRUE
 	bicword gHitMarker, HITMARKER_NO_ANIMATIONS
 	setbyte sBERRY_OVERRIDE, FALSE
+    removeitem BS_ATTACKER
 	setstatchanger STAT_DEF, 2, FALSE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_StuffCheeksEnd
 	setgraphicalstatchangevalues
@@ -1051,9 +1052,11 @@ BattleScript_MoveEffectBugBite::
 	waitmessage B_WAIT_TIME_LONG
 	orword gHitMarker, HITMARKER_NO_ANIMATIONS
 	setbyte sBERRY_OVERRIDE, TRUE   @ override the requirements for eating berries
-	consumeberry BS_ATTACKER, TRUE  @ consume the berry, then restore the item from changedItems
+	savetarget
+	consumeberry BS_ATTACKER, FALSE  @ consume the opponent's berry
 	bicword gHitMarker, HITMARKER_NO_ANIMATIONS
 	setbyte sBERRY_OVERRIDE, FALSE
+	restoretarget
 	return
 
 BattleScript_EffectCoreEnforcer:
