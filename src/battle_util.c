@@ -55,6 +55,7 @@ functions instead of at the top of the file with the other declarations.
 
 static bool32 TryRemoveScreens(u8 battler);
 static bool32 IsUnnerveAbilityOnOpposingSide(u8 battlerId);
+u32 GetBattlerHoldEffectParamWithItem(u8 battlerId, u16 itemId);
 
 extern const u8 *const gBattleScriptsForMoveEffects[];
 extern const u8 *const gBattlescriptsForBallThrow[];
@@ -6029,7 +6030,7 @@ static u8 HealConfuseBerry(u32 battlerId, u32 itemId, u8 flavorId, bool32 end2)
     {
         PREPARE_FLAVOR_BUFFER(gBattleTextBuff1, flavorId);
 
-        gBattleMoveDamage = gBattleMons[battlerId].maxHP / ItemId_GetHoldEffectParam(itemId);
+        gBattleMoveDamage = gBattleMons[battlerId].maxHP / GetBattlerHoldEffectParamWithItem(battlerId, itemId);
         if (gBattleMoveDamage == 0)
             gBattleMoveDamage = 1;
         gBattleMoveDamage *= -1;
@@ -6063,7 +6064,7 @@ static u8 HealConfuseBerry(u32 battlerId, u32 itemId, u8 flavorId, bool32 end2)
 
 static u8 StatRaiseBerry(u32 battlerId, u32 itemId, u32 statId, bool32 end2)
 {
-    if (CompareStat(battlerId, statId, MAX_STAT_STAGE, CMP_LESS_THAN) && HasEnoughHpToEatBerry(battlerId, ItemId_GetHoldEffectParam(itemId), itemId))
+    if (CompareStat(battlerId, statId, MAX_STAT_STAGE, CMP_LESS_THAN) && HasEnoughHpToEatBerry(battlerId, GetBattlerHoldEffectParamWithItem(battlerId, itemId), itemId))
     {
         BufferStatChange(battlerId, statId, STRINGID_STATROSE);
         gEffectBattler = battlerId;
@@ -6099,7 +6100,7 @@ static u8 RandomStatRaiseBerry(u32 battlerId, u32 itemId, bool32 end2)
         if (CompareStat(battlerId, STAT_ATK + i, MAX_STAT_STAGE, CMP_LESS_THAN))
             break;
     }
-    if (i != 5 && HasEnoughHpToEatBerry(battlerId, ItemId_GetHoldEffectParam(itemId), itemId))
+    if (i != 5 && HasEnoughHpToEatBerry(battlerId, GetBattlerHoldEffectParamWithItem(battlerId, itemId), itemId))
     {
         do
         {
@@ -6214,9 +6215,9 @@ static u8 ItemHealHp(u32 battlerId, u32 itemId, bool32 end2, bool32 percentHeal)
       && !(gBattleScripting.overrideBerryRequirements && gBattleMons[battlerId].hp == gBattleMons[battlerId].maxHP))
     {
         if (percentHeal)
-            gBattleMoveDamage = (gBattleMons[battlerId].maxHP * ItemId_GetHoldEffectParam(itemId) / 100) * -1;
+            gBattleMoveDamage = (gBattleMons[battlerId].maxHP * GetBattlerHoldEffectParamWithItem(battlerId, itemId) / 100) * -1;
         else
-            gBattleMoveDamage = ItemId_GetHoldEffectParam(itemId) * -1;
+            gBattleMoveDamage = GetBattlerHoldEffectParamWithItem(battlerId, itemId) * -1;
 
         // check ripen
         if (ItemId_GetPocket(itemId) == POCKET_BERRIES && GetBattlerAbility(battlerId) == ABILITY_RIPEN)
@@ -7440,6 +7441,15 @@ u32 GetBattlerHoldEffect(u8 battlerId, bool32 checkNegating)
         return gEnigmaBerries[battlerId].holdEffect;
     else
         return ItemId_GetHoldEffect(gBattleMons[battlerId].item);
+}
+
+//This function exists for the sole purpose of not breaking enigma berries'
+//broken ass implementation
+u32 GetBattlerHoldEffectParamWithItem(u8 battlerId, u16 itemId) {
+  if (itemId == ITEM_ENIGMA_BERRY)
+        return gEnigmaBerries[battlerId].holdEffectParam;
+    else
+        return ItemId_GetHoldEffectParam(itemId); 
 }
 
 u32 GetBattlerHoldEffectParam(u8 battlerId)
