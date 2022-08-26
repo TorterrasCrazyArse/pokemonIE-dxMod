@@ -1993,38 +1993,19 @@ static u16 GetTutorMove(u8 tutor)
 
 bool32 CanLearnTutorMove(u16 species, u8 tutor) // note the change to bool32
 {
-    if (tutor < 32)
-    {
-        u32 mask = 1 << tutor;
+    u8 index;
+    u32 mask;
 
-        return sTutorLearnsets[species][0] & mask;
-    }
+    // First we obtain which of the 5 32 bit integers the tutor falls into
+    // The alternative would be an if-else for each range
+    mask = tutor % 32;
 
-    else if (tutor < 64)
-    {
-        u32 mask = 1 << (tutor - 32);
+    index = (tutor - mask) / 32;
 
-        return sTutorLearnsets[species][1] & mask;
-    }
-    else if (tutor < 96)
-    {
-        u32 mask = 1 << (tutor - 64);
+    // We shift the bits based on the index
+    mask = 1 << mask;
 
-        return sTutorLearnsets[species][2] & mask;
-    }
- 
-    else if (tutor < 128)
-    {
-        u32 mask = 1 << (tutor - 96);
-
-        return sTutorLearnsets[species][3] & mask;
-    }
-    else
-    {
-        u32 mask = 1 << (tutor - 128);
-
-        return sTutorLearnsets[species][4] & mask;
-    }
+    return sTutorLearnsets[species][index] & mask;
 }
 
 static void InitPartyMenuWindows(u8 layout)
