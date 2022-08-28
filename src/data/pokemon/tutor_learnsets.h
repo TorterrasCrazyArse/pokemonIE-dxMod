@@ -1,4 +1,4 @@
-#define TUTORLEARNSET(moves, moves2, moves3, moves4, moves5) {(u32)(moves),(u32)(moves2),(u32)(moves3),(u32)(moves4),(u32)(moves5),}
+#define TUTORLEARNSET(moves, moves2, moves3, moves4, moves5) {(u32)(moves),(u32)(moves2),(u32)(moves3),(u32)(moves4),(u32)(moves5)}
 #define TUTOR(tutor) ((u32) 1 << (TUTOR_MOVE_##tutor % 32))
 
 const u16 gTutorMoves[] =
@@ -3090,6 +3090,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
+                        | TUTOR(LIQUIDATION)
                         | TUTOR(HYPER_VOICE)
                         | TUTOR(HYDRO_PUMP)
                         | TUTOR(BATON_PASS),
@@ -10723,6 +10724,7 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BOUNCE)
                         | TUTOR(HYDRO_PUMP),
                           TUTOR(AIR_SLASH)
+                        | TUTOR(AURORA_BEAM)
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
