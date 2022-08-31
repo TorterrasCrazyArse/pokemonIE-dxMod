@@ -510,12 +510,8 @@ const u16 gEggMoves[] = {
         MOVE_AGILITY,
         MOVE_CHIP_AWAY,
         MOVE_BIDE,
-        #ifdef REBALANCED_VERSION
-            MOVE_ALLY_SWITCH,
-            MOVE_ICE_HAMMER),
-        #else
-            MOVE_ALLY_SWITCH),
-        #endif
+        MOVE_ALLY_SWITCH,
+        MOVE_ICE_HAMMER),
 
     egg_moves(EXEGGCUTE,
         MOVE_MOONLIGHT,
@@ -594,7 +590,7 @@ const u16 gEggMoves[] = {
         MOVE_HELPING_HAND,
         MOVE_GRAVITY,
         MOVE_MUD_BOMB,
-        MOVE_WISH, // New
+        MOVE_WISH,
         MOVE_NATURAL_GIFT),
 
     egg_moves(TANGELA,
@@ -712,7 +708,7 @@ const u16 gEggMoves[] = {
         MOVE_STORED_POWER,
         MOVE_SYNCHRONOISE,
         MOVE_CAPTIVATE,
-        MOVE_EXTREME_SPEED), // New
+        MOVE_EXTREME_SPEED),
 
     egg_moves(OMANYTE,
         MOVE_BUBBLE_BEAM,
@@ -1429,7 +1425,7 @@ const u16 gEggMoves[] = {
         MOVE_PRESENT,
         MOVE_REVERSAL,
         MOVE_HELPING_HAND,
-        MOVE_HIGH_HORSEPOWER, // New
+        MOVE_HIGH_HORSEPOWER,
         MOVE_SLEEP_TALK,
         MOVE_DIZZY_PUNCH,
         MOVE_HAMMER_ARM,
@@ -1678,7 +1674,7 @@ const u16 gEggMoves[] = {
         MOVE_BLOCK,
         MOVE_STEALTH_ROCK,
         MOVE_ENDURE,
-        MOVE_HEAD_SMASH, // New
+        MOVE_HEAD_SMASH,
         MOVE_WIDE_GUARD),
 
     egg_moves(SKITTY,
@@ -2009,7 +2005,7 @@ const u16 gEggMoves[] = {
         MOVE_MIRROR_COAT,
         MOVE_WRING_OUT,
         MOVE_TICKLE,
-        MOVE_ACID_SPRAY, // New
+        MOVE_ACID_SPRAY,
         MOVE_MEGA_DRAIN),
 
     egg_moves(ANORITH,
@@ -3264,7 +3260,7 @@ const u16 gEggMoves[] = {
         MOVE_SUCKER_PUNCH,
         MOVE_TICKLE,
         MOVE_SLEEP_TALK,
-        MOVE_BULLET_PUNCH, // New
+        MOVE_BULLET_PUNCH,
         MOVE_BELCH),
 
     egg_moves(DURANT,
@@ -3305,7 +3301,7 @@ const u16 gEggMoves[] = {
         MOVE_HEAT_WAVE,
         MOVE_MAGIC_COAT,
         MOVE_PSYCHIC_TERRAIN,
-        MOVE_INFERNO), // New
+        MOVE_INFERNO),
 
     egg_moves(FROAKIE,
         MOVE_BESTOW,
@@ -3318,8 +3314,8 @@ const u16 gEggMoves[] = {
 
     egg_moves(BUNNELBY,
         MOVE_SPIKES,
-        MOVE_HIGH_HORSEPOWER, // New
-        MOVE_BOUNCE), // New
+        MOVE_HIGH_HORSEPOWER,
+        MOVE_BOUNCE),
 
     egg_moves(FLETCHLING,
         MOVE_TAILWIND,
@@ -3345,7 +3341,7 @@ const u16 gEggMoves[] = {
         MOVE_TEARFUL_LOOK),
 
     egg_moves(SKIDDO,
-        MOVE_HIGH_HORSEPOWER, // New
+        MOVE_HIGH_HORSEPOWER,
         MOVE_MILK_DRINK,
         MOVE_GRASSY_TERRAIN),
 
@@ -4039,6 +4035,185 @@ const u16 gEggMoves[] = {
         MOVE_FAKE_OUT,
         MOVE_PSYCHO_SHIFT,
         MOVE_HEAL_PULSE),
+
+    egg_moves(SHELLOS_EAST_SEA,
+        MOVE_MIRROR_COAT,
+        MOVE_STOCKPILE,
+        MOVE_SWALLOW,
+        MOVE_SPIT_UP,
+        MOVE_YAWN,
+        MOVE_MEMENTO,
+        MOVE_AMNESIA,
+        MOVE_FISSURE,
+        MOVE_TRUMP_CARD,
+        MOVE_SLUDGE,
+        MOVE_CLEAR_SMOG,
+        MOVE_BRINE,
+        MOVE_MIST,
+        MOVE_ACID_ARMOR),
+
+    egg_moves(BASCULIN_BLUE_STRIPED,
+        MOVE_BUBBLE_BEAM,
+        MOVE_MUDDY_WATER,
+        MOVE_AGILITY,
+        MOVE_WHIRLPOOL,
+        MOVE_RAGE,
+        MOVE_BRINE,
+        MOVE_REVENGE,
+        MOVE_HEAD_SMASH),
+
+    egg_moves(DEERLING_SUMMER,
+        MOVE_FAKE_TEARS,
+        MOVE_NATURAL_GIFT,
+        MOVE_WORRY_SEED,
+        MOVE_ODOR_SLEUTH,
+        MOVE_AGILITY,
+        MOVE_SLEEP_TALK,
+        MOVE_BATON_PASS,
+        MOVE_GRASS_WHISTLE,
+        MOVE_HEADBUTT),
+
+    egg_moves(DEERLING_AUTUMN,
+        MOVE_FAKE_TEARS,
+        MOVE_NATURAL_GIFT,
+        MOVE_WORRY_SEED,
+        MOVE_ODOR_SLEUTH,
+        MOVE_AGILITY,
+        MOVE_SLEEP_TALK,
+        MOVE_BATON_PASS,
+        MOVE_GRASS_WHISTLE,
+        MOVE_HEADBUTT),
+
+    egg_moves(DEERLING_WINTER,
+        MOVE_FAKE_TEARS,
+        MOVE_NATURAL_GIFT,
+        MOVE_WORRY_SEED,
+        MOVE_ODOR_SLEUTH,
+        MOVE_AGILITY,
+        MOVE_SLEEP_TALK,
+        MOVE_BATON_PASS,
+        MOVE_GRASS_WHISTLE,
+        MOVE_HEADBUTT),
+
+    egg_moves(FLABEBE_YELLOW_FLOWER,
+        MOVE_COPYCAT,
+        MOVE_CAPTIVATE,
+        MOVE_CAMOUFLAGE,
+        MOVE_TEARFUL_LOOK),
+
+    egg_moves(FLABEBE_ORANGE_FLOWER,
+        MOVE_COPYCAT,
+        MOVE_CAPTIVATE,
+        MOVE_CAMOUFLAGE,
+        MOVE_TEARFUL_LOOK),
+
+    egg_moves(FLABEBE_BLUE_FLOWER,
+        MOVE_COPYCAT,
+        MOVE_CAPTIVATE,
+        MOVE_CAMOUFLAGE,
+        MOVE_TEARFUL_LOOK),
+
+    egg_moves(FLABEBE_WHITE_FLOWER,
+        MOVE_COPYCAT,
+        MOVE_CAPTIVATE,
+        MOVE_CAMOUFLAGE,
+        MOVE_TEARFUL_LOOK),
+
+    egg_moves(FURFROU_HEART_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_STAR_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_DIAMOND_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_DEBUTANTE_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_MATRON_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_DANDY_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_LA_REINE_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_KABUKI_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(FURFROU_PHARAOH_TRIM,
+        MOVE_ROLE_PLAY,
+        MOVE_WORK_UP,
+        MOVE_MIMIC,
+        MOVE_CAPTIVATE,
+        MOVE_REFRESH),
+
+    egg_moves(PUMPKABOO_SMALL,
+        MOVE_DISABLE,
+        MOVE_BESTOW,
+        MOVE_DESTINY_BOND),
+
+    egg_moves(PUMPKABOO_LARGE,
+        MOVE_DISABLE,
+        MOVE_BESTOW,
+        MOVE_DESTINY_BOND),
+
+    egg_moves(PUMPKABOO_SUPER,
+        MOVE_DISABLE,
+        MOVE_BESTOW,
+        MOVE_DESTINY_BOND),
+
+    egg_moves(ORICORIO_POM_POM,
+        MOVE_PLUCK,
+        MOVE_TAILWIND,
+        MOVE_SAFEGUARD,
+        MOVE_CAPTIVATE),
+
+    egg_moves(ORICORIO_PAU,
+        MOVE_PLUCK,
+        MOVE_TAILWIND,
+        MOVE_SAFEGUARD,
+        MOVE_CAPTIVATE),
+
+    egg_moves(ORICORIO_SENSU,
+        MOVE_PLUCK,
+        MOVE_TAILWIND,
+        MOVE_SAFEGUARD,
+        MOVE_CAPTIVATE),
 
     EGG_MOVES_TERMINATOR
 };
