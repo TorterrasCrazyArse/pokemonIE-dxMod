@@ -5108,34 +5108,13 @@ static const union AnimCmd sAnim_CHERUBI_1[] =
 
 static const union AnimCmd sAnim_CHERRIM_NORMAL[] =
 {
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sAnim_CHERRIM_NORMAL_2[] =
-{
-    ANIMCMD_FRAME(0, 20),
-    ANIMCMD_FRAME(2, 20),
-    ANIMCMD_FRAME(0, 20),
-    ANIMCMD_FRAME(2, 20),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_CHERRIM_SUNSHINE[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
@@ -12660,15 +12639,9 @@ static const union AnimCmd *const sAnims_CHERUBI[] ={
     sAnim_CHERUBI_1,
 };
 
-static const union AnimCmd *const sAnims_CHERRIM[] ={
-    sAnim_GeneralFrame0,
+static const union AnimCmd *const sAnims_CHERRIM[] = {
     sAnim_CHERRIM_NORMAL,
-    sAnim_CHERRIM_NORMAL_2,
-};
-
-static const union AnimCmd *const sAnims_CHERRIM_SUNSHINE[] ={
-    sAnim_GeneralFrame0,
-    sAnim_CHERRIM_SUNSHINE,
+    sAnim_CHERRIM_SUNSHINE
 };
 
 static const union AnimCmd *const sAnims_SHELLOS[] ={
@@ -16823,7 +16796,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(BURMY_TRASH_CLOAK, sAnims_BURMY),
     ANIM_CMD_FULL(WORMADAM_SANDY_CLOAK, sAnims_WORMADAM),
     ANIM_CMD_FULL(WORMADAM_TRASH_CLOAK, sAnims_WORMADAM),
-    ANIM_CMD(CHERRIM_SUNSHINE),
+    ANIM_CMD_FULL(CHERRIM_SUNSHINE, sAnims_CHERRIM),
     ANIM_CMD_FULL(SHELLOS_EAST_SEA, sAnims_SHELLOS),
     ANIM_CMD_FULL(GASTRODON_EAST_SEA, sAnims_GASTRODON),
     ANIM_CMD(ROTOM_HEAT),
