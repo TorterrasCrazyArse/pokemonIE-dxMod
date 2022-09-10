@@ -56,6 +56,7 @@
 #define SCROLL_MULTI_FURFROU_TRIMS                        26
 #define SCROLL_MULTI_POKE_CENTER_TUTOR                    27
 #define SCROLL_MULTI_HIDDEN_POWER                         28
+#define SCROLL_MULTI_PC_TUTOR_SET_SELECT_FEATHER          29
 
 #define MAX_SCROLL_MULTI_ON_SCREEN 6
 #define MAX_SCROLL_MULTI_LENGTH 21

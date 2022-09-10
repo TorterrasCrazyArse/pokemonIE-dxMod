@@ -2458,9 +2458,10 @@ void ShowScrollableMultichoice(void)
             task->tKeepOpenAfterSelect = FALSE;
             task->tTaskId = taskId;
             break;
+        case SCROLL_MULTI_PC_TUTOR_SET_SELECT_FEATHER:
         case SCROLL_MULTI_PC_TUTOR_SET_SELECT:
             task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-            task->tNumItems = 8;
+            task->tNumItems = (gSpecialVar_0x8004 == SCROLL_MULTI_PC_TUTOR_SET_SELECT) ? 8 : 7;
             task->tLeft = 19;
             task->tTop = 1;
             task->tWidth = 12;
@@ -2842,6 +2843,16 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_Outrage,
         gText_KnockOff,
         gText_QuiverDance,
+        gText_Exit
+    },
+    [SCROLL_MULTI_PC_TUTOR_SET_SELECT_FEATHER] =
+    {
+        gText_TutorMoveSet1,
+        gText_TutorMoveSet2,
+        gText_TutorMoveSet3,
+        gText_TutorMoveSet4,
+        gText_TutorMoveSet5,
+        gText_TutorMoveSet6,
         gText_Exit
     },
     [SCROLL_MULTI_PC_TUTOR_SET_SELECT] =

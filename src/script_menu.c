@@ -627,9 +627,9 @@ static void CreatePKMNCenterMoveListMultichoice(void)
     selectionCount++;
 
     count = selectionCount;
-    if (count == PKMNCENTER_MOVE_TUTOR_SELECTION_COUNT)
+    if (count >= (PKMNCENTER_MOVE_TUTOR_SELECTION_COUNT - 1))
     {
-        gSpecialVar_0x8004 = SCROLL_MULTI_PC_TUTOR_SET_SELECT;
+        gSpecialVar_0x8004 = (count == PKMNCENTER_MOVE_TUTOR_SELECTION_COUNT) ? SCROLL_MULTI_PC_TUTOR_SET_SELECT : SCROLL_MULTI_PC_TUTOR_SET_SELECT_FEATHER;
         ShowScrollableMultichoice();
     }
     else
