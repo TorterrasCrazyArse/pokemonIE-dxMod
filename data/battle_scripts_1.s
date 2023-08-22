@@ -3786,10 +3786,6 @@ BattleScript_EffectTwoTurnsAttackContinue:
 	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
 	call BattleScript_PowerHerbActivation
 	goto BattleScript_TwoTurnMovesSecondTurn
-BattleScript_EffectTwoTurnsAttackChargeAbility:
-    B_WAIT_TIME_SHORT
-    call BattleScript_AbilityPopUp
-	goto BattleScript_TwoTurnMovesSecondTurn
 BattleScript_EffectTwoTurnsAttackSkyAttack:
 	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SKY_ATTACK
 	goto BattleScript_EffectTwoTurnsAttackContinue
@@ -3802,6 +3798,11 @@ BattleScript_EffectTwoTurnsAttackIceBurn:
 BattleScript_EffectTwoTurnsAttackFreezeShock:
 	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_FREEZE_SHOCK
 	goto BattleScript_EffectTwoTurnsAttackContinue	
+
+BattleScript_EffectTwoTurnsAttackChargeAbility::
+    B_WAIT_TIME_SHORT
+    call BattleScript_AbilityPopUp
+	goto BattleScript_TwoTurnMovesSecondTurn
 	
 BattleScript_EffectGeomancy:
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_GeomancySecondTurn
@@ -3811,10 +3812,6 @@ BattleScript_EffectGeomancy:
 	jumpifability BS_ATTACKER, ABILITY_VITAL_SPIRIT, BattleScript_EffectGeomancyChargeAbility
 	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
 	call BattleScript_PowerHerbActivation
-BattleScript_EffectGeomancyChargeAbility:
-    B_WAIT_TIME_SHORT
-	call BattleScript_AbilityPopUp
-	goto BattleScript_GeomancySecondTurn
 BattleScript_GeomancySecondTurn:
 	attackcanceler
 	setmoveeffect MOVE_EFFECT_CHARGING
@@ -3849,6 +3846,11 @@ BattleScript_GeomancyTrySpeed::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_GeomancyEnd::
 	goto BattleScript_MoveEnd
+
+BattleScript_EffectGeomancyChargeAbility:
+    B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	goto BattleScript_GeomancySecondTurn
 
 BattleScript_EffectConfuseHit::
 	setmoveeffect MOVE_EFFECT_CONFUSION
