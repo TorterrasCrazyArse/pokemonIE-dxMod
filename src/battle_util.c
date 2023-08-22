@@ -1203,64 +1203,64 @@ static const u16 sTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPE
 {
 //   normal  fight   flying  poison  ground  rock    bug     ghost   steel   mystery fire    water   grass  electric psychic ice     dragon  dark    fairy
     {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // normal
-    {X(2.0), X(1.0), X(0.5), X(0.5), X(1.0), X(2.0), X(0.5), X(0.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(0.5)}, // fight
-    {X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // flying
-    {X(1.0), X(1.0), X(1.0), X(0.5), X(0.5), X(0.5), X(1.0), X(0.5), X(0.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0)}, // poison
-    {X(1.0), X(1.0), X(0.0), X(2.0), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // ground
-    {X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0)}, // rock
-    {X(1.0), X(0.5), X(0.5), X(0.5), X(1.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(0.5)}, // bug
+    {X(2.0), X(0.5), X(0.5), X(0.5), X(1.0), X(2.0), X(0.5), X(0.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(0.5)}, // fight
+    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(0.5), X(0.5), X(1.0), X(1.0)}, // flying
+    {X(1.0), X(2.0), X(1.0), X(0.5), X(0.5), X(1.0), X(2.0), X(0.5), X(0.0), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0)}, // poison
+    {X(1.0), X(1.0), X(0.0), X(2.0), X(0.5), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0)}, // ground
+    {X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // rock
+    {X(1.0), X(0.5), X(0.5), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(0.5)}, // bug
     #if B_STEEL_RESISTANCES >= GEN_6
-    {X(0.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(1.0)}, // ghost
+    {X(0.0), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(1.0)}, // ghost
     #else
     {X(0.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(1.0)}, // ghost
     #endif
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0)}, // steel
+    {X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0)}, // steel
     {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // mystery
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0)}, // fire
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0)}, // water
-    {X(1.0), X(1.0), X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(0.5), X(1.0), X(0.5), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0)}, // grass
-    {X(1.0), X(1.0), X(2.0), X(1.0), X(0.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0)}, // electric
-    {X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.0), X(1.0)}, // psychic
-    {X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0)}, // ice
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(0.0)}, // dragon
+    {X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0)}, // fire
+    {X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(1.0)}, // water
+    {X(1.0), X(1.0), X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), X(2.0), X(0.5), X(1.0), X(0.5), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5)}, // grass
+    {X(1.0), X(1.0), X(2.0), X(1.0), X(0.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(0.5), X(0.5), X(1.0), X(1.0)}, // electric
+    {X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(0.0), X(2.0)}, // psychic
+    {X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0)}, // ice
+    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(2.0), X(2.0), X(0.0), X(0.5), X(2.0), X(1.0), X(0.5)}, // dragon
     #if B_STEEL_RESISTANCES >= GEN_6
-    {X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5)}, // dark
+    {X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.0)}, // dark
     #else
     {X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5)}, // dark
     #endif
-    {X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0)}, // fairy
+    {X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(0.0), X(0.5), X(2.0), X(2.0), X(0.5)}, // fairy
 };
 
 static const u16 sInverseTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
 {
 //   normal  fight   flying  poison  ground  rock    bug     ghost   steel   mystery fire    water   grass  electric psychic ice     dragon  dark    fairy
     {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // normal
-    {X(0.5), X(1.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(2.0)}, // fight
-    {X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // flying
-    {X(1.0), X(1.0), X(1.0), X(2.0), X(2.0), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5)}, // poison
-    {X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // ground
-    {X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0)}, // rock
-    {X(1.0), X(2.0), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5), X(2.0)}, // bug
+    {X(0.5), X(2.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(2.0)}, // fight
+    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(2.0), X(0.5), X(0.5), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0)}, // flying
+    {X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5)}, // poison
+    {X(1.0), X(1.0), X(2.0), X(0.5), X(2.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0)}, // ground
+    {X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(2.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // rock
+    {X(1.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5), X(2.0)}, // bug
     #if B_STEEL_RESISTANCES >= GEN_6
-    {X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(1.0)}, // ghost
+    {X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(1.0)}, // ghost
     #else
     {X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(1.0)}, // ghost
     #endif
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5)}, // steel
+    {X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.5)}, // steel
     {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0)}, // mystery
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0)}, // fire
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0)}, // water
-    {X(1.0), X(1.0), X(2.0), X(2.0), X(0.5), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(2.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0)}, // grass
-    {X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0)}, // electric
-    {X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(1.0)}, // psychic
-    {X(1.0), X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0)}, // ice
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0)}, // dragon
+    {X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5)}, // fire
+    {X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0)}, // water
+    {X(1.0), X(1.0), X(2.0), X(2.0), X(0.5), X(0.5), X(2.0), X(0.5), X(2.0), X(1.0), X(2.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0)}, // grass
+    {X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(2.0), X(1.0), X(2.0), X(2.0), X(1.0), X(1.0)}, // electric
+    {X(1.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(2.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(0.5), X(2.0), X(0.5)}, // psychic
+    {X(1.0), X(2.0), X(0.5), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(2.0), X(1.0), X(2.0), X(2.0), X(0.5), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0)}, // ice
+    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(0.5), X(0.5), X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), X(1.0), X(2.0)}, // dragon
     #if B_STEEL_RESISTANCES >= GEN_6
-    {X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(2.0)}, // dark
+    {X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(2.0)}, // dark
     #else
     {X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(2.0), X(2.0)}, // dark
     #endif
-    {X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0)}, // fairy
+    {X(1.0), X(0.5), X(1.0), X(2.0), X(1.0), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(2.0), X(2.0), X(0.5), X(0.5), X(2.0)}, // fairy
 };
 
 #undef X
@@ -2510,7 +2510,7 @@ s32 GetDrainedBigRootHp(u32 battler, s32 hp)
 }
 
 #define MAGIC_GUARD_CHECK \
-if (ability == ABILITY_MAGIC_GUARD) \
+if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_WONDER_GUARD) \
 {\
     RecordAbilityBattle(gActiveBattler, ability);\
     gBattleStruct->turnEffectsTracker++;\
@@ -4835,6 +4835,10 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 if (moveType == TYPE_ELECTRIC)
                     effect = 1;
                 break;
+            case ABILITY_POISON_HEAL:
+                if (moveType == TYPE_POISON && (IS_MOVE_SPECIAL(move) || IS_MOVE_PHYSICAL(move)))
+                    effect = 1;
+                break;
             case ABILITY_WATER_ABSORB:
             case ABILITY_DRY_SKIN:
                 if (moveType == TYPE_WATER)
@@ -5393,7 +5397,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 {
                     gBattleStruct->changedSpecies[gBattlerPartyIndexes[gBattlerTarget]] = gBattleMons[gBattlerTarget].species;
                     gBattleMons[gBattlerTarget].species = SPECIES_CRAMORANT;
-                    if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                    if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD)
                     {
                         gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 4;
                         if (gBattleMoveDamage == 0)
@@ -5407,7 +5411,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 {
                     gBattleStruct->changedSpecies[gBattlerPartyIndexes[gBattlerTarget]] = gBattleMons[gBattlerTarget].species;
                     gBattleMons[gBattlerTarget].species = SPECIES_CRAMORANT;
-                    if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                    if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD)
                     {
                         gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 4;
                         if (gBattleMoveDamage == 0)
@@ -5868,6 +5872,8 @@ bool32 CanBattlerEscape(u32 battlerId) // no ability check
 {
     if (GetBattlerHoldEffect(battlerId, TRUE) == HOLD_EFFECT_SHED_SHELL)
         return TRUE;
+    else if (GetBattlerAbility(battlerId) == ABILITY_RUN_AWAY)
+        return TRUE;
     else if ((B_GHOSTS_ESCAPE >= GEN_6 && !IS_BATTLER_OF_TYPE(battlerId, TYPE_GHOST)) && gBattleMons[battlerId].status2 & (STATUS2_ESCAPE_PREVENTION | STATUS2_WRAPPED))
         return FALSE;
     else if (gStatuses3[battlerId] & STATUS3_ROOTED)
@@ -5993,6 +5999,7 @@ bool32 CanBeFrozen(u8 battlerId)
 bool32 CanBeConfused(u8 battlerId)
 {
     if (GetBattlerAbility(gEffectBattler) == ABILITY_OWN_TEMPO
+	  || IS_BATTLER_OF_TYPE(battlerId, TYPE_BUG)
       || gBattleMons[gEffectBattler].status2 & STATUS2_CONFUSION
       || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_MISTY_TERRAIN))
         return FALSE;
@@ -6639,7 +6646,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 {
                     goto LEFTOVERS;
                 }
-                else if (GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD && !moveTurn)
+                else if ((GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD || GetBattlerAbility(battlerId) != ABILITY_WONDER_GUARD) && !moveTurn)
                 {
                     gBattleMoveDamage = gBattleMons[battlerId].maxHP / 8;
                     if (gBattleMoveDamage == 0)
@@ -6935,7 +6942,8 @@ case ITEMEFFECT_KINGSROCK:
         case HOLD_EFFECT_LIFE_ORB:
             if (gSpecialStatuses[gBattlerAttacker].damagedMons
                 && !(TestSheerForceFlag(gBattlerAttacker, gCurrentMove))
-                && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD) 
                 && gBattlerAttacker != gBattlerTarget
                 && gBattleMons[gBattlerAttacker].hp != 0)
             {
@@ -6983,7 +6991,8 @@ case ITEMEFFECT_KINGSROCK:
                 if (TARGET_TURN_DAMAGED
                     && IsMoveMakingContact(gCurrentMove, gBattlerAttacker)
                     && IsBattlerAlive(gBattlerAttacker)
-                    && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                    && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                    || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD))
                 {
                     gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 6;
                     if (gBattleMoveDamage == 0)
@@ -7054,7 +7063,8 @@ case ITEMEFFECT_KINGSROCK:
                  && TARGET_TURN_DAMAGED
                  && !DoesSubstituteBlockMove(gBattlerAttacker, battlerId, gCurrentMove)
                  && IS_MOVE_PHYSICAL(gCurrentMove)
-                 && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                 && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                 || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD))
                 {
                     gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 8;
                     if (gBattleMoveDamage == 0)
@@ -7074,7 +7084,8 @@ case ITEMEFFECT_KINGSROCK:
                  && TARGET_TURN_DAMAGED
                  && !DoesSubstituteBlockMove(gBattlerAttacker, battlerId, gCurrentMove)
                  && IS_MOVE_SPECIAL(gCurrentMove)
-                 && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                 && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                 || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD))
                 {
                     gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 8;
                     if (gBattleMoveDamage == 0)
@@ -7146,7 +7157,7 @@ case ITEMEFFECT_KINGSROCK:
             }
             break;
         case HOLD_EFFECT_STICKY_BARB:   // Not an orb per se, but similar effect, and needs to NOT activate with pickpocket
-            if (GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD)
+            if (GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD || GetBattlerAbility(battlerId) != ABILITY_WONDER_GUARD)
             {
                 gBattleMoveDamage = gBattleMons[battlerId].maxHP / 8;
                 if (gBattleMoveDamage == 0)
@@ -8006,7 +8017,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     switch (GetBattlerAbility(battlerAtk))
     {
     case ABILITY_TECHNICIAN:
-        if (basePower <= 60)
+        if (basePower <= 65)
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_FLARE_BOOST:
@@ -8019,12 +8030,12 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         break;
     case ABILITY_RECKLESS:
         if (gBattleMoves[move].flags & FLAG_RECKLESS_BOOST)
-           MulModifier(&modifier, UQ_4_12(1.2));
+           MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_IRON_FIST:
     case ABILITY_POWER_FISTS:
         if (gBattleMoves[move].flags & FLAG_IRON_FIST_BOOST)
-           MulModifier(&modifier, UQ_4_12(1.2));
+           MulModifier(&modifier, UQ_4_12(1.3));
         break;
             break;
     case ABILITY_KEEN_EDGE:
@@ -8067,6 +8078,10 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (gBattleMoves[move].flags & FLAG_MEGA_LAUNCHER_BOOST)
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_SNIPER:
+        if (gBattleMoves[move].flags & FLAG_BALLISTIC)
+           MulModifier(&modifier, UQ_4_12(1.5));
+        break;
     case ABILITY_WATER_BUBBLE:
         if (moveType == TYPE_WATER)
            MulModifier(&modifier, UQ_4_12(2.0));
@@ -8074,26 +8089,40 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     case ABILITY_STEELWORKER:
         if (moveType == TYPE_STEEL)
            MulModifier(&modifier, UQ_4_12(1.5));
+        break;	   
+    case ABILITY_TERAVOLT:
+    case ABILITY_PLUS:
+    case ABILITY_MINUS:
+        if (moveType == TYPE_ELECTRIC)
+           MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_TURBOBLAZE:
+        if (moveType == TYPE_FIRE)
+           MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_MULTISCALE:
+        if (moveType == TYPE_WATER)
+           MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PIXILATE:
         if (moveType == TYPE_FAIRY && gBattleStruct->ateBoost[battlerAtk])
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_GALVANIZE:
         if (moveType == TYPE_ELECTRIC && gBattleStruct->ateBoost[battlerAtk])
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_REFRIGERATE:
         if (moveType == TYPE_ICE && gBattleStruct->ateBoost[battlerAtk])
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_AERILATE:
         if (moveType == TYPE_FLYING && gBattleStruct->ateBoost[battlerAtk])
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_NORMALIZE:
         if (moveType == TYPE_NORMAL && gBattleStruct->ateBoost[battlerAtk])
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_PUNK_ROCK:
         if (gBattleMoves[move].flags & FLAG_SOUND)
@@ -8113,10 +8142,13 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         break;
     case ABILITY_LIQUID_VOICE:
         if (gBattleMoves[move].flags & FLAG_SOUND)
-            MulModifier(&modifier, UQ_4_12(1.2));
+            MulModifier(&modifier, UQ_4_12(1.3));
     case ABILITY_GORILLA_TACTICS:
         if (IS_MOVE_PHYSICAL(move))
             MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_VICTORY_STAR:
+        MulModifier(&modifier, UQ_4_12(1.3));
         break;
     }
 
@@ -8140,6 +8172,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
                 MulModifier(&modifier, UQ_4_12(1.3));
             break;
         case ABILITY_POWER_SPOT:
+        case ABILITY_VICTORY_STAR:
             MulModifier(&modifier, UQ_4_12(1.3));
             break;
         case ABILITY_STEELY_SPIRIT:
@@ -8154,10 +8187,33 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     switch (ability)
     {
     case ABILITY_HEATPROOF:
+        if (moveType == TYPE_FIRE)
+        {
+            MulModifier(&modifier, UQ_4_12(0.0));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ability);
+        }
+        break;
+    case ABILITY_MAGMA_ARMOR:
+        if (moveType == TYPE_WATER)
+        {
+            MulModifier(&modifier, UQ_4_12(0.0));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ability);
+        }
+        break;
     case ABILITY_WATER_BUBBLE:
         if (moveType == TYPE_FIRE)
         {
             MulModifier(&modifier, UQ_4_12(0.5));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ability);
+        }
+        break;
+    case ABILITY_WATER_VEIL:
+        if (moveType == TYPE_ELECTRIC)
+        {
+            MulModifier(&modifier, UQ_4_12(1.0));
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, ability);
         }
@@ -8375,6 +8431,10 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
         if (IS_MOVE_PHYSICAL(move))
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
+    case ABILITY_HYPER_CUTTER:
+        if (IS_MOVE_PHYSICAL(move))
+            MulModifier(&modifier, UQ_4_12(1.1));
+        break;
     case ABILITY_SLOW_START:
         if (gDisableStructs[battlerAtk].slowStartTimer != 0)
             MulModifier(&modifier, UQ_4_12(0.5));
@@ -8450,8 +8510,7 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_HUSTLE:
-        if (IS_MOVE_PHYSICAL(move))
-            MulModifier(&modifier, UQ_4_12(1.5));
+        MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_STAKEOUT:
         if (gDisableStructs[battlerDef].isFirstTurn == 2) // just switched in
@@ -8579,6 +8638,10 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
         usesDefStat = FALSE;
     }
+	
+    // Self-destruct / Explosion / Superpower cuts defense in half
+    if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION || gBattleMoves[gCurrentMove].effect == EFFECT_SUPERPOWER)
+        defStat /= 2;
 
     // critical hits ignore positive stat changes
     if (isCrit && defStage > DEFAULT_STAT_STAGE)
@@ -8613,6 +8676,14 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
             MulModifier(&modifier, UQ_4_12(2.0));
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, ABILITY_FUR_COAT);
+        }
+        break;
+    case ABILITY_BIG_PECKS:
+        if (usesDefStat)
+        {
+            MulModifier(&modifier, UQ_4_12(1.1));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_BIG_PECKS);
         }
         break;
     case ABILITY_GRASS_PELT:
@@ -8939,6 +9010,24 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
         mod = UQ_4_12(1.0);
     if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER)
         mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_GLACIATE && defType == TYPE_WATER)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_CUT && defType == TYPE_GRASS)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_SCALD && defType == TYPE_ICE)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_MAGNET_BOMB && defType == TYPE_STEEL)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_BUG_BITE && defType == TYPE_GHOST)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_FALSE_SWIPE && defType == TYPE_GHOST)
+        mod = UQ_4_12(1.0);
+    if ((gBattleMoves[move].effect == EFFECT_FALSE_SWIPE || EFFECT_EXPLOSION) && defType == TYPE_ROCK)
+        mod = UQ_4_12(1.0);
+    if (gBattleMoves[move].effect == EFFECT_FALSE_SWIPE && defType == TYPE_STEEL)
+        mod = UQ_4_12(1.0);
+    if (gBattleMoves[move].effect == EFFECT_EXPLOSION && defType == TYPE_STEEL)
+        mod = UQ_4_12(2.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (moveType == TYPE_FIRE && gDisableStructs[battlerDef].tarShot)
@@ -9033,6 +9122,8 @@ u16 CalcTypeEffectivenessMultiplier(u16 move, u8 moveType, u8 battlerAtk, u8 bat
         modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier);
         if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE)
             modifier = CalcTypeEffectivenessMultiplierInternal(move, gBattleMoves[move].argument, battlerAtk, battlerDef, recordAbilities, modifier);
+        if (gBattleMoves[move].effect == EFFECT_MUDDY_WATER)
+            modifier = CalcTypeEffectivenessMultiplierInternal(move, gBattleMoves[move].argument, battlerAtk, battlerDef, recordAbilities, modifier);
     }
 
     if (recordAbilities)
@@ -9087,27 +9178,27 @@ s32 GetStealthHazardDamage(u8 hazardType, u8 battlerId)
         dmg = 0;
         break;
     case UQ_4_12(0.25):
-        dmg = maxHp / 32;
+        dmg = maxHp / 64;
         if (dmg == 0)
             dmg = 1;
         break;
     case UQ_4_12(0.5):
-        dmg = maxHp / 16;
+        dmg = maxHp / 32;
         if (dmg == 0)
             dmg = 1;
         break;
     case UQ_4_12(1.0):
-        dmg = maxHp / 8;
+        dmg = maxHp / 16;
         if (dmg == 0)
             dmg = 1;
         break;
     case UQ_4_12(2.0):
-        dmg = maxHp / 4;
+        dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
         break;
     case UQ_4_12(4.0):
-        dmg = maxHp / 2;
+        dmg = maxHp / 4;
         if (dmg == 0)
             dmg = 1;
         break;

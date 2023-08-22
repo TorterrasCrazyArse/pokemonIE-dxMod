@@ -188,7 +188,7 @@
 #define FLAG_RECEIVED_TM50                   0xA8
 #define FLAG_RECEIVED_TM42                   0xA9
 #define FLAG_RECEIVED_TM51                   0xAA
-#define FLAG_RECEIVED_TM04                   0xAB
+#define FLAG_RECEIVED_TM29                   0xAB
 #define FLAG_RECEIVED_TM03                   0xAC
 #define FLAG_DECORATION_0                    0xAD
 #define FLAG_DECORATION_1                    0xAE
@@ -1124,7 +1124,7 @@
 #define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_TM70_AURORA_VEIL           0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_METAGROSSITE                      0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_29                            0x43E
+#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_04                            0x43E
 #define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM_30                                  0x441

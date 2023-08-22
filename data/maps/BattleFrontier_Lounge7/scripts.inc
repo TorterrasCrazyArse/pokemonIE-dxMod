@@ -856,8 +856,8 @@ PokemonCenterMoveTutor_Text_IronHeadDesc::
 
 PokemonCenterMoveTutor_Text_AquaTailDesc::
 	.string "User swings its\n"
-	.string "tail as if it were\n"
-	.string "a wave in a storm.$"
+	.string "tail like a wave.\n"
+	.string "Might Paralyze.$"
 
 PokemonCenterMoveTutor_Text_PowerGemDesc::
 	.string "Attacks with a ray\n"
@@ -1105,4 +1105,5 @@ PokemonCenterMoveTutor_Text_QuiverDanceDesc::
 	.string "A mystic dance\n"
 	.string "that ups Sp. Atk,\n"
 	.string "Sp. Def & Speed.$"
+
 

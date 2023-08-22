@@ -86,6 +86,33 @@ OldaleTown_EventScript_ExplainPokemonMart:: @ 81E8F8C
 
 OldaleTown_EventScript_ExplainPotion:: @ 81E8FB9
 	msgbox OldaleTown_Text_PotionExplanation, MSGBOX_DEFAULT
+	giveitem ITEM_RARE_CANDY, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_MASTER_BALL, 990
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_BIG_NUGGET, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_ORAN_BERRY, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_BOTTLE_CAP, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_FULL_RESTORE, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_MAX_REVIVE, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_MAX_POTION, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
+	giveitem ITEM_MAX_ELIXIR, 600
+	compare VAR_RESULT, FALSE
+	goto_if_eq OldaleTown_EventScript_BagIsFull
 	release
 	end
 

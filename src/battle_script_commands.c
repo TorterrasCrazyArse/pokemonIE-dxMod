@@ -1763,8 +1763,14 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if (atkAbility == ABILITY_COMPOUND_EYES)
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
+    else if (atkAbility == ABILITY_ILLUMINATE)
+        calc = (calc * 130) / 100; // 1.3 illuminate boost
+    else if (atkAbility == ABILITY_SNIPER && gBattleMoves[move].flags & FLAG_BALLISTIC)
+        calc = (calc * 130) / 100; // 1.3 sniper boost
+    else if (atkAbility == ABILITY_KEEN_EYE)
+        calc = (calc * 110) / 100; // 1.1 keen eye boost
     else if (atkAbility == ABILITY_VICTORY_STAR)
-        calc = (calc * 110) / 100; // 1.1 victory star boost
+        calc = (calc * 120) / 100; // 1.2 victory star boost
     if (IsBattlerAlive(BATTLE_PARTNER(battlerAtk)) && GetBattlerAbility(BATTLE_PARTNER(battlerAtk)) == ABILITY_VICTORY_STAR)
         calc = (calc * 110) / 100; // 1.1 ally's victory star boost
 
@@ -1774,8 +1780,12 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
         calc = (calc * 80) / 100; // 1.2 snow cloak loss
     else if (defAbility == ABILITY_TANGLED_FEET && gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
         calc = (calc * 50) / 100; // 1.5 tangled feet loss
+    else if (defAbility == ABILITY_KLUTZ)
+        calc = (calc * 90) / 100; // 1.1 klutz loss
+    else if (defAbility == ABILITY_ANTICIPATION)
+        calc = (calc * 90) / 100; // 1.1 anticiption loss
 
-    if (atkAbility == ABILITY_HUSTLE && IS_MOVE_PHYSICAL(move))
+    if (atkAbility == ABILITY_HUSTLE && (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)))
         calc = (calc * 80) / 100; // 1.2 hustle loss
 
     if (defHoldEffect == HOLD_EFFECT_EVASION_UP)
@@ -1797,6 +1807,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if (gFieldStatuses & STATUS_FIELD_GRAVITY)
         calc = (calc * 5) / 3; // 1.66 Gravity acc boost
+
+    if (gBattleMons[battlerAtk].status2 & STATUS2_CONFUSION)
+        calc = (calc * 90) / 100; // 1.1 confusion loss
 
     return calc;
 }
@@ -3345,7 +3358,7 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 }
                 break;
             case MOVE_EFFECT_FLAME_BURST:
-                if (IsBattlerAlive(BATTLE_PARTNER(gBattlerTarget)) && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_MAGIC_GUARD)
+                if (IsBattlerAlive(BATTLE_PARTNER(gBattlerTarget)) && (GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_MAGIC_GUARD || GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_WONDER_GUARD))
                 {
                     gBattleScripting.savedBattler = BATTLE_PARTNER(gBattlerTarget);
                     gBattleMoveDamage = gBattleMons[BATTLE_PARTNER(gBattlerTarget)].hp / 16;
@@ -4949,7 +4962,7 @@ static void Cmd_moveend(void)
         case MOVEEND_PROTECT_LIKE_EFFECT:
             if (gProtectStructs[gBattlerAttacker].touchedProtectLike)
             {
-                if (gProtectStructs[gBattlerTarget].spikyShielded && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
+                if (gProtectStructs[gBattlerTarget].spikyShielded && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD))
                 {
                     gProtectStructs[gBattlerAttacker].touchedProtectLike = FALSE;
                     gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / 8;
@@ -5051,8 +5064,14 @@ static void Cmd_moveend(void)
                     gBattlescriptCurrInstr = BattleScript_MoveEffectRecoil;
                     effect = TRUE;
                     break;
-                case EFFECT_RECOIL_33_STATUS: // Flare Blitz - can burn, Volt Tackle - can paralyze
+                case EFFECT_RECOIL_33_STATUS: // Flare Blitz - can burn, Wild Charge - can paralyze
                     gBattleMoveDamage = max(1, gBattleScripting.savedDmg / 3);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_MoveEffectRecoilWithStatus;
+                    effect = TRUE;
+                    break;
+                case EFFECT_RECOIL_50_STATUS: // Volt Tackle - can paralyze, 50 % recoil
+                    gBattleMoveDamage = max(1, gBattleScripting.savedDmg / 2);
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_MoveEffectRecoilWithStatus;
                     effect = TRUE;
@@ -6342,7 +6361,8 @@ static void Cmd_switchineffects(void)
     }
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES)
-        && GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
+        && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
+        || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD)
         && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && IsBattlerGrounded(gActiveBattler))
     {
@@ -6357,7 +6377,8 @@ static void Cmd_switchineffects(void)
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK)
         && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
-        && GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD)
+        && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
+        || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD))
     {
         gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_STEALTH_ROCK_DAMAGED;
         gBattleMoveDamage = GetStealthHazardDamage(gBattleMoves[MOVE_STEALTH_ROCK].type, gActiveBattler);
@@ -6409,6 +6430,29 @@ static void Cmd_switchineffects(void)
         SET_STATCHANGER(STAT_SPEED, 1, TRUE);
         BattleScriptPushCursor();
         gBattlescriptCurrInstr = BattleScript_StickyWebOnSwitchIn;
+    }
+    else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & (SIDE_STATUS_TOXIC_SPIKES_DAMAGED 
+         || SIDE_STATUS_SPIKES_DAMAGED 
+         || SIDE_STATUS_STEALTH_ROCK_DAMAGED 
+         || SIDE_STATUS_STICKY_WEB_DAMAGED))
+        && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_HAZARDS_ANY)
+        && IsBattlerGrounded(gActiveBattler))
+    {
+        gSideStatuses[GetBattlerSide(gActiveBattler)] |= (SIDE_STATUS_TOXIC_SPIKES_DAMAGED
+         || SIDE_STATUS_SPIKES_DAMAGED 
+         || SIDE_STATUS_STEALTH_ROCK_DAMAGED 
+         || SIDE_STATUS_STICKY_WEB_DAMAGED);
+        if (GetBattlerAbility(gActiveBattler) == ABILITY_HEAVY_METAL) // Crush the hazards.
+        {
+            gSideStatuses[GetBattlerSide(gActiveBattler)] &= ~(SIDE_STATUS_HAZARDS_ANY);
+            gSideTimers[GetBattlerSide(gActiveBattler)].toxicSpikesAmount = 0;
+            gSideTimers[GetBattlerSide(gActiveBattler)].spikesAmount = 0;
+            gSideTimers[GetBattlerSide(gActiveBattler)].stickyWebAmount = 0;
+            gSideTimers[GetBattlerSide(gActiveBattler)].stealthRockAmount = 0;
+            gBattleScripting.battler = gActiveBattler;
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_HazardsCrushed;
+        }
     }
     else
     {
@@ -10868,13 +10912,14 @@ static void Cmd_weatherdamage(void)
     u32 ability = GetBattlerAbility(gBattlerAttacker);
 
     gBattleMoveDamage = 0;
-    if (IsBattlerAlive(gBattlerAttacker) && WEATHER_HAS_EFFECT && ability != ABILITY_MAGIC_GUARD)
+    if (IsBattlerAlive(gBattlerAttacker) && WEATHER_HAS_EFFECT && (ability != ABILITY_MAGIC_GUARD || ability != ABILITY_WONDER_GUARD))
     {
         if (gBattleWeather & WEATHER_SANDSTORM_ANY)
         {
             if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST)
                 && ability != ABILITY_SAND_VEIL
                 && ability != ABILITY_SAND_FORCE
                 && ability != ABILITY_SAND_RUSH
@@ -10901,6 +10946,8 @@ static void Cmd_weatherdamage(void)
                 gBattleMoveDamage *= -1;
             }
             else if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST)
                 && ability != ABILITY_SNOW_CLOAK
                 && ability != ABILITY_OVERCOAT
                 && ability != ABILITY_ICE_BODY

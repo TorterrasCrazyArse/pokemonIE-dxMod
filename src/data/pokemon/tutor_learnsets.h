@@ -164,6 +164,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           0,
                           0),
+
+
    [SPECIES_BULBASAUR] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -181,6 +183,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_IVYSAUR] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -198,6 +202,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_VENUSAUR] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(FURY_CUTTER)
@@ -220,6 +226,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(TERRAIN_PULSE)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CHARMANDER] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -243,6 +251,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CHARMELEON] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -266,8 +276,11 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CHARIZARD] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
+                        | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(AIR_CUTTER)
@@ -303,6 +316,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SQUIRTLE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -325,6 +340,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_WARTORTLE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -347,6 +364,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BLASTOISE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(ROLLOUT)
@@ -377,18 +396,24 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CATERPIE] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(SWAGGER),
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_METAPOD] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(IRON_DEFENSE),
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_BUTTERFREE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -410,17 +435,23 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_WEEDLE] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB),
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_KAKUNA] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(IRON_DEFENSE),
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_BEEDRILL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -450,6 +481,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PIDGEY] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -468,6 +501,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PIDGEOTTO] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -486,6 +521,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PIDGEOT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -505,6 +542,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RATTATA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -527,6 +566,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RATICATE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -554,6 +595,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SPEAROW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -573,6 +616,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FEAROW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -593,6 +638,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_EKANS] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -611,6 +658,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ARBOK] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -632,6 +681,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_PIKACHU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -660,6 +711,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RAICHU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -689,6 +742,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SANDSHREW] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -710,6 +765,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SANDSLASH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -734,6 +791,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_NIDORAN_F] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -751,6 +810,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(PIN_MISSILE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_NIDORINA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -769,6 +830,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_NIDOQUEEN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -809,6 +872,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_NIDORAN_M] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -825,6 +890,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(PIN_MISSILE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_NIDORINO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -843,6 +910,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_NIDOKING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -883,6 +952,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CLEFAIRY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -929,6 +1000,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CLEFABLE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -975,6 +1048,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_VULPIX] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -995,7 +1070,10 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(AGILITY)),
-   [SPECIES_NINETALES] = TUTORLEARNSET(TUTOR(COVET)
+
+
+   [SPECIES_NINETALES] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
+                        | TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -1004,6 +1082,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_SLAM)
                         | TUTOR(SWAGGER)
                         | TUTOR(ROLE_PLAY)
+                        | TUTOR(TRICK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(HEAT_WAVE)
@@ -1013,11 +1092,11 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STORED_POWER)
                         | TUTOR(ENCORE)
                         | TUTOR(WEATHER_BALL)
-                        | TUTOR(HEX)
-                        | TUTOR(DRAINING_KISS)
-                        | TUTOR(MISTY_TERRAIN),
+                        | TUTOR(HEX),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_JIGGLYPUFF] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -1055,6 +1134,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_WIGGLYTUFF] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -1095,6 +1176,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ZUBAT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -1114,6 +1197,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AIR_SLASH),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_GOLBAT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -1132,6 +1217,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(AIR_SLASH),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_ODDISH] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -1142,6 +1229,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GLOOM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -1152,6 +1241,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VILEPLUME] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -1164,6 +1255,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_PARAS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -1184,6 +1277,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PARASECT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -1206,6 +1301,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VENONAT] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -1219,6 +1316,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VENOMOTH] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -1240,6 +1339,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DIGLETT] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -1252,6 +1353,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DUGTRIO] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -1265,6 +1368,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MEOWTH] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -1289,6 +1394,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_PERSIAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -1315,6 +1422,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PSYDUCK] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -1342,6 +1451,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FLIP_TURN)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GOLDUCK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -1379,6 +1490,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MANKEY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(VACUUM_WAVE)
@@ -1414,6 +1527,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PRIMEAPE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(VACUUM_WAVE)
@@ -1454,6 +1569,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GROWLITHE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -1472,6 +1589,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL)
                         | TUTOR(FIRE_FANG),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_ARCANINE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -1494,6 +1613,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_POLIWAG] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(ENDEAVOR)
                         | TUTOR(ICY_WIND)
@@ -1508,6 +1629,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_POLIWHIRL] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -1528,6 +1651,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_POLIWRATH] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -1557,6 +1682,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ABRA] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -1582,6 +1709,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ENCORE)
                         | TUTOR(PSYCHIC_TERRAIN),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_KADABRA] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -1609,6 +1738,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHIC_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_ALAKAZAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -1639,6 +1770,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHIC_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_MACHOP] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -1665,6 +1798,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE),
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_MACHOKE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -1692,6 +1827,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_MACHAMP] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -1723,6 +1860,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_BELLSPROUT] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -1740,6 +1879,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_WEEPINBELL] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -1758,6 +1899,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VICTREEBEL] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -1778,6 +1921,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_TENTACOOL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MAGIC_COAT),
                           TUTOR(ICY_WIND)
@@ -1791,6 +1936,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_TENTACRUEL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MAGIC_COAT),
                           TUTOR(ICY_WIND)
@@ -1805,6 +1952,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_GEODUDE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -1829,6 +1978,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRAVELER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -1854,6 +2005,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GOLEM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -1883,6 +2036,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PONYTA] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC),
                           TUTOR(LOW_KICK)
@@ -1899,6 +2054,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SOLAR_BLADE),
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RAPIDASH] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC),
                           TUTOR(LOW_KICK)
@@ -1919,6 +2076,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SLOWPOKE] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -1940,6 +2099,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHIC_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_SLOWBRO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -1972,6 +2133,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(BODY_PRESS)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGNEMITE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -1989,6 +2152,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGNETON] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -2007,6 +2172,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_FARFETCHD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
@@ -2038,6 +2205,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DODUO] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2053,6 +2222,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BRAVE_BIRD),
                           0,
                           TUTOR(AGILITY)),
+
+
    [SPECIES_DODRIO] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2069,6 +2240,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SEEL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
                           TUTOR(ICY_WIND)
@@ -2085,6 +2258,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEWGONG] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
                           TUTOR(ICY_WIND)
@@ -2103,6 +2278,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FLIP_TURN)
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GRIMER] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -2119,6 +2296,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(MUD_SHOT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_MUK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -2138,6 +2317,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHELLDER] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -2156,6 +2337,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CLOYSTER] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -2177,6 +2360,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SPIKES)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_GASTLY] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -2196,6 +2381,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_HAUNTER] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -2216,6 +2403,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GENGAR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -2246,6 +2435,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ONIX] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(PSYCH_UP)
@@ -2263,6 +2454,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DROWZEE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -2291,6 +2484,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_HYPNO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -2321,6 +2516,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_KRABBY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -2337,6 +2534,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(RAZOR_SHELL),
                           TUTOR(MUD_SHOT),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_KINGLER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -2357,6 +2556,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VOLTORB] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -2373,6 +2574,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ELECTRODE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -2390,6 +2593,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_EXEGGCUTE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(GRAVITY)
@@ -2406,6 +2611,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_EXEGGUTOR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(GRAVITY)
@@ -2430,6 +2637,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CUBONE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -2454,6 +2663,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MAROWAK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -2482,6 +2693,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_HITMONLEE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(VACUUM_WAVE)
@@ -2509,6 +2722,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_HITMONCHAN] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(VACUUM_WAVE)
@@ -2537,6 +2752,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LICKITUNG] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -2561,6 +2778,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_KOFFING] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC),
@@ -2570,6 +2789,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TOXIC_SPIKES),
                           TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_WEEZING] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC),
@@ -2579,6 +2800,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TOXIC_SPIKES),
                           TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_RHYHORN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -2604,6 +2827,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG),
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_RHYDON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -2644,6 +2869,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CHANSEY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -2675,6 +2902,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_TANGELA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -2693,6 +2922,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_KANGASKHAN] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -2727,6 +2958,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_HORSEA] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -2743,6 +2976,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SEADRA] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -2752,13 +2987,17 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(BOUNCE)
                         | TUTOR(OUTRAGE)
+                        | TUTOR(GUNK_SHOT)
                         | TUTOR(HYDRO_PUMP)
-                        | TUTOR(DRAGON_DANCE),
+                        | TUTOR(DRAGON_DANCE)
+                        | TUTOR(TOXIC_SPIKES),
                           TUTOR(AURORA_BEAM),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GOLDEEN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2776,6 +3015,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SEAKING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2793,6 +3034,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STARYU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2810,6 +3053,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_STARMIE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -2832,6 +3077,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MR_MIME] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -2868,6 +3115,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SCYTHER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(BUG_BITE)
@@ -2881,6 +3130,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(KNOCK_OFF)
                         | TUTOR(BATON_PASS)
+                        | TUTOR(CLOSE_COMBAT)
                         | TUTOR(BUG_BUZZ),
                           TUTOR(SOLAR_BLADE)
                         | TUTOR(REVERSAL)
@@ -2890,6 +3140,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_JYNX] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -2923,6 +3175,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ELECTABUZZ] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -2952,6 +3206,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGMAR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -2975,6 +3231,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PINSIR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(BUG_BITE)
@@ -2987,12 +3245,15 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(KNOCK_OFF)
                         | TUTOR(AURA_SPHERE)
                         | TUTOR(THROAT_CHOP)
+                        | TUTOR(MEGAHORN)
                         | TUTOR(CLOSE_COMBAT)
                         | TUTOR(BUG_BUZZ),
                           TUTOR(REVERSAL)
                         | TUTOR(REVENGE),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_TAUROS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC),
                           TUTOR(UPROAR)
@@ -3012,12 +3273,16 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE),
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_MAGIKARP] = TUTORLEARNSET(TUTOR(MIMIC),
                           0,
                           TUTOR(BOUNCE)
                         | TUTOR(HYDRO_PUMP),
                           TUTOR(REVERSAL),
                           0),
+
+
    [SPECIES_GYARADOS] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(UPROAR)
                         | TUTOR(ICY_WIND)
@@ -3037,6 +3302,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL)
                         | TUTOR(ICE_FANG),
                           TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_LAPRAS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -3056,11 +3323,15 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAGON_DANCE),
                           TUTOR(WEATHER_BALL),
                           TUTOR(BODY_PRESS)),
+
+
    [SPECIES_DITTO] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           0,
                           0),
+
+
    [SPECIES_EEVEE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3076,6 +3347,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STORED_POWER)
                         | TUTOR(WEATHER_BALL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_VAPOREON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3099,6 +3372,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_JOLTEON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -3121,6 +3396,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLAREON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3143,6 +3420,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_PORYGON] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3164,6 +3443,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_OMANYTE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -3181,6 +3462,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_OMASTAR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC),
@@ -3202,6 +3485,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_KABUTO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(HONE_CLAWS)
@@ -3217,6 +3502,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_KABUTOPS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -3242,7 +3529,10 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(FLIP_TURN)),
-   [SPECIES_AERODACTYL] = TUTORLEARNSET(TUTOR(SWIFT)
+
+
+   [SPECIES_AERODACTYL] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
+                        | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND)
                         | TUTOR(DEFOG),
@@ -3267,6 +3557,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SNORLAX] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -3304,6 +3596,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ARTICUNO] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3327,6 +3621,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZAPDOS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -3348,6 +3644,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MOLTRES] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3368,6 +3666,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRATINI] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -3384,6 +3684,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRAGONAIR] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -3401,6 +3703,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRAGONITE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -3440,6 +3744,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MEWTWO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -3477,6 +3783,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MEW] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -3617,6 +3925,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CHIKORITA] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -3635,6 +3945,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_BAYLEEF] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -3653,6 +3965,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_MEGANIUM] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(FURY_CUTTER)
@@ -3679,6 +3993,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(TERRAIN_PULSE)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CYNDAQUIL] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -3694,6 +4010,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_QUILAVA] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -3713,6 +4031,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TYPHLOSION] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(FURY_CUTTER)
@@ -3747,6 +4067,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TOTODILE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(WATER_PLEDGE)
                         | TUTOR(SEISMIC_TOSS)
@@ -3774,6 +4096,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CROCONAW] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(WATER_PLEDGE)
                         | TUTOR(FURY_CUTTER)
@@ -3802,6 +4126,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FERALIGATR] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
@@ -3836,6 +4162,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SENTRET] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -3865,6 +4193,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FURRET] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -3895,6 +4225,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_HOOTHOOT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3917,6 +4249,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_NOCTOWL] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -3939,6 +4273,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LEDYBA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -3962,6 +4298,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LEDIAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -3988,6 +4326,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SPINARAK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -4012,6 +4352,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ARIADOS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -4038,6 +4380,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CROBAT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -4062,6 +4406,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CHINCHOU] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -4075,6 +4421,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LANTURN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -4089,6 +4437,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PICHU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4113,6 +4463,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(ELECTRIC_TERRAIN),
                           0),
+
+
    [SPECIES_CLEFFA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4145,6 +4497,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           0),
+
+
    [SPECIES_IGGLYBUFF] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4178,6 +4532,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           0),
+
+
    [SPECIES_TOGEPI] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4210,6 +4566,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           0),
+
+
    [SPECIES_TOGETIC] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4247,6 +4605,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_NATU] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -4269,6 +4629,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_XATU] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -4293,6 +4655,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAREEP] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -4309,6 +4673,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLAAFFY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -4330,6 +4696,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_AMPHAROS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -4355,6 +4723,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BELLOSSOM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4373,6 +4743,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_MARILL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4400,6 +4772,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_AZUMARILL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4429,6 +4803,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SUDOWOODO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4456,6 +4832,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_POLITOED] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -4480,6 +4858,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_HOPPIP] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4497,6 +4877,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SKIPLOOM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4514,6 +4896,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_JUMPLUFF] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4532,6 +4916,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_AIPOM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -4565,6 +4951,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SUNKERN] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4580,6 +4968,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_SUNFLORA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -4598,6 +4988,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_YANMA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -4615,6 +5007,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WOOPER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -4633,6 +5027,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_QUAGSIRE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -4656,6 +5052,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ESPEON] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -4680,6 +5078,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_UMBREON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -4700,6 +5100,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STORED_POWER)
                         | TUTOR(WEATHER_BALL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_MURKROW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -4721,6 +5123,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(HEX),
                           0),
+
+
    [SPECIES_SLOWKING] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -4754,6 +5158,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MISDREAVUS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -4778,16 +5184,22 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_UNOWN] = TUTORLEARNSET(0,
                           0,
                           0,
                           TUTOR(STORED_POWER),
                           0),
+
+
    [SPECIES_WOBBUFFET] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           TUTOR(ENCORE),
                           0),
+
+
    [SPECIES_GIRAFARIG] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -4816,6 +5228,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PINECO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -4833,6 +5247,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SPIKES)),
+
+
    [SPECIES_FORRETRESS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -4854,6 +5270,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SPIKES)),
+
+
    [SPECIES_DUNSPARCE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -4884,6 +5302,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GLIGAR] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
@@ -4908,6 +5328,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STEELIX] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -4935,6 +5357,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SNUBBULL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4964,6 +5388,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRANBULL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -4998,6 +5424,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_QWILFISH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5021,6 +5449,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_SCIZOR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(BUG_BITE)
@@ -5038,6 +5468,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(KNOCK_OFF)
                         | TUTOR(RAZOR_SHELL)
                         | TUTOR(BATON_PASS)
+                        | TUTOR(CLOSE_COMBAT)
                         | TUTOR(BUG_BUZZ),
                           TUTOR(SOLAR_BLADE)
                         | TUTOR(REVERSAL)
@@ -5048,6 +5479,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SHUCKLE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -5069,6 +5502,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_HERACROSS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -5094,6 +5529,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(SPIKES)
                         | TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_SNEASEL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -5120,6 +5557,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TEDDIURSA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -5151,6 +5590,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_URSARING] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -5189,6 +5630,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SLUGMA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -5205,6 +5648,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_MAGCARGO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -5225,6 +5670,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SWINUB] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ENDEAVOR)
@@ -5239,6 +5686,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_PILOSWINE] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ENDEAVOR)
@@ -5255,6 +5704,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CORSOLA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5278,6 +5729,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_REMORAID] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5295,6 +5748,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_OCTILLERY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5314,6 +5769,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_DELIBIRD] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -5341,6 +5798,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MANTINE] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5367,6 +5826,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SKARMORY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
@@ -5389,6 +5850,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(SPIKES)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_HOUNDOUR] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -5411,6 +5874,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(HEX),
                           0),
+
+
    [SPECIES_HOUNDOOM] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -5434,6 +5899,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(HEX),
                           TUTOR(SCORCHING_SANDS)),
+
+
    [SPECIES_KINGDRA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5446,14 +5913,18 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(BOUNCE)
                         | TUTOR(OUTRAGE)
+                        | TUTOR(GUNK_SHOT)
                         | TUTOR(HURRICANE)
                         | TUTOR(HYDRO_PUMP)
-                        | TUTOR(DRAGON_DANCE),
+                        | TUTOR(DRAGON_DANCE)
+                        | TUTOR(TOXIC_SPIKES),
                           TUTOR(AURORA_BEAM),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PHANPY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5474,6 +5945,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_DONPHAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5502,6 +5975,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PORYGON2] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5525,6 +6000,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_STANTLER] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5545,12 +6022,150 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(HEX),
                           TUTOR(AGILITY)),
-   [SPECIES_SMEARGLE] = TUTORLEARNSET(TUTOR(MIMIC),
-                          TUTOR(SWAGGER)
+
+
+   [SPECIES_SMEARGLE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
+                        | TUTOR(FURY_CUTTER)
+                        | TUTOR(ROLLOUT)
+                        | TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(VACUUM_WAVE)
+                        | TUTOR(SHOCK_WAVE)
+                        | TUTOR(BUG_BITE)
+                        | TUTOR(AIR_CUTTER)
+                        | TUTOR(SWIFT)
+                        | TUTOR(SNATCH)
+                        | TUTOR(MIMIC)
+                        | TUTOR(MUD_SLAP)
+                        | TUTOR(METRONOME)
+                        | TUTOR(OMINOUS_WIND)
+                        | TUTOR(SUPER_FANG)
+                        | TUTOR(COUNTER)
+                        | TUTOR(SIGNAL_BEAM)
+                        | TUTOR(DEFOG)
+                        | TUTOR(MAGIC_COAT)
+                        | TUTOR(GRAVITY)
+                        | TUTOR(SEED_BOMB),
+                          TUTOR(DYNAMIC_PUNCH)
+                        | TUTOR(SYNTHESIS)
+                        | TUTOR(PAIN_SPLIT)
+                        | TUTOR(UPROAR)
+                        | TUTOR(HONE_CLAWS)
+                        | TUTOR(ENDEAVOR)
+                        | TUTOR(WORRY_SEED)
+                        | TUTOR(PSYCH_UP)
+                        | TUTOR(THUNDER_PUNCH)
+                        | TUTOR(FIRE_PUNCH)
+                        | TUTOR(ICE_PUNCH)
+                        | TUTOR(ICY_WIND)
+                        | TUTOR(ELECTROWEB)
+                        | TUTOR(LOW_KICK)
+                        | TUTOR(IRON_DEFENSE)
+                        | TUTOR(MAGNET_RISE)
+                        | TUTOR(TAILWIND)
+                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(DUAL_CHOP)
+                        | TUTOR(BODY_SLAM)
+                        | TUTOR(BRINE)
+                        | TUTOR(SWAGGER)
+                        | TUTOR(IRON_HEAD)
+                        | TUTOR(SOFTBOILED)
+                        | TUTOR(LAST_RESORT)
+                        | TUTOR(ROLE_PLAY)
+                        | TUTOR(DRILL_RUN)
+                        | TUTOR(TRICK)
+                        | TUTOR(AQUA_TAIL)
+                        | TUTOR(SKY_ATTACK)
+                        | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
-                          0,
-                          0),
+                          TUTOR(BOUNCE)
+                        | TUTOR(HEAL_BELL)
+                        | TUTOR(SUPERPOWER)
+                        | TUTOR(HELPING_HAND)
+                        | TUTOR(HEAT_WAVE)
+                        | TUTOR(OUTRAGE)
+                        | TUTOR(KNOCK_OFF)
+                        | TUTOR(LIQUIDATION)
+                        | TUTOR(HYPER_VOICE)
+                        | TUTOR(EARTH_POWER)
+                        | TUTOR(GUNK_SHOT)
+                        | TUTOR(AURA_SPHERE)
+                        | TUTOR(THROAT_CHOP)
+                        | TUTOR(GASTRO_ACID)
+                        | TUTOR(POWER_GEM)
+                        | TUTOR(HURRICANE)
+                        | TUTOR(HYDRO_PUMP)
+                        | TUTOR(RAZOR_SHELL)
+                        | TUTOR(CRUNCH)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(MEGAHORN)
+                        | TUTOR(BATON_PASS)
+                        | TUTOR(LEAF_BLADE)
+                        | TUTOR(DRAGON_DANCE)
+                        | TUTOR(CLOSE_COMBAT)
+                        | TUTOR(TOXIC_SPIKES)
+                        | TUTOR(FLARE_BLITZ)
+                        | TUTOR(BUG_BUZZ)
+                        | TUTOR(BRAVE_BIRD)
+                        | TUTOR(LEAF_STORM)
+                        | TUTOR(POWER_WHIP)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(NASTY_PLOT)
+                        | TUTOR(HEAT_CRASH)
+                        | TUTOR(STORED_POWER)
+                        | TUTOR(BLAZE_KICK)
+                        | TUTOR(ENCORE)
+                        | TUTOR(SOLAR_BLADE)
+                        | TUTOR(PIN_MISSILE)
+                        | TUTOR(REVERSAL)
+                        | TUTOR(SELF_DESTRUCT)
+                        | TUTOR(REVENGE)
+                        | TUTOR(WEATHER_BALL)
+                        | TUTOR(ICICLE_SPEAR)
+                        | TUTOR(MUD_SHOT)
+                        | TUTOR(ROCK_BLAST)
+                        | TUTOR(ICE_FANG)
+                        | TUTOR(FIRE_FANG)
+                        | TUTOR(THUNDER_FANG)
+                        | TUTOR(PSYCHO_CUT)
+                        | TUTOR(CROSS_POISON)
+                        | TUTOR(HEX)
+                        | TUTOR(DEFENSE_CURL)
+                        | TUTOR(PHANTOM_FORCE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(GRASSY_TERRAIN)
+                        | TUTOR(ELECTRIC_TERRAIN)
+                        | TUTOR(MISTY_TERRAIN)
+                        | TUTOR(PSYCHIC_TERRAIN)
+                        | TUTOR(AIR_SLASH)
+                        | TUTOR(METEOR_MASH)
+                        | TUTOR(AURORA_BEAM)
+                        | TUTOR(QUIVER_DANCE)
+                        | TUTOR(EXPANDING_FORCE),
+                          TUTOR(RISING_VOLTAGE)
+                        | TUTOR(MISTY_EXPLOSION)
+                        | TUTOR(GRASSY_GLIDE)
+                        | TUTOR(TERRAIN_PULSE)
+                        | TUTOR(SCALE_SHOT)
+                        | TUTOR(METEOR_BEAM)
+                        | TUTOR(POLTERGEIST)
+                        | TUTOR(FLIP_TURN)
+                        | TUTOR(TRIPLE_AXEL)
+                        | TUTOR(DUAL_WINGBEAT)
+                        | TUTOR(SCORCHING_SANDS)
+                        | TUTOR(SKITTER_SMACK)
+                        | TUTOR(COACHING)
+                        | TUTOR(BODY_PRESS)
+                        | TUTOR(FOCUS_ENERGY)
+                        | TUTOR(SPIKES)
+                        | TUTOR(HIGH_HORSEPOWER)
+                        | TUTOR(STOMPING_TANTRUM)
+                        | TUTOR(INFESTATION)
+                        | TUTOR(POWER_UP_PUNCH)
+                        | TUTOR(AGILITY)
+                        | TUTOR(TELEPORT)),
+
+
    [SPECIES_TYROGUE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(VACUUM_WAVE)
@@ -5567,6 +6182,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HELPING_HAND),
                           0,
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_HITMONTOP] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -5592,6 +6209,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SMOOCHUM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -5618,6 +6237,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ENCORE)
                         | TUTOR(DRAINING_KISS),
                           0),
+
+
    [SPECIES_ELEKID] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -5642,6 +6263,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HELPING_HAND),
                           TUTOR(AURORA_BEAM),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MAGBY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -5662,6 +6285,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MILTANK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -5691,6 +6316,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BLISSEY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -5725,6 +6352,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_RAIKOU] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5745,6 +6374,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ENTEI] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -5764,6 +6395,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SUICUNE] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -5786,6 +6419,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LARVITAR] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -5803,6 +6438,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PUPITAR] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -5820,6 +6457,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TYRANITAR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -5858,6 +6497,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_LUGIA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -5889,6 +6530,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_HO_OH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -5916,6 +6559,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)),
+
+
    [SPECIES_CELEBI] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -5951,6 +6596,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_TREECKO] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -5978,7 +6625,10 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GROVYLE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
+                        | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -6006,6 +6656,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SCEPTILE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(DRACO_METEOR)
@@ -6044,6 +6696,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SCALE_SHOT)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TORCHIC] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -6066,6 +6720,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_COMBUSKEN] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -6099,6 +6755,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BLAZIKEN] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(FURY_CUTTER)
@@ -6141,6 +6799,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MUDKIP] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -6160,6 +6820,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(WEATHER_BALL)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MARSHTOMP] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -6183,6 +6845,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SWAMPERT] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(ROLLOUT)
@@ -6215,6 +6879,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_POOCHYENA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -6232,6 +6898,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(ICE_FANG),
                           0),
+
+
    [SPECIES_MIGHTYENA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -6250,6 +6918,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(ICE_FANG),
                           0),
+
+
    [SPECIES_ZIGZAGOON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -6274,6 +6944,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_LINOONE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -6300,17 +6972,23 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WURMPLE] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB),
                           0,
                           0,
                           0),
+
+
    [SPECIES_SILCOON] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(IRON_DEFENSE),
                           0,
                           0,
                           0),
+
+
    [SPECIES_BEAUTIFLY] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -6333,12 +7011,16 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CASCOON] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(IRON_DEFENSE),
                           0,
                           0,
                           0),
+
+
    [SPECIES_DUSTOX] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -6362,6 +7044,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LOTAD] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -6374,6 +7058,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           0,
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_LOMBRE] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SEED_BOMB),
@@ -6396,6 +7082,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_LUDICOLO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -6424,6 +7112,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SEEDOT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(DEFOG)
@@ -6440,6 +7130,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_NUZLEAF] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
@@ -6464,6 +7156,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHIFTRY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(AIR_CUTTER)
@@ -6501,6 +7195,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TAILLOW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -6522,6 +7218,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SWELLOW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -6543,6 +7241,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WINGULL] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -6563,6 +7263,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PELIPPER] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -6588,6 +7290,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RALTS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -6615,6 +7319,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_KIRLIA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -6643,6 +7349,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_GARDEVOIR] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -6676,6 +7384,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SURSKIT] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -6691,6 +7401,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_MASQUERAIN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -6716,6 +7428,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SHROOMISH] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -6728,6 +7442,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HELPING_HAND),
                           0,
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_BRELOOM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -6745,12 +7461,15 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(SUPERPOWER)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE),
+                        | TUTOR(AURA_SPHERE)
+                        | TUTOR(CLOSE_COMBAT),
                           TUTOR(REVERSAL)
                         | TUTOR(REVENGE),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SLAKOTH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -6772,6 +7491,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ENCORE)
                         | TUTOR(REVENGE),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_VIGOROTH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -6798,6 +7519,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SLAKING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -6828,6 +7551,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_NINCADA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -6838,6 +7563,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BUG_BUZZ),
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_NINJASK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -6858,6 +7585,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SHEDINJA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -6872,6 +7601,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WHISMUR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -6893,6 +7624,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BUG_BUZZ),
                           TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_LOUDRED] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -6917,6 +7650,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_EXPLOUD] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -6949,6 +7684,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MAKUHITA] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -6975,6 +7712,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_HARIYAMA] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -7006,6 +7745,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_AZURILL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -7026,6 +7767,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           0),
+
+
    [SPECIES_NOSEPASS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -7048,6 +7791,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SKITTY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -7069,6 +7814,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_DELCATTY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -7091,6 +7838,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SABLEYE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -7125,6 +7874,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX),
                           TUTOR(POLTERGEIST)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MAWILE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -7157,6 +7908,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ARON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -7177,6 +7930,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(BODY_PRESS)),
+
+
    [SPECIES_LAIRON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -7199,6 +7954,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_AGGRON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -7239,6 +7996,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MEDITITE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SWIFT)
@@ -7272,6 +8031,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MEDICHAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SWIFT)
@@ -7305,6 +8066,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ELECTRIKE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -7323,6 +8086,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MANECTRIC] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -7342,6 +8107,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PLUSLE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -7370,6 +8137,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MINUN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -7398,6 +8167,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VOLBEAT] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -7433,6 +8204,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ILLUMISE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -7469,6 +8242,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ROSELIA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -7488,6 +8263,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_GULPIN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -7512,6 +8289,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SWALOT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -7536,6 +8315,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CARVANHA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
@@ -7558,6 +8339,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SHARPEDO] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
@@ -7582,6 +8365,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WAILMER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -7596,6 +8381,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(BODY_PRESS)),
+
+
    [SPECIES_WAILORD] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -7612,6 +8399,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(BODY_PRESS)),
+
+
    [SPECIES_NUMEL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -7625,6 +8414,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_CAMERUPT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -7643,6 +8434,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_TORKOAL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(IRON_DEFENSE)
@@ -7658,6 +8451,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SPOINK] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -7680,6 +8475,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_GRUMPIG] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -7712,6 +8509,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SPINDA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -7746,6 +8545,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TRAPINCH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -7760,6 +8561,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_VIBRAVA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
@@ -7788,6 +8591,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_FLYGON] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
@@ -7822,6 +8627,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CACNEA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -7845,6 +8652,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CACTURNE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -7862,6 +8671,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(SUPERPOWER)
+                        | TUTOR(KNOCK_OFF)
                         | TUTOR(EARTH_POWER)
                         | TUTOR(AURA_SPHERE)
                         | TUTOR(CLOSE_COMBAT)
@@ -7876,6 +8686,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SWABLU] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -7898,6 +8710,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ALTARIA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -7924,6 +8738,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZANGOOSE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -7959,6 +8775,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SEVIPER] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
@@ -7989,6 +8807,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LUNATONE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -8018,6 +8838,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SOLROCK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -8048,6 +8870,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BARBOACH] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ICY_WIND)
@@ -8060,6 +8884,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAGON_DANCE),
                           TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_WHISCASH] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ICY_WIND)
@@ -8074,6 +8900,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(WEATHER_BALL)
                         | TUTOR(MUD_SHOT),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CORPHISH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -8093,6 +8921,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAGON_DANCE),
                           TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_CRAWDAUNT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -8117,6 +8947,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_BALTOY] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SIGNAL_BEAM)
@@ -8135,6 +8967,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CLAYDOL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SIGNAL_BEAM)
@@ -8156,6 +8990,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LILEEP] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SEED_BOMB),
@@ -8173,6 +9009,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_CRADILY] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SEED_BOMB),
@@ -8193,6 +9031,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ANORITH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -8213,6 +9053,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(CROSS_POISON),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_ARMALDO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(BUG_BITE)
@@ -8241,6 +9083,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(CROSS_POISON),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_FEEBAS] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -8249,6 +9093,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(MUD_SHOT),
                           TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_MILOTIC] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -8269,6 +9115,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_CASTFORM] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -8288,6 +9136,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_KECLEON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -8319,6 +9169,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHUPPET] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -8341,6 +9193,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_BANETTE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -8368,6 +9222,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(POLTERGEIST)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_DUSKULL] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND)
@@ -8386,6 +9242,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_DUSCLOPS] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -8414,6 +9272,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TROPIUS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
@@ -8438,6 +9298,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CHIMECHO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -8465,6 +9327,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_ABSOL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -8487,6 +9351,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SUPERPOWER)
                         | TUTOR(KNOCK_OFF)
                         | TUTOR(THROAT_CHOP)
+                        | TUTOR(HURRICANE)
                         | TUTOR(MEGAHORN)
                         | TUTOR(BATON_PASS)
                         | TUTOR(LEAF_BLADE)
@@ -8494,15 +9359,18 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(NASTY_PLOT)
                         | TUTOR(PSYCHO_CUT)
-                        | TUTOR(HEX)
                         | TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WYNAUT] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           TUTOR(ENCORE),
                           0),
+
+
    [SPECIES_SNORUNT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -8515,6 +9383,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SPIKES)),
+
+
    [SPECIES_GLALIE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SUPER_FANG)
@@ -8535,6 +9405,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_SPHEAL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -8554,6 +9426,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_SEALEO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -8573,6 +9447,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_WALREIN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -8597,6 +9473,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CLAMPERL] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
                         | TUTOR(IRON_DEFENSE)
@@ -8607,6 +9485,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RAZOR_SHELL),
                           TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_HUNTAIL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -8631,6 +9511,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GOREBYSS] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -8653,6 +9535,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RELICANTH] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(PSYCH_UP)
@@ -8672,6 +9556,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_LUVDISC] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC),
                           TUTOR(PSYCH_UP)
@@ -8687,6 +9573,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BAGON] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -8704,6 +9592,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_SHELGON] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -8725,6 +9615,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_SALAMENCE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -8757,6 +9649,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BELDUM] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(IRON_DEFENSE)
                         | TUTOR(ZEN_HEADBUTT)
@@ -8765,6 +9659,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           0,
                           0),
+
+
    [SPECIES_METANG] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
@@ -8797,6 +9693,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_METAGROSS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
@@ -8832,6 +9730,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_REGIROCK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -8861,6 +9761,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_REGICE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -8888,6 +9790,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_REGISTEEL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -8914,6 +9818,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_LATIAS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -8947,6 +9853,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LATIOS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -8978,6 +9886,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_KYOGRE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -8999,6 +9909,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_GROUDON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -9029,6 +9941,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_RAYQUAZA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(DRAGON_ASCENT)
                         | TUTOR(FURY_CUTTER)
@@ -9061,6 +9975,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_JIRACHI] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9096,6 +10012,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DEOXYS] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -9131,6 +10049,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_TURTWIG] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9149,6 +10069,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_GROTLE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9167,6 +10089,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_TORTERRA] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(MIMIC)
@@ -9193,6 +10117,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CHIMCHAR] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -9226,6 +10152,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MONFERNO] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -9263,6 +10191,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_INFERNAPE] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(ROLLOUT)
@@ -9304,6 +10234,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PIPLUP] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -9320,6 +10252,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PRINPLUP] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -9338,6 +10272,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_EMPOLEON] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(FURY_CUTTER)
@@ -9365,6 +10301,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STARLY] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9384,6 +10322,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STARAVIA] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9403,6 +10343,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STARAPTOR] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9425,6 +10367,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BIDOOF] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -9445,6 +10389,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(CRUNCH),
                           TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_BIBAREL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -9468,6 +10414,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(CRUNCH),
                           TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_KRICKETOT] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -9475,6 +10423,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BUG_BUZZ),
                           0,
                           0),
+
+
    [SPECIES_KRICKETUNE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -9499,6 +10449,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHINX] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -9520,6 +10472,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_LUXIO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -9541,7 +10495,10 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
-   [SPECIES_LUXRAY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
+
+
+   [SPECIES_LUXRAY] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
+                        | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9549,12 +10506,12 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COUNTER)
                         | TUTOR(SIGNAL_BEAM),
                           TUTOR(MAGNET_RISE)
+                        | TUTOR(ZEN_HEADBUTT)
                         | TUTOR(BODY_SLAM)
                         | TUTOR(SWAGGER)
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(SUPERPOWER)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(THROAT_CHOP)
                         | TUTOR(CRUNCH)
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(REVERSAL)
@@ -9562,10 +10519,13 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICE_FANG)
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG)
+                        | TUTOR(PSYCHO_CUT)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BUDEW] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -9582,6 +10542,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_ROSERADE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -9603,6 +10565,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_CRANIDOS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9625,6 +10589,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_RAMPARDOS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -9661,6 +10627,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHIELDON] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9678,6 +10646,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_BASTIODON] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9699,11 +10669,15 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_BURMY] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB),
                           TUTOR(BUG_BUZZ),
                           0,
                           0),
+
+
    [SPECIES_WORMADAM] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -9722,6 +10696,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_MOTHIM] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -9742,6 +10718,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_COMBEE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -9754,6 +10732,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BUG_BUZZ),
                           0,
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_VESPIQUEN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -9781,6 +10761,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_PACHIRISU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -9806,6 +10788,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_BUIZEL] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -9826,6 +10810,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLOATZEL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -9856,6 +10842,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CHERUBI] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -9871,6 +10859,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_CHERRIM] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -9887,6 +10877,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_SHELLOS] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(COUNTER),
                           TUTOR(PAIN_SPLIT)
@@ -9902,6 +10894,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GASTRODON] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -9920,6 +10914,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_AMBIPOM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -9954,6 +10950,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ENCORE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRIFLOON] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -9980,6 +10978,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DRIFBLIM] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -10008,6 +11008,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BUNEARY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -10040,6 +11042,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LOPUNNY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -10076,6 +11080,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MISMAGIUS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10102,6 +11108,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_HONCHKROW] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10125,6 +11133,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_GLAMEOW] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -10147,6 +11157,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_PURUGLY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -10172,6 +11184,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CHINGLING] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10194,6 +11208,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STORED_POWER)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_STUNKY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10213,6 +11229,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_SKUNTANK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10232,6 +11250,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_BRONZOR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -10246,6 +11266,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HEX)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_BRONZONG] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -10266,6 +11288,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BONSLY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -10283,6 +11307,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_MIME_JR] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -10306,6 +11332,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN)
                         | TUTOR(PSYCHIC_TERRAIN),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_HAPPINY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -10331,6 +11359,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_CHATOT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -10349,6 +11379,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(ENCORE),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_SPIRITOMB] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -10369,6 +11401,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(POLTERGEIST)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GIBLE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -10386,6 +11420,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SCORCHING_SANDS)),
+
+
    [SPECIES_GABITE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -10405,6 +11441,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SCORCHING_SANDS)),
+
+
    [SPECIES_GARCHOMP] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -10432,6 +11470,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_MUNCHLAX] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -10462,6 +11502,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_RIOLU] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -10492,6 +11534,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LUCARIO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -10526,6 +11570,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_HIPPOPOTAS] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -10544,6 +11590,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_HIPPOWDON] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -10564,6 +11612,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SKORUPI] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -10580,6 +11630,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRAPION] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(BUG_BITE)
@@ -10607,6 +11659,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CROAGUNK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -10637,6 +11691,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TOXICROAK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -10670,6 +11726,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(METEOR_MASH),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CARNIVINE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -10688,6 +11746,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BUG_BUZZ),
                           0,
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_FINNEON] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -10708,6 +11768,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LUMINEON] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -10730,6 +11792,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MANTYKE] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -10743,6 +11807,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HELPING_HAND),
                           TUTOR(AIR_SLASH),
                           0),
+
+
    [SPECIES_SNOVER] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -10759,6 +11825,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_ABOMASNOW] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -10781,6 +11849,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICICLE_SPEAR),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_WEAVILE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -10808,6 +11878,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MAGNEZONE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -10830,6 +11902,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LICKILICKY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -10855,6 +11929,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_RHYPERIOR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -10895,6 +11971,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TANGROWTH] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -10920,6 +11998,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ELECTIVIRE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -10955,6 +12035,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGMORTAR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -10983,6 +12065,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_TOGEKISS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -11023,6 +12107,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_YANMEGA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -11043,6 +12129,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LEAFEON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -11068,6 +12156,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_GLACEON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11091,6 +12181,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_GLISCOR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
@@ -11115,6 +12207,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(CROSS_POISON),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MAMOSWINE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -11136,31 +12230,123 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
-   [SPECIES_PORYGON_Z] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
+
+
+   [SPECIES_PORYGON_Z] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(VACUUM_WAVE)
+                        | TUTOR(SHOCK_WAVE)
+                        | TUTOR(BUG_BITE)
+                        | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
+                        | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
+                        | TUTOR(MUD_SLAP)
+                        | TUTOR(METRONOME)
+                        | TUTOR(OMINOUS_WIND)
                         | TUTOR(SIGNAL_BEAM)
+                        | TUTOR(DEFOG)
                         | TUTOR(MAGIC_COAT)
                         | TUTOR(GRAVITY),
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
+                        | TUTOR(ENDEAVOR)
+                        | TUTOR(WORRY_SEED)
                         | TUTOR(PSYCH_UP)
                         | TUTOR(ICY_WIND)
                         | TUTOR(ELECTROWEB)
+                        | TUTOR(IRON_DEFENSE)
                         | TUTOR(MAGNET_RISE)
+                        | TUTOR(TAILWIND)
                         | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(BRINE)
                         | TUTOR(SWAGGER)
+                        | TUTOR(IRON_HEAD)
+                        | TUTOR(SOFTBOILED)
                         | TUTOR(LAST_RESORT)
+                        | TUTOR(ROLE_PLAY)
+                        | TUTOR(DRILL_RUN)
                         | TUTOR(TRICK)
+                        | TUTOR(AQUA_TAIL)
+                        | TUTOR(SKY_ATTACK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(POWER_GEM)
-                        | TUTOR(BUG_BUZZ),
+                          TUTOR(BOUNCE)
+                        | TUTOR(HEAL_BELL)
+                        | TUTOR(SUPERPOWER)
+                        | TUTOR(HELPING_HAND)
+                        | TUTOR(HEAT_WAVE)
+                        | TUTOR(OUTRAGE)
+                        | TUTOR(KNOCK_OFF)
+                        | TUTOR(LIQUIDATION)
+                        | TUTOR(HYPER_VOICE)
+                        | TUTOR(EARTH_POWER)
+                        | TUTOR(GUNK_SHOT)
+                        | TUTOR(AURA_SPHERE)
+                        | TUTOR(THROAT_CHOP)
+                        | TUTOR(POWER_GEM)
+                        | TUTOR(POWER_GEM)
+                        | TUTOR(HURRICANE)
+                        | TUTOR(HYDRO_PUMP)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(MEGAHORN)
+                        | TUTOR(BATON_PASS)
+                        | TUTOR(DRAGON_DANCE)
+                        | TUTOR(CLOSE_COMBAT)
+                        | TUTOR(TOXIC_SPIKES)
+                        | TUTOR(FLARE_BLITZ)
+                        | TUTOR(BUG_BUZZ)
+                        | TUTOR(BRAVE_BIRD)
+                        | TUTOR(LEAF_STORM)
+                        | TUTOR(POWER_WHIP)
+                        | TUTOR(PLAY_ROUGH),
                           TUTOR(NASTY_PLOT)
+                        | TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(SOLAR_BLADE)
+                        | TUTOR(PIN_MISSILE)
+                        | TUTOR(REVERSAL)
+                        | TUTOR(SELF_DESTRUCT)
+                        | TUTOR(REVENGE)
+                        | TUTOR(WEATHER_BALL)
+                        | TUTOR(ICICLE_SPEAR)
+                        | TUTOR(MUD_SHOT)
+                        | TUTOR(ROCK_BLAST)
+                        | TUTOR(PSYCHO_CUT)
+                        | TUTOR(CROSS_POISON)
+                        | TUTOR(HEX)
+                        | TUTOR(DEFENSE_CURL)
+                        | TUTOR(PHANTOM_FORCE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(ELECTRIC_TERRAIN)
-                        | TUTOR(AURORA_BEAM),
-                          TUTOR(AGILITY)
+                        | TUTOR(ELECTRIC_TERRAIN)
+                        | TUTOR(MISTY_TERRAIN)
+                        | TUTOR(PSYCHIC_TERRAIN)
+                        | TUTOR(AIR_SLASH)
+                        | TUTOR(METEOR_MASH)
+                        | TUTOR(AURORA_BEAM)
+                        | TUTOR(QUIVER_DANCE)
+                        | TUTOR(EXPANDING_FORCE),
+                          TUTOR(RISING_VOLTAGE)
+                        | TUTOR(MISTY_EXPLOSION)
+                        | TUTOR(GRASSY_GLIDE)
+                        | TUTOR(TERRAIN_PULSE)
+                        | TUTOR(METEOR_BEAM)
+                        | TUTOR(POLTERGEIST)
+                        | TUTOR(FLIP_TURN)
+                        | TUTOR(SCORCHING_SANDS)
+                        | TUTOR(SKITTER_SMACK)
+                        | TUTOR(FOCUS_ENERGY)
+                        | TUTOR(SPIKES)
+                        | TUTOR(HIGH_HORSEPOWER)
+                        | TUTOR(STOMPING_TANTRUM)
+                        | TUTOR(INFESTATION)
+                        | TUTOR(INFESTATION)
+                        | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_GALLADE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -11206,6 +12392,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PROBOPASS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -11227,6 +12415,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ROCK_BLAST),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DUSKNOIR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -11253,6 +12443,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_FROSLASS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -11278,6 +12470,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_ROTOM] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -11302,6 +12496,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POLTERGEIST)),
+
+
    [SPECIES_UXIE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11335,6 +12531,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MESPRIT] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11366,6 +12564,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_AZELF] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11400,6 +12600,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DIALGA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -11427,6 +12629,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PALKIA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -11459,6 +12663,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_HEATRAN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -11480,6 +12686,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_REGIGIGAS] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -11513,6 +12721,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GIRATINA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -11544,6 +12754,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CRESSELIA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11566,6 +12778,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PHIONE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11587,6 +12801,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYDRO_PUMP),
                           0,
                           TUTOR(FLIP_TURN)),
+
+
    [SPECIES_MANAPHY] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11608,6 +12824,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYDRO_PUMP),
                           TUTOR(WEATHER_BALL),
                           TUTOR(FLIP_TURN)),
+
+
    [SPECIES_DARKRAI] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -11630,6 +12848,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(HEX),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SHAYMIN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -11651,6 +12871,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(AIR_SLASH),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_ARCEUS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -11691,6 +12913,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_VICTINI] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -11729,6 +12953,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SNIVY] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SNATCH)
@@ -11753,6 +12979,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_SERVINE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SNATCH)
@@ -11777,6 +13005,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_SERPERIOR] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(DRACO_METEOR)
@@ -11805,6 +13035,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_TEPIG] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -11826,6 +13058,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_PIGNITE] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -11858,6 +13092,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_EMBOAR] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(ROLLOUT)
@@ -11897,6 +13133,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_OSHAWOTT] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -11921,6 +13159,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_DEWOTT] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -11948,6 +13188,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_SAMUROTT] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(FURY_CUTTER)
@@ -11983,6 +13225,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_PATRAT] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -12009,6 +13253,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_WATCHOG] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -12046,6 +13292,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_LILLIPUP] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -12066,6 +13314,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           0),
+
+
    [SPECIES_HERDIER] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -12086,6 +13336,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           0),
+
+
    [SPECIES_STOUTLAND] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -12109,6 +13361,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_PURRLOIN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -12135,6 +13389,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_LIEPARD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -12164,6 +13420,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PANSAGE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -12195,6 +13453,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_SIMISAGE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -12234,6 +13494,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PANSEAR] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -12265,6 +13527,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BLAZE_KICK)
                         | TUTOR(WEATHER_BALL),
                           0),
+
+
    [SPECIES_SIMISEAR] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -12302,6 +13566,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PANPOUR] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -12332,6 +13598,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(WEATHER_BALL),
                           TUTOR(FLIP_TURN)),
+
+
    [SPECIES_SIMIPOUR] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -12368,6 +13636,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FLIP_TURN)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MUNNA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -12391,6 +13661,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_MUSHARNA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -12416,6 +13688,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PIDOVE] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -12432,6 +13706,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TRANQUILL] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -12448,6 +13724,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_UNFEZANT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -12467,6 +13745,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BLITZLE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -12486,6 +13766,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZEBSTRIKA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -12507,6 +13789,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ROGGENROLA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -12525,6 +13809,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_BOLDORE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -12544,7 +13830,10 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_GIGALITH] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -12563,10 +13852,14 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(MUD_SHOT)
                         | TUTOR(ROCK_BLAST)
+                        | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
-                          TUTOR(METEOR_BEAM)
+                          TUTOR(RISING_VOLTAGE)
+                        | TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_WOOBAT] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -12596,6 +13889,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SWOOBAT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -12628,6 +13923,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DRILBUR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -12643,6 +13940,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_EXCADRILL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -12664,6 +13963,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_AUDINO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SNATCH)
@@ -12702,6 +14003,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TIMBURR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -12725,6 +14028,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GURDURR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -12751,6 +14056,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CONKELDURR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -12779,6 +14086,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TYMPOLE] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -12795,6 +14104,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_PALPITOAD] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -12815,6 +14126,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_SEISMITOAD] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -12844,6 +14157,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_THROH] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -12871,6 +14186,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SAWK] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(MIMIC)
@@ -12900,6 +14217,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SEWADDLE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -12921,6 +14240,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SWADLOON] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -12943,6 +14264,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LEAVANNY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -12983,6 +14306,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VENIPEDE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
@@ -13005,6 +14330,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WHIRLIPEDE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
@@ -13027,6 +14354,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SCOLIPEDE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
@@ -13058,6 +14387,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_COTTONEE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -13076,6 +14407,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_WHIMSICOTT] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -13099,6 +14432,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_PETILIL] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -13114,6 +14449,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_LILLIGANT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -13138,6 +14475,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_BASCULIN] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC),
@@ -13161,6 +14500,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SANDILE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -13181,6 +14522,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_KROKOROK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -13210,6 +14553,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_KROOKODILE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -13247,6 +14592,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_DARUMAKA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -13271,6 +14618,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DARMANITAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -13301,6 +14650,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MARACTUS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -13325,6 +14676,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_DWEBBLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
@@ -13343,6 +14696,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_CRUSTLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
@@ -13365,6 +14720,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SCRAGGY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SNATCH)
@@ -13393,6 +14750,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVENGE),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SCRAFTY] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SNATCH)
@@ -13424,6 +14783,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVENGE),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SIGILYPH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -13450,6 +14811,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_YAMASK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -13470,6 +14833,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX),
                           TUTOR(POLTERGEIST)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_COFAGRIGUS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -13497,6 +14862,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_TIRTOUGA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13520,6 +14887,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_CARRACOSTA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -13551,6 +14920,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_ARCHEN] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13575,6 +14946,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ARCHEOPS] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13605,6 +14978,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TRUBBISH] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13621,6 +14996,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST),
                           TUTOR(SPIKES)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GARBODOR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -13643,6 +15020,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ZORUA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -13669,6 +15048,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZOROARK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -13702,6 +15083,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MINCCINO] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -13723,6 +15106,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ENCORE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(TRIPLE_AXEL)),
+
+
    [SPECIES_CINCCINO] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -13747,6 +15132,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(TRIPLE_AXEL)),
+
+
    [SPECIES_GOTHITA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13771,6 +15158,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STORED_POWER)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_GOTHORITA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13795,6 +15184,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STORED_POWER)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_GOTHITELLE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13820,6 +15211,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SOLOSIS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13846,6 +15239,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DUOSION] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13872,6 +15267,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_REUNICLUS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -13908,6 +15305,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DUCKLETT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13925,6 +15324,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SWANNA] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -13945,6 +15346,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VANILLITE] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -13961,6 +15364,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICICLE_SPEAR)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_VANILLISH] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -13977,6 +15382,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICICLE_SPEAR)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_VANILLUXE] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -13995,6 +15402,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICICLE_SPEAR)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_DEERLING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -14013,6 +15422,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SAWSBUCK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -14035,6 +15446,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_EMOLGA] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -14061,6 +15474,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_KARRABLAST] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
@@ -14079,6 +15494,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ENCORE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_ESCAVALIER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
@@ -14105,6 +15522,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FOONGUS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -14116,6 +15535,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GASTRO_ACID),
                           TUTOR(DEFENSE_CURL),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_AMOONGUSS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
@@ -14131,6 +15552,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_FRILLISH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND)
@@ -14145,6 +15568,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HYDRO_PUMP),
                           TUTOR(HEX),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_JELLICENT] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND)
@@ -14159,6 +15584,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HYDRO_PUMP),
                           TUTOR(HEX),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_ALOMOMOLA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(MAGIC_COAT),
@@ -14175,6 +15602,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(LIQUIDATION),
                           0,
                           TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_JOLTIK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -14195,6 +15624,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GALVANTULA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -14216,6 +15647,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FERROSEED] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -14235,6 +15668,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SPIKES)),
+
+
    [SPECIES_FERROTHORN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -14256,6 +15691,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(BODY_PRESS)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_KLINK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -14271,6 +15708,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_KLANG] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -14286,6 +15725,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_KLINKLANG] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -14297,17 +15738,22 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_SLAM)
                         | TUTOR(SWAGGER)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
+                          TUTOR(CRUNCH),
                           TUTOR(DEFENSE_CURL)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_TYNAMO] = TUTORLEARNSET(0,
                           TUTOR(MAGNET_RISE),
                           0,
                           0,
                           TUTOR(AGILITY)),
-   [SPECIES_EELEKTRIK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
+
+
+   [SPECIES_EELEKTRIK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -14324,10 +15770,16 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THROAT_CHOP)
                         | TUTOR(GASTRO_ACID)
                         | TUTOR(CRUNCH),
-                          TUTOR(AURORA_BEAM),
+                          TUTOR(ICE_FANG)
+                        | TUTOR(FIRE_FANG)
+                        | TUTOR(THUNDER_FANG)
+                        | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
-   [SPECIES_EELEKTROSS] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+
+
+   [SPECIES_EELEKTROSS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
+                        | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -14338,6 +15790,7 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HONE_CLAWS)
                         | TUTOR(THUNDER_PUNCH)
                         | TUTOR(FIRE_PUNCH)
+                        | TUTOR(ICE_PUNCH)
                         | TUTOR(MAGNET_RISE)
                         | TUTOR(BODY_SLAM)
                         | TUTOR(BRINE)
@@ -14352,11 +15805,16 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GASTRO_ACID)
                         | TUTOR(CRUNCH)
                         | TUTOR(POWER_WHIP),
-                          TUTOR(ELECTRIC_TERRAIN)
+                          TUTOR(ICE_FANG)
+                        | TUTOR(FIRE_FANG)
+                        | TUTOR(THUNDER_FANG)
+                        | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ELGYEM] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -14384,6 +15842,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BEHEEYEM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -14413,6 +15873,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LITWICK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -14426,6 +15888,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HEX),
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_LAMPENT] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -14439,6 +15903,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HEX),
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_CHANDELURE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND),
@@ -14452,6 +15918,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HEX),
                           TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_AXEW] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -14472,6 +15940,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_FRAXURE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -14496,6 +15966,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_HAXORUS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -14523,6 +15995,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CUBCHOO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -14545,6 +16019,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICE_FANG)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BEARTIC] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -14574,6 +16050,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(BODY_PRESS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CRYOGONAL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -14594,6 +16072,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SHELMET] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -14611,6 +16091,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ACCELGOR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(BUG_BITE)
@@ -14636,6 +16118,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_STUNFISK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -14657,6 +16141,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_MIENFOO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SWIFT)
@@ -14683,6 +16169,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MIENSHAO] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SWIFT)
@@ -14713,6 +16201,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRUDDIGON] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -14750,6 +16240,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GOLETT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -14781,6 +16273,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GOLURK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -14818,6 +16312,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PAWNIARD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SWIFT)
@@ -14840,6 +16336,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVENGE)
                         | TUTOR(PSYCHO_CUT),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BISHARP] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -14867,6 +16365,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH)
                         | TUTOR(METEOR_MASH),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BOUFFALANT] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -14888,6 +16388,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_RUFFLET] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -14909,6 +16411,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BRAVIARY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -14931,6 +16435,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VULLABY] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -14950,6 +16456,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_MANDIBUZZ] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -14970,6 +16478,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_HEATMOR] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -14995,6 +16505,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_DURANT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(SWIFT)
@@ -15013,6 +16525,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(THUNDER_FANG),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEINO] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -15034,6 +16548,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_ZWEILOUS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -15055,6 +16571,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_HYDREIGON] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -15089,6 +16607,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_LARVESTA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM),
@@ -15101,6 +16621,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLARE_BLITZ),
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_VOLCARONA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
@@ -15122,6 +16644,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_COBALION] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -15146,6 +16670,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(AIR_SLASH),
                           TUTOR(COACHING)),
+
+
    [SPECIES_TERRAKION] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -15170,6 +16696,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(COACHING)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_VIRIZION] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -15197,6 +16725,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(COACHING)),
+
+
    [SPECIES_TORNADUS] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -15223,6 +16753,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(AIR_SLASH),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_THUNDURUS] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -15248,6 +16780,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RESHIRAM] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15274,6 +16808,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_ZEKROM] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -15301,6 +16837,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_LANDORUS] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -15324,6 +16862,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_KYUREM] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15345,6 +16885,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_KELDEO] = TUTORLEARNSET(TUTOR(SECRET_SWORD)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -15375,6 +16917,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(COACHING)),
+
+
    [SPECIES_MELOETTA] = TUTORLEARNSET(TUTOR(RELIC_SONG)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -15414,6 +16958,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_GENESECT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -15439,6 +16985,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PIN_MISSILE)
                         | TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_CHESPIN] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -15476,6 +17024,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_QUILLADIN] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -15514,6 +17064,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CHESNAUGHT] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(FURY_CUTTER)
@@ -15562,6 +17114,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_FENNEKIN] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -15583,6 +17137,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(PSYCHIC_TERRAIN),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BRAIXEN] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -15613,6 +17169,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(PSYCHIC_TERRAIN),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_DELPHOX] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(COVET)
@@ -15650,6 +17208,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_FROAKIE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
@@ -15669,6 +17229,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_FROGADIER] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(VACUUM_WAVE)
@@ -15692,6 +17254,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRENINJA] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(FURY_CUTTER)
@@ -15719,6 +17283,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BUNNELBY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15737,6 +17303,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DIGGERSBY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -15772,6 +17340,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLETCHLING] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -15786,6 +17356,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLETCHINDER] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -15800,6 +17372,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TALONFLAME] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -15818,17 +17392,23 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SCATTERBUG] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           0,
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_SPEWPA] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB)
                         | TUTOR(IRON_DEFENSE),
                           0,
                           0,
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_VIVILLON] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -15852,6 +17432,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_LITLEO] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -15870,6 +17452,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(FIRE_FANG),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_PYROAR] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -15890,6 +17474,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG),
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_FLABEBE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15908,6 +17494,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15927,6 +17515,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLORGES] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15949,6 +17539,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_SKIDDO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15968,6 +17560,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GOGOAT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -15993,6 +17587,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PANCHAM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -16026,6 +17622,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PANGORO] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -16070,6 +17668,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_FURFROU] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -16085,6 +17685,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_ESPURR] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -16108,6 +17710,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_MEOWSTIC] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -16134,6 +17738,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_HONEDGE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -16149,6 +17755,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(AIR_SLASH),
                           0),
+
+
    [SPECIES_DOUBLADE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -16164,6 +17772,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(AIR_SLASH),
                           0),
+
+
    [SPECIES_AEGISLASH] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -16179,6 +17789,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(AIR_SLASH),
                           0),
+
+
    [SPECIES_SPRITZEE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16197,6 +17809,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_AROMATISSE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -16219,6 +17833,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN)
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_SWIRLIX] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16235,6 +17851,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(DRAINING_KISS),
                           TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_SLURPUFF] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -16256,6 +17874,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(DRAINING_KISS),
                           TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_INKAY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -16277,6 +17897,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_MALAMAR] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SNATCH)
@@ -16302,6 +17924,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHO_CUT)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_BINACLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -16327,6 +17951,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BARBARACLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -16361,6 +17987,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SKRELP] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -16378,6 +18006,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_DRAGALGE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -16398,6 +18028,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_CLAUNCHER] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ICY_WIND)
@@ -16412,6 +18044,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_CLAWITZER] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ICY_WIND)
@@ -16429,6 +18063,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_HELIOPTILE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -16446,6 +18082,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SCALE_SHOT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_HELIOLISK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -16470,6 +18108,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SCALE_SHOT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TYRUNT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -16502,6 +18142,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_TYRANTRUM] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -16538,6 +18180,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_AMAURA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -16563,6 +18207,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_AURORUS] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -16588,6 +18234,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_SYLVEON] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -16610,6 +18258,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_HAWLUCHA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -16651,6 +18301,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEDENNE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -16672,6 +18324,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_CARBINK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -16694,6 +18348,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_GOOMY] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -16708,6 +18364,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SLIGGOO] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -16722,6 +18380,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GOODRA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -16749,6 +18409,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_KLEFKI] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -16767,6 +18429,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(SPIKES)),
+
+
    [SPECIES_PHANTUMP] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16789,6 +18453,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_TREVENANT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -16818,6 +18484,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PUMPKABOO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16840,6 +18508,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_GOURGEIST] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16868,6 +18538,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_BERGMITE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -16885,6 +18557,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_AVALUGG] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -16907,6 +18581,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_NOIBAT] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
@@ -16929,6 +18605,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_NOIVERN] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(AIR_CUTTER)
@@ -16956,6 +18634,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_XERNEAS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -16982,6 +18662,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(TERRAIN_PULSE)),
+
+
    [SPECIES_YVELTAL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(AIR_CUTTER)
@@ -17005,6 +18687,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE)
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_ZYGARDE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
@@ -17029,6 +18713,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DIANCIE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17056,6 +18742,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(TERRAIN_PULSE)
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_HOOPA] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -17091,6 +18779,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_VOLCANION] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER)
@@ -17114,6 +18804,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_ROWLET] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -17138,6 +18830,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_DARTRIX] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -17162,6 +18856,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_DECIDUEYE] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(FURY_CUTTER)
@@ -17198,6 +18894,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POLTERGEIST)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_LITTEN] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -17220,6 +18918,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_TORRACAT] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -17243,6 +18943,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_INCINEROAR] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(FURY_CUTTER)
@@ -17287,6 +18989,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_POPPLIO] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -17309,6 +19013,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(TRIPLE_AXEL)),
+
+
    [SPECIES_BRIONNE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -17331,6 +19037,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(TRIPLE_AXEL)),
+
+
    [SPECIES_PRIMARINA] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(COVET)
@@ -17359,6 +19067,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(TRIPLE_AXEL)),
+
+
    [SPECIES_PIKIPEK] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17378,6 +19088,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BRAVE_BIRD),
                           TUTOR(ROCK_BLAST),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_TRUMBEAK] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17397,6 +19109,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BRAVE_BIRD),
                           TUTOR(ROCK_BLAST),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_TOUCANNON] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17419,6 +19133,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(ROCK_BLAST),
                           TUTOR(DUAL_WINGBEAT)),
+
+
    [SPECIES_YUNGOOS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -17439,6 +19155,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_GUMSHOOS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -17467,6 +19185,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRUBBIN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -17480,6 +19200,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_CHARJABUG] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -17495,6 +19217,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_VIKAVOLT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -17519,6 +19243,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CRABRAWLER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -17546,6 +19272,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CRABOMINABLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -17576,6 +19304,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ORICORIO] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -17600,6 +19330,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CUTIEFLY] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
@@ -17622,6 +19354,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_RIBOMBEE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(BUG_BITE)
@@ -17645,6 +19379,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ROCKRUFF] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -17669,6 +19405,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_LYCANROC] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -17697,6 +19435,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WISHIWASHI] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC),
                           TUTOR(ENDEAVOR)
@@ -17711,6 +19451,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_MAREANIE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SNATCH)
@@ -17736,6 +19478,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_TOXAPEX] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SNATCH)
@@ -17763,6 +19507,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_MUDBRAY] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -17779,6 +19525,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_MUDSDALE] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -17799,6 +19547,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DEWPIDER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -17814,6 +19564,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ARAQUANID] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -17832,6 +19584,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_FOMANTIS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -17851,6 +19605,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(LEAF_STORM),
                           TUTOR(WEATHER_BALL),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_LURANTIS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(BUG_BITE)
@@ -17879,6 +19635,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH)
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_MORELULL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -17892,6 +19650,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           0),
+
+
    [SPECIES_SHIINOTIC] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -17906,6 +19666,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           0),
+
+
    [SPECIES_SALANDIT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -17924,6 +19686,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_SALAZZLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -17946,6 +19710,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_STUFFUL] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17968,6 +19734,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(COACHING)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_BEWEAR] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -17996,6 +19764,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_BOUNSWEET] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -18016,6 +19786,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_STEENEE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -18043,6 +19815,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TSAREENA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -18076,6 +19850,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(TRIPLE_AXEL)
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_COMFEY] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(DEFOG)
@@ -18100,6 +19876,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_ORANGURU] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SNATCH)
@@ -18128,6 +19906,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PASSIMIAN] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SHOCK_WAVE)
@@ -18156,6 +19936,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_WIMPOD] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(HONE_CLAWS)
@@ -18167,6 +19949,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_GOLISOPOD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(BUG_BITE)
@@ -18202,6 +19986,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SANDYGAST] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND)
@@ -18220,6 +20006,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_PALOSSAND] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND)
@@ -18240,6 +20028,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_PYUKUMUKU] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(COUNTER),
                           TUTOR(PAIN_SPLIT)
@@ -18250,6 +20040,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BATON_PASS),
                           TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_TYPE_NULL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -18269,6 +20061,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)),
+
+
    [SPECIES_SILVALLY] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -18302,6 +20096,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MINIOR] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -18320,6 +20116,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_KOMALA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -18338,6 +20136,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TURTONATOR] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -18367,6 +20167,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TOGEDEMARU] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -18398,6 +20200,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MIMIKYU] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -18418,6 +20222,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_BRUXISH] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -18441,6 +20247,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DRAMPA] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -18470,6 +20278,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DHELMISE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC),
                           TUTOR(SYNTHESIS)
@@ -18490,6 +20300,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_JANGMO_O] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
@@ -18511,6 +20323,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(REVERSAL)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCALE_SHOT)),
+
+
    [SPECIES_HAKAMO_O] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -18537,6 +20351,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(COACHING)),
+
+
    [SPECIES_KOMMO_O] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -18575,6 +20391,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_TAPU_KOKO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -18604,6 +20422,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_TAPU_LELE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -18625,6 +20445,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(PSYCHIC_TERRAIN),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_TAPU_BULU] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -18653,6 +20475,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(METEOR_MASH),
                           TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_TAPU_FINI] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(MIMIC)
@@ -18679,16 +20503,22 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           0),
+
+
    [SPECIES_COSMOG] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           0,
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_COSMOEM] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           0,
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_SOLGALEO] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -18720,6 +20550,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_LUNALA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -18750,6 +20582,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_NIHILEGO] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(MAGIC_COAT),
@@ -18771,6 +20605,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HEX)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_BUZZWOLE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(BUG_BITE)
@@ -18804,6 +20640,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PHEROMOSA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -18833,6 +20671,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(COACHING)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_XURKITREE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -18851,6 +20691,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_CELESTEELA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(MIMIC)
@@ -18876,6 +20718,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_KARTANA] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(AIR_CUTTER)
@@ -18898,6 +20742,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(AIR_SLASH),
                           0),
+
+
    [SPECIES_GUZZLORD] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
@@ -18925,6 +20771,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_NECROZMA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -18952,6 +20800,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGEARNA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -18976,6 +20826,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MARSHADOW] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
                         | TUTOR(SNATCH)
@@ -19014,6 +20866,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_POIPOLE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -19030,6 +20884,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(PIN_MISSILE),
                           0),
+
+
    [SPECIES_NAGANADEL] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -19064,6 +20920,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_STAKATAKA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -19086,6 +20944,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_BLACEPHALON] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND),
@@ -19107,6 +20967,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ROCK_BLAST)
                         | TUTOR(EXPANDING_FORCE),
                           0),
+
+
    [SPECIES_ZERAORA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -19147,6 +21009,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MELTAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MAGIC_COAT),
@@ -19156,6 +21020,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           0,
                           0),
+
+
    [SPECIES_MELMETAL] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -19176,6 +21042,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GROOKEY] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19193,6 +21061,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_THWACKEY] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19210,6 +21080,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_RILLABOOM] = TUTORLEARNSET(TUTOR(GRASS_PLEDGE)
                         | TUTOR(FRENZY_PLANT)
                         | TUTOR(SWIFT)
@@ -19241,6 +21113,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SCORBUNNY] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -19265,6 +21139,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_RABOOT] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -19289,6 +21165,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CINDERACE] = TUTORLEARNSET(TUTOR(FIRE_PLEDGE)
                         | TUTOR(BLAST_BURN)
                         | TUTOR(COVET)
@@ -19323,6 +21201,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SOBBLE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19339,6 +21219,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRIZZILE] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19355,6 +21237,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_INTELEON] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(SWIFT)
@@ -19380,6 +21264,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SKWOVET] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -19395,6 +21281,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(MUD_SHOT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_GREEDENT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -19418,6 +21306,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ROOKIDEE] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -19438,6 +21328,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CORVISQUIRE] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -19458,6 +21350,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CORVIKNIGHT] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -19482,11 +21376,15 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BLIPBUG] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(DOUBLE_EDGE),
                           0,
                           0,
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_DOTTLER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -19508,6 +21406,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(BODY_PRESS)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ORBEETLE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -19540,6 +21440,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(INFESTATION)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_NICKIT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -19556,6 +21458,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(MUD_SHOT),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_THIEVUL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(SWIFT)
@@ -19576,6 +21480,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_GOSSIFLEUR] = TUTORLEARNSET(TUTOR(MIMIC),
                           TUTOR(SYNTHESIS)
                         | TUTOR(WORRY_SEED)
@@ -19587,6 +21493,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(LEAF_STORM),
                           TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_ELDEGOSS] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(SEED_BOMB),
                           TUTOR(SYNTHESIS)
@@ -19599,6 +21507,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(WEATHER_BALL)
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_WOOLOO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -19612,6 +21522,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DUBWOOL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -19630,6 +21542,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CHEWTLE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -19647,6 +21561,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_DREDNAW] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -19679,6 +21595,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_YAMPER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -19701,6 +21619,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FIRE_FANG)
                         | TUTOR(THUNDER_FANG),
                           TUTOR(RISING_VOLTAGE)),
+
+
    [SPECIES_BOLTUND] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -19729,6 +21649,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ROLYCOLY] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -19744,6 +21666,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(SPIKES)),
+
+
    [SPECIES_CARKOL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -19764,6 +21688,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(SPIKES)
                         | TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_COALOSSAL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -19791,6 +21717,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_APPLIN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC),
@@ -19799,6 +21727,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DEFENSE_CURL),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_FLAPPLE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -19826,6 +21756,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_APPLETUN] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -19848,6 +21780,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SILICOBRA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SUPER_FANG),
@@ -19862,6 +21796,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_SANDACONDA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SUPER_FANG)
@@ -19886,6 +21822,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)),
+
+
    [SPECIES_CRAMORANT] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SNATCH)
@@ -19908,6 +21846,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ARROKUDA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19925,6 +21865,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_BARRASKEWDA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -19944,6 +21886,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FLIP_TURN)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TOXEL] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(ENDEAVOR)
@@ -19953,6 +21897,8 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(ENCORE),
                           0),
+
+
    [SPECIES_TOXTRICITY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -19983,6 +21929,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SIZZLIPEDE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -19999,6 +21947,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_CENTISKORCH] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -20019,6 +21969,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_CLOBBOPUS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -20045,6 +21997,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(COACHING)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRAPPLOCT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(VACUUM_WAVE)
@@ -20075,6 +22029,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_SINISTEA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -20097,6 +22053,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_POLTEAGEIST] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -20119,6 +22077,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_HATENNA] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -20138,6 +22098,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_HATTREM] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -20157,6 +22119,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_HATTERENE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -20181,6 +22145,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_IMPIDIMP] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -20211,6 +22177,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MORGREM] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -20242,6 +22210,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL)
                         | TUTOR(DRAINING_KISS),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRIMMSNARL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -20287,6 +22257,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_OBSTAGOON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -20329,6 +22301,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_PERRSERKER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -20356,6 +22330,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CURSOLA] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -20384,6 +22360,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_BEAM)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SIRFETCHD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
@@ -20411,6 +22389,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_MR_RIME] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
@@ -20444,6 +22424,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_RUNERIGUS] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -20467,6 +22449,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(BODY_PRESS)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MILCERY] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -20478,6 +22462,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           0),
+
+
    [SPECIES_ALCREMIE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -20496,6 +22482,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_FALINKS] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER),
@@ -20517,6 +22505,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_PINCURCHIN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -20537,6 +22527,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(SPIKES)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SNOM] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC),
                           TUTOR(ICY_WIND)
@@ -20546,6 +22538,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(ICICLE_SPEAR)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_FROSMOTH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -20570,6 +22564,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_STONJOURNER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -20593,6 +22589,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_EISCUE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -20611,6 +22609,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(ICICLE_SPEAR),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_INDEEDEE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -20639,6 +22639,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MORPEKO] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
@@ -20667,6 +22669,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CUFANT] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -20691,6 +22695,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_COPPERAJAH] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(COVET)
                         | TUTOR(MIMIC)
@@ -20718,6 +22724,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DRACOZOLT] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -20741,6 +22749,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_ARCTOZOLT] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -20764,6 +22774,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DRACOVISH] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -20788,6 +22800,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICE_FANG),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_ARCTOVISH] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(MIMIC)
                         | TUTOR(SUPER_FANG),
@@ -20808,6 +22822,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ICE_FANG)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)),
+
+
    [SPECIES_DURALUDON] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -20827,6 +22843,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(METEOR_MASH),
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_DREEPY] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -20843,6 +22861,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BATON_PASS),
                           TUTOR(DEFENSE_CURL),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_DRAKLOAK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -20875,6 +22895,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DRAGAPULT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
@@ -20910,6 +22932,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(INFESTATION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZACIAN] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SWIFT)
@@ -20934,6 +22958,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZAMAZENTA] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -20958,6 +22984,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ETERNATUS] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -20973,6 +23001,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_KUBFU] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -21001,6 +23031,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_URSHIFU] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -21038,6 +23070,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ZARUDE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -21069,6 +23103,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_REGIELEKI] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -21084,6 +23120,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(ELECTRIC_TERRAIN),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_REGIDRAGO] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC),
@@ -21099,6 +23137,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG),
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_GLASTRIER] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(COUNTER)
                         | TUTOR(MAGIC_COAT),
@@ -21121,6 +23161,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SPECTRIER] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MIMIC)
                         | TUTOR(OMINOUS_WIND)
@@ -21142,6 +23184,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_CALYREX] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -21170,6 +23214,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_RATTATA_ALOLAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
@@ -21190,6 +23236,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(REVENGE)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)),
+
+
    [SPECIES_RATICATE_ALOLAN] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -21218,6 +23266,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_RAICHU_ALOLAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -21254,6 +23304,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SANDSHREW_ALOLAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -21280,6 +23332,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SANDSLASH_ALOLAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(SEISMIC_TOSS)
@@ -21310,6 +23364,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(SPIKES)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VULPIX_ALOLAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC),
@@ -21329,6 +23385,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DRAINING_KISS)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_NINETALES_ALOLAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -21354,6 +23412,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DIGLETT_ALOLAN] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -21369,6 +23429,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCORCHING_SANDS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DUGTRIO_ALOLAN] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
                           TUTOR(UPROAR)
@@ -21385,6 +23447,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MEOWTH_ALOLAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -21409,6 +23473,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_PERSIAN_ALOLAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -21435,6 +23501,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_GEODUDE_ALOLAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -21462,6 +23530,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRAVELER_ALOLAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -21490,6 +23560,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GOLEM_ALOLAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -21519,6 +23591,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_GRIMER_ALOLAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP),
@@ -21544,6 +23618,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MUK_ALOLAN] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
@@ -21571,6 +23647,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_EXEGGUTOR_ALOLAN] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
@@ -21597,6 +23675,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAROWAK_ALOLAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SWIFT)
@@ -21629,6 +23709,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_MEOWTH_GALARIAN] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SEED_BOMB),
@@ -21648,6 +23730,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PLAY_ROUGH),
                           TUTOR(NASTY_PLOT),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_PONYTA_GALARIAN] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(SIGNAL_BEAM)
                         | TUTOR(MAGIC_COAT),
@@ -21664,6 +23748,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_RAPIDASH_GALARIAN] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(SIGNAL_BEAM)
                         | TUTOR(MAGIC_COAT),
@@ -21686,6 +23772,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HIGH_HORSEPOWER)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SLOWPOKE_GALARIAN] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SIGNAL_BEAM)
@@ -21708,6 +23796,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHIC_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_SLOWBRO_GALARIAN] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SIGNAL_BEAM)
@@ -21734,6 +23824,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PSYCHIC_TERRAIN)
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(TELEPORT)),
+
+
    [SPECIES_FARFETCHD_GALARIAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
@@ -21756,6 +23848,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_WEEZING_GALARIAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(OMINOUS_WIND)
                         | TUTOR(DEFOG),
@@ -21769,6 +23863,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_MR_MIME_GALARIAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
                         | TUTOR(MUD_SLAP)
@@ -21796,6 +23892,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TRIPLE_AXEL)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_ARTICUNO_GALARIAN] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(OMINOUS_WIND)
@@ -21816,6 +23914,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ZAPDOS_GALARIAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -21840,6 +23940,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_MOLTRES_GALARIAN] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(OMINOUS_WIND)
@@ -21856,6 +23958,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AIR_SLASH),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SLOWKING_GALARIAN] = TUTORLEARNSET(TUTOR(SWIFT)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(SIGNAL_BEAM)
@@ -21886,6 +23990,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_CORSOLA_GALARIAN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MAGIC_COAT),
                           TUTOR(PAIN_SPLIT)
@@ -21907,6 +24013,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_ZIGZAGOON_GALARIAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -21927,6 +24035,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SHOT)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_LINOONE_GALARIAN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(ROLLOUT)
                         | TUTOR(COVET)
@@ -21951,6 +24061,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DARUMAKA_GALARIAN] = TUTORLEARNSET(TUTOR(ROLLOUT),
                           TUTOR(UPROAR)
                         | TUTOR(FIRE_PUNCH)
@@ -21967,6 +24079,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_DARMANITAN_GALARIAN] = TUTORLEARNSET(TUTOR(ROLLOUT),
                           TUTOR(DYNAMIC_PUNCH)
                         | TUTOR(UPROAR)
@@ -21990,6 +24104,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(BODY_PRESS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_YAMASK_GALARIAN] = TUTORLEARNSET(TUTOR(SNATCH)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND),
@@ -22004,6 +24120,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(NASTY_PLOT)
                         | TUTOR(HEX),
                           TUTOR(POLTERGEIST)),
+
+
    [SPECIES_STUNFISK_GALARIAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SNATCH)
                         | TUTOR(MUD_SLAP)
@@ -22026,6 +24144,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_DEOXYS_ATTACK] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER)
@@ -22042,6 +24162,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DEOXYS_DEFENSE] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER)
@@ -22062,6 +24184,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_DEOXYS_SPEED] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(MUD_SLAP)
@@ -22086,16 +24210,22 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BURMY_SANDY_CLOAK] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB),
                           TUTOR(BUG_BUZZ),
                           0,
                           0),
+
+
    [SPECIES_BURMY_TRASH_CLOAK] = TUTORLEARNSET(TUTOR(BUG_BITE),
                           TUTOR(ELECTROWEB),
                           TUTOR(BUG_BUZZ),
                           0,
                           0),
+
+
    [SPECIES_WORMADAM_SANDY_CLOAK] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
@@ -22115,6 +24245,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_WORMADAM_TRASH_CLOAK] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(MIMIC)
                         | TUTOR(COUNTER)
@@ -22133,6 +24265,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_SHELLOS_EAST_SEA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(COUNTER),
                           TUTOR(PAIN_SPLIT)
@@ -22148,6 +24282,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_GASTRODON_EAST_SEA] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -22166,6 +24302,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SKITTER_SMACK)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_ROTOM_HEAT] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -22173,23 +24311,32 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND)
                         | TUTOR(SIGNAL_BEAM)
+                        | TUTOR(DEFOG)
                         | TUTOR(DEFOG),
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
                         | TUTOR(PSYCH_UP)
                         | TUTOR(ELECTROWEB)
                         | TUTOR(SWAGGER)
+                        | TUTOR(SOFTBOILED)
                         | TUTOR(TRICK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
+                          TUTOR(HELPING_HAND)
+                        | TUTOR(HEAT_WAVE)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(FLARE_BLITZ),
                           TUTOR(NASTY_PLOT)
+                        | TUTOR(HEAT_CRASH)
                         | TUTOR(STORED_POWER)
+                        | TUTOR(SELF_DESTRUCT)
                         | TUTOR(HEX)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POLTERGEIST)),
+
+
    [SPECIES_ROTOM_WASH] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -22202,18 +24349,24 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(UPROAR)
                         | TUTOR(PSYCH_UP)
                         | TUTOR(ELECTROWEB)
+                        | TUTOR(BRINE)
                         | TUTOR(SWAGGER)
                         | TUTOR(TRICK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
+                          TUTOR(LIQUIDATION)
+                        | TUTOR(HYDRO_PUMP),
                           TUTOR(NASTY_PLOT)
                         | TUTOR(STORED_POWER)
+                        | TUTOR(SELF_DESTRUCT)
                         | TUTOR(HEX)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
-                        | TUTOR(POLTERGEIST)),
+                        | TUTOR(POLTERGEIST)
+                        | TUTOR(FLIP_TURN)),
+
+
    [SPECIES_ROTOM_FROST] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -22225,6 +24378,7 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
                         | TUTOR(PSYCH_UP)
+                        | TUTOR(ICY_WIND)
                         | TUTOR(ELECTROWEB)
                         | TUTOR(SWAGGER)
                         | TUTOR(TRICK)
@@ -22233,35 +24387,48 @@ static const u32 sTutorLearnsets[][5] = {
                           0,
                           TUTOR(NASTY_PLOT)
                         | TUTOR(STORED_POWER)
+                        | TUTOR(SELF_DESTRUCT)
+                        | TUTOR(WEATHER_BALL)
+                        | TUTOR(ICICLE_SPEAR)
                         | TUTOR(HEX)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POLTERGEIST)),
+
+
    [SPECIES_ROTOM_FAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
+                        | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND)
                         | TUTOR(SIGNAL_BEAM)
+                        | TUTOR(DEFOG)
                         | TUTOR(DEFOG),
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
                         | TUTOR(PSYCH_UP)
+                        | TUTOR(ICY_WIND)
                         | TUTOR(ELECTROWEB)
+                        | TUTOR(TAILWIND)
                         | TUTOR(SWAGGER)
                         | TUTOR(TRICK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
+                          TUTOR(HURRICANE),
                           TUTOR(NASTY_PLOT)
                         | TUTOR(STORED_POWER)
+                        | TUTOR(SELF_DESTRUCT)
+                        | TUTOR(WEATHER_BALL)
                         | TUTOR(HEX)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POLTERGEIST)),
+
+
    [SPECIES_ROTOM_MOW] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
                         | TUTOR(SNATCH)
@@ -22269,23 +24436,32 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(MUD_SLAP)
                         | TUTOR(OMINOUS_WIND)
                         | TUTOR(SIGNAL_BEAM)
-                        | TUTOR(DEFOG),
+                        | TUTOR(DEFOG)
+                        | TUTOR(SEED_BOMB),
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
+                        | TUTOR(WORRY_SEED)
                         | TUTOR(PSYCH_UP)
                         | TUTOR(ELECTROWEB)
                         | TUTOR(SWAGGER)
                         | TUTOR(TRICK)
                         | TUTOR(FOUL_PLAY)
                         | TUTOR(DOUBLE_EDGE),
-                          0,
+                          TUTOR(LEAF_BLADE)
+                        | TUTOR(LEAF_STORM)
+                        | TUTOR(POWER_WHIP),
                           TUTOR(NASTY_PLOT)
                         | TUTOR(STORED_POWER)
+                        | TUTOR(SELF_DESTRUCT)
                         | TUTOR(HEX)
+                        | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(ELECTRIC_TERRAIN)
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
+                        | TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)),
+
+
    [SPECIES_GIRATINA_ORIGIN] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
@@ -22317,6 +24493,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(POLTERGEIST)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SHAYMIN_SKY] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -22338,6 +24516,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(AIR_SLASH),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_ARCEUS_FIGHTING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22378,6 +24558,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_FLYING] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22418,6 +24600,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_POISON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22458,6 +24642,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_GROUND] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22498,6 +24684,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_ROCK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22538,6 +24726,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_BUG] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22578,6 +24768,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_GHOST] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22618,6 +24810,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_STEEL] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22658,6 +24852,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_FIRE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22698,6 +24894,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_WATER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22738,6 +24936,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_GRASS] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22778,6 +24978,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_ELECTRIC] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22818,6 +25020,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_PSYCHIC] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22858,6 +25062,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_ICE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22898,6 +25104,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_DRAGON] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22938,6 +25146,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_DARK] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -22978,6 +25188,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ARCEUS_FAIRY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -23018,6 +25230,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PHANTOM_FORCE),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_BASCULIN_BLUE_STRIPED] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC),
@@ -23041,6 +25255,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(FLIP_TURN)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEERLING_SUMMER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23059,6 +25275,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEERLING_AUTUMN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23077,6 +25295,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_DEERLING_WINTER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23095,6 +25315,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SAWSBUCK_SUMMER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23117,6 +25339,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SAWSBUCK_AUTUMN] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23139,6 +25363,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_SAWSBUCK_WINTER] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23161,6 +25387,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(STOMPING_TANTRUM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TORNADUS_THERIAN] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -23187,6 +25415,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(AIR_SLASH),
                           TUTOR(AGILITY)),
+
+
    [SPECIES_THUNDURUS_THERIAN] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23212,6 +25442,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LANDORUS_THERIAN] = TUTORLEARNSET(TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -23235,6 +25467,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(WEATHER_BALL)
                         | TUTOR(MUD_SHOT),
                           0),
+
+
    [SPECIES_KYUREM_WHITE] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23256,6 +25490,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_KYUREM_BLACK] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23277,6 +25513,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SCALE_SHOT)
                         | TUTOR(DUAL_WINGBEAT)
                         | TUTOR(BODY_PRESS)),
+
+
    [SPECIES_KELDEO_RESOLUTE] = TUTORLEARNSET(TUTOR(SECRET_SWORD)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -23307,6 +25545,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(FLIP_TURN)
                         | TUTOR(COACHING)),
+
+
    [SPECIES_GENESECT_DOUSE_DRIVE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -23332,6 +25572,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PIN_MISSILE)
                         | TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_GENESECT_SHOCK_DRIVE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -23357,6 +25599,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PIN_MISSILE)
                         | TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_GENESECT_BURN_DRIVE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -23382,6 +25626,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PIN_MISSILE)
                         | TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_GENESECT_CHILL_DRIVE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(BUG_BITE)
@@ -23407,6 +25653,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(PIN_MISSILE)
                         | TUTOR(SELF_DESTRUCT),
                           TUTOR(INFESTATION)),
+
+
    [SPECIES_GRENINJA_BATTLE_BOND] = TUTORLEARNSET(TUTOR(WATER_PLEDGE)
                         | TUTOR(HYDRO_CANNON)
                         | TUTOR(FURY_CUTTER)
@@ -23434,6 +25682,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(SPIKES)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_VIVILLON_POLAR] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23457,6 +25707,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_TUNDRA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23480,6 +25732,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_CONTINENTAL] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23503,6 +25757,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_GARDEN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23526,6 +25782,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_ELEGANT] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23549,6 +25807,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_MEADOW] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23572,6 +25832,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_MODERN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23595,6 +25857,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_MARINE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23618,6 +25882,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_ARCHIPELAGO] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23641,6 +25907,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_HIGH_PLAINS] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23664,6 +25932,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_SANDSTORM] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23687,6 +25957,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_RIVER] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23710,6 +25982,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_MONSOON] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23733,6 +26007,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_SAVANNA] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23756,6 +26032,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_SUN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23779,6 +26057,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_OCEAN] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23802,6 +26082,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_JUNGLE] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23825,6 +26107,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_FANCY] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23848,6 +26132,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_VIVILLON_POKE_BALL] = TUTORLEARNSET(TUTOR(BUG_BITE)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -23871,6 +26157,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(SKITTER_SMACK)
                         | TUTOR(INFESTATION)),
+
+
    [SPECIES_FLABEBE_YELLOW_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23889,6 +26177,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLABEBE_ORANGE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23907,6 +26197,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLABEBE_BLUE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23925,6 +26217,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLABEBE_WHITE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23943,6 +26237,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE_YELLOW_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23962,6 +26258,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE_ORANGE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -23981,6 +26279,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE_BLUE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24000,6 +26300,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE_WHITE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24019,6 +26321,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLOETTE_ETERNAL_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24038,6 +26342,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLORGES_YELLOW_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24060,6 +26366,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLORGES_ORANGE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24082,6 +26390,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLORGES_BLUE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24104,6 +26414,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FLORGES_WHITE_FLOWER] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24126,6 +26438,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(GRASSY_TERRAIN)
                         | TUTOR(MISTY_TERRAIN),
                           TUTOR(GRASSY_GLIDE)),
+
+
    [SPECIES_FURFROU_HEART_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24141,6 +26455,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_STAR_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24156,6 +26472,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_DIAMOND_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24171,6 +26489,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_DEBUTANTE_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24186,6 +26506,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_MATRON_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24201,6 +26523,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_DANDY_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24216,6 +26540,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_LA_REINE_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24231,6 +26557,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_KABUKI_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24246,6 +26574,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_FURFROU_PHARAOH_TRIM] = TUTORLEARNSET(TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
                         | TUTOR(COUNTER),
@@ -24261,6 +26591,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(HYPER_VOICE),
                           0,
                           0),
+
+
    [SPECIES_MEOWSTIC_FEMALE] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -24286,6 +26618,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_PUMPKABOO_SMALL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24308,6 +26642,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_PUMPKABOO_LARGE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24330,6 +26666,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_PUMPKABOO_SUPER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24352,6 +26690,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_GOURGEIST_SMALL] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24380,6 +26720,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_GOURGEIST_LARGE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24408,6 +26750,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_GOURGEIST_SUPER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -24436,6 +26780,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(GRASSY_GLIDE)
                         | TUTOR(POLTERGEIST)
                         | TUTOR(SKITTER_SMACK)),
+
+
    [SPECIES_HOOPA_UNBOUND] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -24471,6 +26817,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ORICORIO_POM_POM] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -24495,6 +26843,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ORICORIO_PAU] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -24519,6 +26869,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ORICORIO_SENSU] = TUTORLEARNSET(TUTOR(COVET)
                         | TUTOR(AIR_CUTTER)
                         | TUTOR(SWIFT)
@@ -24543,6 +26895,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(QUIVER_DANCE),
                           TUTOR(DUAL_WINGBEAT)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_LYCANROC_MIDNIGHT] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24578,6 +26932,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_LYCANROC_DUSK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(COVET)
@@ -24605,6 +26961,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_SILVALLY_FIGHTING] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24638,6 +26996,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_FLYING] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24671,6 +27031,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_POISON] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24704,6 +27066,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_GROUND] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24737,6 +27101,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_ROCK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24770,6 +27136,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_BUG] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24803,6 +27171,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_GHOST] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24836,6 +27206,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_STEEL] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24869,6 +27241,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_FIRE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24902,6 +27276,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_WATER] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24935,6 +27311,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_GRASS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -24968,6 +27346,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_ELECTRIC] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25001,6 +27381,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_PSYCHIC] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25034,6 +27416,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_ICE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25067,6 +27451,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_DRAGON] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25100,6 +27486,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_DARK] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25133,6 +27521,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_SILVALLY_FAIRY] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
@@ -25166,6 +27556,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MINIOR_CORE_ORANGE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25184,6 +27576,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MINIOR_CORE_YELLOW] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25202,6 +27596,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MINIOR_CORE_GREEN] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25220,6 +27616,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MINIOR_CORE_BLUE] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25238,6 +27636,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MINIOR_CORE_INDIGO] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25256,6 +27656,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_MINIOR_CORE_VIOLET] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(SWIFT)
                         | TUTOR(MIMIC)
@@ -25274,6 +27676,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(SELF_DESTRUCT)
                         | TUTOR(DEFENSE_CURL),
                           0),
+
+
    [SPECIES_NECROZMA_DUSK_MANE] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -25301,6 +27705,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_NECROZMA_DAWN_WINGS] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
@@ -25328,6 +27734,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(EXPANDING_FORCE),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_MAGEARNA_ORIGINAL_COLOR] = TUTORLEARNSET(TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
                         | TUTOR(MUD_SLAP)
@@ -25352,6 +27760,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(MISTY_EXPLOSION)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_TOXTRICITY_LOW_KEY] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -25382,174 +27792,168 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(AURORA_BEAM),
                           TUTOR(RISING_VOLTAGE)
                         | TUTOR(POWER_UP_PUNCH)),
-   [SPECIES_ALCREMIE_RUBY_CREAM] = TUTORLEARNSET(TUTOR(ROLLOUT)
+
+
+   [SPECIES_ALCREMIE_RUBY_CREAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_MATCHA_CREAM] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_MATCHA_CREAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_MINT_CREAM] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_MINT_CREAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_LEMON_CREAM] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_LEMON_CREAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_SALTED_CREAM] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_SALTED_CREAM] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_RUBY_SWIRL] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_RUBY_SWIRL] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_CARAMEL_SWIRL] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_CARAMEL_SWIRL] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
-   [SPECIES_ALCREMIE_RAINBOW_SWIRL] = TUTORLEARNSET(TUTOR(ROLLOUT)
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
+   [SPECIES_ALCREMIE_RAINBOW_SWIRL] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
+                        | TUTOR(COVET)
+                        | TUTOR(SHOCK_WAVE)
                         | TUTOR(MIMIC)
-                        | TUTOR(COUNTER),
-                          TUTOR(ENDEAVOR)
-                        | TUTOR(IRON_DEFENSE)
-                        | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(METRONOME)
+                        | TUTOR(MAGIC_COAT),
+                          TUTOR(PSYCH_UP)
                         | TUTOR(SWAGGER)
-                        | TUTOR(IRON_HEAD)
                         | TUTOR(DOUBLE_EDGE),
-                          TUTOR(SUPERPOWER)
+                          TUTOR(HEAL_BELL)
                         | TUTOR(HELPING_HAND)
-                        | TUTOR(AURA_SPHERE)
-                        | TUTOR(THROAT_CHOP)
-                        | TUTOR(MEGAHORN)
-                        | TUTOR(CLOSE_COMBAT),
-                          TUTOR(REVERSAL)
-                        | TUTOR(REVENGE)
-                        | TUTOR(DEFENSE_CURL),
-                          TUTOR(COACHING)
-                        | TUTOR(FOCUS_ENERGY)
-                        | TUTOR(AGILITY)),
+                        | TUTOR(MYSTICAL_FIRE)
+                        | TUTOR(PLAY_ROUGH),
+                          TUTOR(STORED_POWER)
+                        | TUTOR(ENCORE)
+                        | TUTOR(DRAINING_KISS)
+                        | TUTOR(MISTY_TERRAIN),
+                          TUTOR(MISTY_EXPLOSION)),
+
+
    [SPECIES_INDEEDEE_FEMALE] = TUTORLEARNSET(TUTOR(SEISMIC_TOSS)
                         | TUTOR(SHOCK_WAVE)
                         | TUTOR(SWIFT)
@@ -25577,6 +27981,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(TERRAIN_PULSE)
                         | TUTOR(POWER_UP_PUNCH)
                         | TUTOR(TELEPORT)),
+
+
    [SPECIES_ZACIAN_CROWNED_SWORD] = TUTORLEARNSET(TUTOR(DRACO_METEOR)
                         | TUTOR(MIMIC)
                         | TUTOR(SIGNAL_BEAM)
@@ -25592,6 +27998,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(METEOR_BEAM)
                         | TUTOR(AGILITY)),
+
+
    [SPECIES_ZAMAZENTA_CROWNED_SHIELD] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -25620,6 +28028,8 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(COACHING)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_URSHIFU_RAPID_STRIKE_STYLE] = TUTORLEARNSET(TUTOR(FURY_CUTTER)
                         | TUTOR(SEISMIC_TOSS)
                         | TUTOR(COVET)
@@ -25656,6 +28066,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(BODY_PRESS)
                         | TUTOR(FOCUS_ENERGY)
                         | TUTOR(POWER_UP_PUNCH)),
+
+
    [SPECIES_CALYREX_ICE_RIDER] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -25684,6 +28096,8 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
                         | TUTOR(STOMPING_TANTRUM)),
+
+
    [SPECIES_CALYREX_SHADOW_RIDER] = TUTORLEARNSET(TUTOR(PSYCHIC_FANGS)
                         | TUTOR(COVET)
                         | TUTOR(SHOCK_WAVE)
@@ -25711,5 +28125,5 @@ static const u32 sTutorLearnsets[][5] = {
                         | TUTOR(THUNDER_FANG)
                         | TUTOR(DEFENSE_CURL),
                           TUTOR(FOCUS_ENERGY)
-                        | TUTOR(STOMPING_TANTRUM)),
+                        | TUTOR(STOMPING_TANTRUM))
 };

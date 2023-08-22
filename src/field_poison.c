@@ -131,7 +131,8 @@ s32 DoPoisonFieldEffect(void)
             && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN
             && ability != ABILITY_POISON_HEAL
             && ability != ABILITY_TOXIC_BOOST
-            && ability != ABILITY_MAGIC_GUARD)
+            && ability != ABILITY_MAGIC_GUARD
+            && ability != ABILITY_WONDER_GUARD)
         {
             hp = GetMonData(pokemon, MON_DATA_HP);
             if (hp == 1 || --hp == 1)

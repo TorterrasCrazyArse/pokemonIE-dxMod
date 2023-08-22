@@ -610,8 +610,8 @@ VictoryRoad_1F_EventScript_ItemMetagrossite:: @ 8291490
 	finditem ITEM_METAGROSSITE
 	end
 
-VictoryRoad_B1F_EventScript_ItemTM29:: @ 829149D
-	finditem ITEM_TM29_PSYCHIC
+VictoryRoad_B1F_EventScript_ItemTM04:: @ 829149D
+	finditem ITEM_TM04_CALM_MIND
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore:: @ 82914AA

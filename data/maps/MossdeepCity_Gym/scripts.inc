@@ -55,7 +55,7 @@ MossdeepCity_Gym_EventScript_TateAndLiza:: @ 8220898
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	clearflag FLAG_SYS_INVERSE_BATTLE
 	goto_if_eq MossdeepCity_Gym_EventScript_TateAndLizaRematch
-	goto_if_unset FLAG_RECEIVED_TM04, MossdeepCity_Gym_EventScript_GiveCalmMind2
+	goto_if_unset FLAG_RECEIVED_TM29, MossdeepCity_Gym_EventScript_GiveCalmMind2
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -102,20 +102,20 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated:: @ 82208D1
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind2:: @ 8220937
-	giveitem ITEM_TM04_CALM_MIND
+	giveitem ITEM_TM29_PSYCHIC
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM04
+	setflag FLAG_RECEIVED_TM29
 	release
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind:: @ 822095B
-	giveitem ITEM_TM04_CALM_MIND
+	giveitem ITEM_TM29_PSYCHIC
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM04
+	setflag FLAG_RECEIVED_TM29
 	return
 
 MossdeepCity_Gym_EventScript_TateAndLizaRematch::
@@ -639,12 +639,13 @@ MossdeepCity_Gym_Text_TakeThis:
 	.string "Liza: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind: @ 8221A40
-	.string "Tate: That TM04 contains…\n"
-	.string "Liza: Calm Mind!\p"
-	.string "Tate: It raises Sp. Atk and…\n"
-	.string "Liza: It raises Sp. Def!\p"
+	.string "Tate: That TM contains…\n"
+	.string "Liza: Psychic!\p"
+	.string "Tate: It's a powerful psychic attack…\n"
+	.string "Liza: That may lower the foe's\l"
+	.string "Sp. Def!\p"
 	.string "Tate: It's a move that's perfect…\n"
-	.string "Liza: For Psychic Pokémon!\p"
+	.string "Liza: For Psychic Type Pokémon!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza: @ 8221AEA

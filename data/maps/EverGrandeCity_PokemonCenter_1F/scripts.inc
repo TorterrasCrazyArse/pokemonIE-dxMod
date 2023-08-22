@@ -60,7 +60,75 @@ EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit:: @ 8229AC1
 	applymovement LOCALID_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExit
 	waitmovement 0
 	return
+	
+EverGrandeCity_PokemonCenter_1F_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_unset FLAG_DEFEATED_SLATEPORT_GRETA, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_ROUTE_116_BINDING_BAND, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_HIDDEN_ITEM_ROUTE_123_BLACK_SLUDGE, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_HIDDEN_ITEM_ROUTE_117_BRIGHT_POWDER, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_LILYCOVE_CITY_LIGHT_CLAY, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_WEATHER_INSTITUTE_ROCKS, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_DEWFORD_EVIOLITE, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ASHEN_WOODS_FLAME_ORB, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_RECEIVED_LIFE_ORB, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_FORTREE_NPC_TRADE_COMPLETED, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_PACIFIDLOG_NPC_TRADE_COMPLETED, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_DEWFORD_MEADOW_RING_TARGET, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_ROUTE_114_PROTECTIVE_PADS, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_RECEIVED_SCOPE_LENS, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_ROUTE_119_TOXIC_ORB, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_ROUTE_123_WIDE_LENS, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	goto_if_unset FLAG_ITEM_ROUTE_109_ZOOM_LENS, EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart PokeMart_PokeCenterEverGrandeCity
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
 
+	.align 2
+PokeMart_PokeCenterEverGrandeCity::
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_BAND
+    .2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_WISE_GLASSES
+	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_EVIOLITE
+	.2byte ITEM_PROTECTIVE_PADS
+	.2byte ITEM_SAFETY_GOGGLES
+	.2byte ITEM_SCOPE_LENS
+	.2byte ITEM_ZOOM_LENS
+	.2byte ITEM_WIDE_LENS
+	.2byte ITEM_SMOOTH_ROCK
+	.2byte ITEM_DAMP_ROCK
+	.2byte ITEM_ICY_ROCK
+	.2byte ITEM_HEAT_ROCK
+	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_TERRAIN_EXTENDER
+	.2byte ITEM_BLACK_SLUDGE
+	.2byte ITEM_RING_TARGET
+	.2byte ITEM_BRIGHT_POWDER
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_BINDING_BAND
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_FOCUS_BAND
+	.2byte ITEM_PP_UP
+	.2byte ITEM_NONE
+	release
+	end
+	
+EverGrandeCity_PokemonCenter_1F_EventScript_NotAceEnough:
+	msgbox EverGrandeCity_PokemonCenter_1F_Text_NotAceEnough, MSGBOX_DEFAULT
+	release
+	end
+	
 EverGrandeCity_PokemonCenter_1F_Movement_ScottExitNorth: @ 8229ACC
 	walk_left
 	walk_down
@@ -102,4 +170,10 @@ EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou: @ 8229BF1
 	.string "I'll get in touch with you then.\p"
 	.string "Okay, {PLAYER}{KUN}.\n"
 	.string "Go for greatness!$"
+	
+EverGrandeCity_PokemonCenter_1F_Text_NotAceEnough:
+	.string "I'm sorry, but currently we're\n"
+	.string "waiting for some merchandise to\l"
+	.string "be delivered.\p"
+	.string "Come back later when we're done!$"
 

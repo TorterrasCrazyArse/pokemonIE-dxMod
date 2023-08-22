@@ -608,7 +608,9 @@ static const u8 sText_MagicBounceActivates[] = _("The {B_DEF_NAME_WITH_PREFIX} b
 static const u8 sText_ProteanTypeChange[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY} transformed\nit into the {B_BUFF1} type!");
 static const u8 sText_SymbiosisItemPass[] = _("{B_ATK_NAME_WITH_PREFIX} passed its {B_LAST_ITEM}\nto {B_SCR_ACTIVE_NAME_WITH_PREFIX} through {B_ATK_ABILITY}!");
 static const u8 sText_StealthRockDmg[] = _("Pointed stones dug into\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}!");
-static const u8 sText_ToxicSpikesAbsorbed[] = _("The poison spikes disappeared\nfrom around the opposing team's feet!");
+static const u8 sText_ToxicSpikesAbsorbed[] = _("The poison spikes disappeared\nfrom around the team's feet!");
+static const u8 sText_HazardsCrushed[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}\ncrushed the hazards!");
+static const u8 sText_DampSlipped[] = _("{B_DEF_NAME_WITH_PREFIX} won't\nget trapped!");
 static const u8 sText_ToxicSpikesPoisoned[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} was poisoned!");
 static const u8 sText_StickyWebSwitchIn[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} was\ncaught in a Sticky Web!");
 static const u8 sText_HealingWishCameTrue[] = _("The healing wish came true\nfor {B_ATK_NAME_WITH_PREFIX}!");
@@ -1339,6 +1341,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_CANTESCAPEBECAUSEOFCURRENTMOVE - 12] = sText_CantEscapeBecauseOfCurrentMove,
     [STRINGID_PLAYERLOSTAGAINSTENEMYTRAINER - 12] = sText_PlayerLostAgainstEnemyTrainer,
     [STRINGID_PLAYERPAIDPRIZEMONEY - 12] = sText_PlayerPaidPrizeMoney,
+    [STRINGID_HAZARDSCRUSHED - 12] = sText_HazardsCrushed,
+    [STRINGID_DAMPSLIPPED - 12] = sText_DampSlipped,
 };
 
 const u16 gMentalHerbCureStringIds[] = 

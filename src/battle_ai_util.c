@@ -102,7 +102,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_HYDRATION] = 4,
     [ABILITY_HYPER_CUTTER] = 3,
     [ABILITY_ICE_BODY] = 3,
-    [ABILITY_ILLUMINATE] = 0,
+    [ABILITY_ILLUMINATE] = 7,
     [ABILITY_ILLUSION] = 8,
     [ABILITY_IMMUNITY] = 4,
     [ABILITY_IMPOSTER] = 9,
@@ -115,7 +115,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_IRON_FIST] = 6,
     [ABILITY_JUSTIFIED] = 4,
     [ABILITY_KEEN_EYE] = 1,
-    [ABILITY_KLUTZ] = -1,
+    [ABILITY_KLUTZ] = 2,
     [ABILITY_LEAF_GUARD] = 2,
     [ABILITY_LEVITATE] = 7,
     [ABILITY_LIGHT_METAL] = 2,
@@ -127,7 +127,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_MAGIC_BOUNCE] = 9,
     [ABILITY_MAGIC_GUARD] = 9,
     [ABILITY_MAGICIAN] = 3,
-    [ABILITY_MAGMA_ARMOR] = 1,
+    [ABILITY_MAGMA_ARMOR] = 3,
     [ABILITY_MAGNET_PULL] = 9,
     [ABILITY_MARVEL_SCALE] = 5,
     [ABILITY_MEGA_LAUNCHER] = 7,
@@ -199,7 +199,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_SKILL_LINK] = 7,
     [ABILITY_SLOW_START] = -2,
     [ABILITY_SLUSH_RUSH] = 5,
-    [ABILITY_SNIPER] = 3,
+    [ABILITY_SNIPER] = 7,
     [ABILITY_SNOW_CLOAK] = 3,
     [ABILITY_SNOW_WARNING] = 8,
     [ABILITY_SOLAR_POWER] = 3,
@@ -254,7 +254,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_WEAK_ARMOR] = 2,
     [ABILITY_WHITE_SMOKE] = 4,
     [ABILITY_WIMP_OUT] = 3,
-    [ABILITY_WONDER_GUARD] = 10,
+    [ABILITY_WONDER_GUARD] = 12,
     [ABILITY_WONDER_SKIN] = 4,
     [ABILITY_ZEN_MODE] = -1,
     [ABILITY_INTREPID_SWORD] = 3,
@@ -795,12 +795,14 @@ static u32 WhichMoveBetter(u32 move1, u32 move2)
                 || gBattleMoves[move1].effect == EFFECT_RECOIL_IF_MISS
                 || gBattleMoves[move1].effect == EFFECT_RECOIL_50
                 || gBattleMoves[move1].effect == EFFECT_RECOIL_33
-                || gBattleMoves[move1].effect == EFFECT_RECOIL_33_STATUS)
+                || gBattleMoves[move1].effect == EFFECT_RECOIL_33_STATUS
+                || gBattleMoves[move1].effect == EFFECT_RECOIL_50_STATUS)
             && (gBattleMoves[move2].effect != EFFECT_RECOIL_25
                  && gBattleMoves[move2].effect != EFFECT_RECOIL_IF_MISS
                  && gBattleMoves[move2].effect != EFFECT_RECOIL_50
                  && gBattleMoves[move2].effect != EFFECT_RECOIL_33
                  && gBattleMoves[move2].effect != EFFECT_RECOIL_33_STATUS
+                 && gBattleMoves[move2].effect != EFFECT_RECOIL_50_STATUS
                  && gBattleMoves[move2].effect != EFFECT_RECHARGE)))
             return 1;
 
@@ -808,12 +810,14 @@ static u32 WhichMoveBetter(u32 move1, u32 move2)
                 || gBattleMoves[move2].effect == EFFECT_RECOIL_IF_MISS
                 || gBattleMoves[move2].effect == EFFECT_RECOIL_50
                 || gBattleMoves[move2].effect == EFFECT_RECOIL_33
-                || gBattleMoves[move2].effect == EFFECT_RECOIL_33_STATUS)
+                || gBattleMoves[move2].effect == EFFECT_RECOIL_33_STATUS
+                || gBattleMoves[move2].effect == EFFECT_RECOIL_50_STATUS)
             && (gBattleMoves[move1].effect != EFFECT_RECOIL_25
                  && gBattleMoves[move1].effect != EFFECT_RECOIL_IF_MISS
                  && gBattleMoves[move1].effect != EFFECT_RECOIL_50
                  && gBattleMoves[move1].effect != EFFECT_RECOIL_33
                  && gBattleMoves[move1].effect != EFFECT_RECOIL_33_STATUS
+                 && gBattleMoves[move1].effect != EFFECT_RECOIL_50_STATUS
                  && gBattleMoves[move1].effect != EFFECT_RECHARGE)))
             return 0;
     }
@@ -1382,10 +1386,10 @@ u32 AI_GetMoveAccuracy(u8 battlerAtk, u8 battlerDef, u16 atkAbility, u16 defAbil
     calc = gAccuracyStageRatios[buff].dividend * moveAcc;
     calc /= gAccuracyStageRatios[buff].divisor;
 
-    if (atkAbility == ABILITY_COMPOUND_EYES)
+    if (atkAbility == ABILITY_COMPOUND_EYES || ABILITY_ILLUMINATE)
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
     else if (atkAbility == ABILITY_VICTORY_STAR)
-        calc = (calc * 110) / 100; // 1.1 victory star boost
+        calc = (calc * 120) / 100; // 1.2 victory star boost
     if (IsBattlerAlive(BATTLE_PARTNER(battlerAtk)) && GetBattlerAbility(BATTLE_PARTNER(battlerAtk)) == ABILITY_VICTORY_STAR)
         calc = (calc * 110) / 100; // 1.1 ally's victory star boost
 
@@ -1396,7 +1400,7 @@ u32 AI_GetMoveAccuracy(u8 battlerAtk, u8 battlerDef, u16 atkAbility, u16 defAbil
     else if (defAbility == ABILITY_TANGLED_FEET && gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
         calc = (calc * 50) / 100; // 1.5 tangled feet loss
 
-    if (atkAbility == ABILITY_HUSTLE && IS_MOVE_PHYSICAL(move))
+    if (atkAbility == ABILITY_HUSTLE && (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)))
         calc = (calc * 80) / 100; // 1.2 hustle loss
 
     if (defHoldEffect == HOLD_EFFECT_EVASION_UP)
@@ -1500,8 +1504,10 @@ bool32 ShouldSetSandstorm(u8 battler, u16 ability, u16 holdEffect)
       || ability == ABILITY_SAND_FORCE
       || ability == ABILITY_OVERCOAT
       || ability == ABILITY_MAGIC_GUARD
+      || ability == ABILITY_WONDER_GUARD
       || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
       || IS_BATTLER_OF_TYPE(battler, TYPE_ROCK)
+      || IS_BATTLER_OF_TYPE(battler, TYPE_GHOST)
       || IS_BATTLER_OF_TYPE(battler, TYPE_STEEL)
       || IS_BATTLER_OF_TYPE(battler, TYPE_GROUND)
       || HasMoveEffect(battler, EFFECT_SHORE_UP)
@@ -1524,9 +1530,12 @@ bool32 ShouldSetHail(u8 battler, u16 ability, u16 holdEffect)
       || ability == ABILITY_FORECAST
       || ability == ABILITY_SLUSH_RUSH
       || ability == ABILITY_MAGIC_GUARD
+      || ability == ABILITY_WONDER_GUARD
       || ability == ABILITY_OVERCOAT
       || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
       || IS_BATTLER_OF_TYPE(battler, TYPE_ICE)
+      || IS_BATTLER_OF_TYPE(battler, TYPE_GHOST)
+      || IS_BATTLER_OF_TYPE(battler, TYPE_STEEL)
       || HasMove(battler, MOVE_BLIZZARD)
       || HasMoveEffect(battler, EFFECT_AURORA_VEIL)
       || HasMoveEffect(battler, EFFECT_WEATHER_BALL))
@@ -2307,6 +2316,7 @@ static bool32 BattlerAffectedBySandstorm(u8 battlerId, u16 ability)
 {
     if (!IS_BATTLER_OF_TYPE(battlerId, TYPE_ROCK)
       && !IS_BATTLER_OF_TYPE(battlerId, TYPE_GROUND)
+      && !IS_BATTLER_OF_TYPE(battlerId, TYPE_GHOST)
       && !IS_BATTLER_OF_TYPE(battlerId, TYPE_STEEL)
       && ability != ABILITY_SAND_VEIL
       && ability != ABILITY_SAND_FORCE
@@ -2319,6 +2329,8 @@ static bool32 BattlerAffectedBySandstorm(u8 battlerId, u16 ability)
 static bool32 BattlerAffectedByHail(u8 battlerId, u16 ability)
 {
     if (!IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE)
+      && !IS_BATTLER_OF_TYPE(battlerId, TYPE_GHOST)
+      && !IS_BATTLER_OF_TYPE(battlerId, TYPE_STEEL)
       && ability != ABILITY_SNOW_CLOAK
       && ability != ABILITY_OVERCOAT
       && ability != ABILITY_ICE_BODY)
@@ -2363,7 +2375,7 @@ u32 GetBattlerSecondaryDamage(u8 battlerId)
 {
     u32 secondaryDamage;
     
-    if (AI_GetAbility(battlerId) == ABILITY_MAGIC_GUARD)
+    if (AI_GetAbility(battlerId) == ABILITY_MAGIC_GUARD || AI_GetAbility(battlerId) == ABILITY_WONDER_GUARD)
         return FALSE;
     
     secondaryDamage = GetLeechSeedDamage(battlerId)
@@ -2440,7 +2452,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u8 currBattler, u8 switchBattler)
     if (flags == 0)
         return FALSE;
     
-    if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_LEVITATE
+    if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_LEVITATE || ability == ABILITY_WONDER_GUARD
       || holdEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS)
         return FALSE;
     
@@ -2717,6 +2729,7 @@ bool32 ShouldPoisonSelf(u8 battler, u16 ability)
       || ability == ABILITY_POISON_HEAL
       || ability == ABILITY_QUICK_FEET
       || ability == ABILITY_MAGIC_GUARD
+      || ability == ABILITY_WONDER_GUARD
       || (ability == ABILITY_TOXIC_BOOST && HasMoveWithSplit(battler, SPLIT_PHYSICAL))
       || (ability == ABILITY_GUTS && HasMoveWithSplit(battler, SPLIT_PHYSICAL))
       || HasMoveEffect(battler, EFFECT_FACADE)
@@ -2765,6 +2778,7 @@ bool32 AI_CanBeConfused(u8 battler, u16 ability)
 {
     if ((gBattleMons[battler].status2 & STATUS2_CONFUSION)
       || (ability == ABILITY_OWN_TEMPO)
+      || IS_BATTLER_OF_TYPE(battler, TYPE_BUG)
       || (IsBattlerGrounded(battler) && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)))
         return FALSE;
     return TRUE;

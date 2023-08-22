@@ -1906,7 +1906,7 @@ static const u8 sTM56Desc[] = _(
 static const u8 sTM57Desc[] = _(
     "Fires a beam of\n"
     "electricity.\n"
-    "May raise Sp. Atk.");
+    "Raises Sp. Atk.");
 
 static const u8 sTM58Desc[] = _(
     "Endures any attack\n"
@@ -2146,12 +2146,12 @@ static const u8 sHM04Desc[] = _(
 static const u8 sHM05Desc[] = _(
     "Looses a powerful\n"
     "blast of light that\n"
-    "reduces accuracy.");
+    "confuses everyone.");
 
 static const u8 sHM06Desc[] = _(
     "A rock-crushingly\n"
     "tough attack that\n"
-    "may lower Defense.");
+    "lowers Defense.");
 
 static const u8 sHM07Desc[] = _(
     "Attacks the foe\n"

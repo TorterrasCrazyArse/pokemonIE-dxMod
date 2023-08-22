@@ -2426,7 +2426,7 @@ void ShowScrollableMultichoice(void)
             break;
         case SCROLL_MULTI_PC_TUTOR_SET_1:
             task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-            task->tNumItems = 21;
+            task->tNumItems = 20;
             task->tLeft = 17;
             task->tTop = 1;
             task->tWidth = 14;
@@ -2450,7 +2450,7 @@ void ShowScrollableMultichoice(void)
             break;
         case SCROLL_MULTI_PC_TUTOR_SET_7:
             task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-            task->tNumItems = 16;
+            task->tNumItems = 17;
             task->tLeft = 17;
             task->tTop = 1;
             task->tWidth = 14;
@@ -2707,7 +2707,6 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_Mimic,
         gText_MudSlap,
         gText_Metronome,
-        gText_OminousWind,
         gText_SuperFang,
         gText_HoneClaws,
         gText_PsychUp,
@@ -2842,6 +2841,7 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_DragonDance,
         gText_Outrage,
         gText_KnockOff,
+        gText_OminousWind,
         gText_QuiverDance,
         gText_Exit
     },
@@ -3541,7 +3541,6 @@ static const u16 sPokemonCenter_TutorMoves1[] =
 	MOVE_MIMIC,
 	MOVE_MUD_SLAP,
 	MOVE_METRONOME,
-	MOVE_OMINOUS_WIND,
 	MOVE_SUPER_FANG,
 	MOVE_HONE_CLAWS,
 	MOVE_PSYCH_UP,
@@ -3676,6 +3675,7 @@ static const u16 sPokemonCenter_TutorMoves7[] =
 	MOVE_DRAGON_DANCE,
 	MOVE_OUTRAGE,
 	MOVE_KNOCK_OFF,
+	MOVE_OMINOUS_WIND,
 	MOVE_QUIVER_DANCE
 };
 
@@ -3748,7 +3748,6 @@ static void ShowBattleFrontierTutorMoveDescription(u8 menu, u16 selection)
         PokemonCenterMoveTutor_Text_MimicDesc,
         PokemonCenterMoveTutor_Text_MudSlapDesc,
         PokemonCenterMoveTutor_Text_MetronomeDesc,
-        PokemonCenterMoveTutor_Text_OminousWindDesc,
         PokemonCenterMoveTutor_Text_SuperFangDesc,
         PokemonCenterMoveTutor_Text_HoneClawsDesc,
         PokemonCenterMoveTutor_Text_PsychUpDesc,
@@ -3889,6 +3888,7 @@ static void ShowBattleFrontierTutorMoveDescription(u8 menu, u16 selection)
         PokemonCenterMoveTutor_Text_DragonDanceDesc,
         PokemonCenterMoveTutor_Text_OutrageDesc,
         PokemonCenterMoveTutor_Text_KnockOffDesc,
+        PokemonCenterMoveTutor_Text_OminousWindDesc,
         PokemonCenterMoveTutor_Text_QuiverDanceDesc,
         gText_Exit,
 	};

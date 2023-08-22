@@ -611,8 +611,10 @@
 #define STRINGID_NEUTRALIZINGGASOVER                  608
 #define STRINGID_PLAYERLOSTAGAINSTENEMYTRAINER        609
 #define STRINGID_PLAYERPAIDPRIZEMONEY                 610
+#define STRINGID_HAZARDSCRUSHED                       611
+#define STRINGID_DAMPSLIPPED                          612
 
-#define BATTLESTRINGS_COUNT                           611
+#define BATTLESTRINGS_COUNT                           613
 
 // The below IDs are all indexes into battle message tables,
 // used to determine which of a set of messages to print.

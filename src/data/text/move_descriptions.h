@@ -58,8 +58,8 @@ static const u8 sSwordsDanceDescription[] = _(
     "sharply raises Attack.");
 
 static const u8 sCutDescription[] = _(
-    "Cuts the foe with sharp\n"
-    "scythes, claws, etc.");
+    "A cutting attack that hits\n"
+    "Grass Types Super Effective.");
 
 static const u8 sGustDescription[] = _(
     "Strikes the foe with a gust\n"
@@ -497,7 +497,7 @@ static const u8 sLickDescription[] = _(
 
 static const u8 sSmogDescription[] = _(
     "An exhaust-gas attack\n"
-    "that may also poison.");
+    "that also poisons.");
 
 static const u8 sSludgeDescription[] = _(
     "Sludge is hurled to inflict\n"
@@ -540,8 +540,8 @@ static const u8 sAmnesiaDescription[] = _(
     "and sharply raises Sp. Def.");
 
 static const u8 sKinesisDescription[] = _(
-    "Distracts the foe.\n"
-    "May lower accuracy.");
+    "Distracts the foe,\n"
+    "confusing it without fail.");
 
 static const u8 sSoftBoiledDescription[] = _(
     "Recovers up to half the\n"
@@ -564,8 +564,8 @@ static const u8 sPoisonGasDescription[] = _(
     "gas that may poison.");
 
 static const u8 sBarrageDescription[] = _(
-    "Hurls round objects at the\n"
-    "foe 2 to 5 times.");
+    "Hurls big, draconic fruits\n"
+    "at the foe 2 to 5 times.");
 
 static const u8 sLeechLifeDescription[] = _(
     "An attack that steals half\n"
@@ -597,14 +597,14 @@ static const u8 sSporeDescription[] = _(
 
 static const u8 sFlashDescription[] = _(
     "Looses a powerful blast of\n"
-    "light that cuts accuracy.");
+    "light that confuses.");
 
 static const u8 sPsywaveDescription[] = _(
     "Attacks with a psychic\n"
     "wave of varying intensity.");
 
 static const u8 sSplashDescription[] = _(
-    "It's just a splash...\n"
+    "It's just a hop...\n"
     "Has no effect whatsoever.");
 
 static const u8 sAcidArmorDescription[] = _(
@@ -646,8 +646,8 @@ static const u8 sHyperFangDescription[] = _(
     "May cause flinching.");
 
 static const u8 sSharpenDescription[] = _(
-    "Reduces the polygon count\n"
-    "and raises Attack.");
+    "Sharpens the user's body\n"
+    "to raise Attack.");
 
 static const u8 sConversionDescription[] = _(
     "Changes the user's type\n"
@@ -1222,8 +1222,8 @@ static const u8 sBlazeKickDescription[] = _(
     "hit ratio. May cause a burn.");
 
 static const u8 sMudSportDescription[] = _(
-    "Covers the user in mud to\n"
-    "raise electrical resistance.");
+    "Covers the user in a special\n"
+    "mud to cure status.");
 
 static const u8 sIceBallDescription[] = _(
     "A 5-turn attack that gains\n"
@@ -1239,7 +1239,7 @@ static const u8 sSlackOffDescription[] = _(
 
 static const u8 sHyperVoiceDescription[] = _(
     "A loud attack that uses\n"
-    "sound waves to injure.");
+    "sound waves to flinch.");
 
 static const u8 sPoisonFangDescription[] = _(
     "A sharp-fanged attack.\n"
@@ -1371,7 +1371,7 @@ static const u8 sHowlDescription[] = _(
 
 static const u8 sDragonClawDescription[] = _(
     "Slashes the foe with sharp\n"
-    "claws.");
+    "claws. Strong against Steel.");
 
 static const u8 sFrenzyPlantDescription[] = _(
     "Powerful, but leaves the\n"
@@ -1406,8 +1406,8 @@ static const u8 sMagicalLeafDescription[] = _(
     "that cannot be evaded.");
 
 static const u8 sWaterSportDescription[] = _(
-    "The user becomes soaked to\n"
-    "raise resistance to fire.");
+    "The user bathes in a\n"
+    "special, restoring water.");
 
 static const u8 sCalmMindDescription[] = _(
     "Raises Sp. Atk and Sp. Def\n"
@@ -1458,8 +1458,8 @@ static const u8 sWAKE_UP_SLAPDescription[] = _(
     "foes, but also heals them.");
 
 static const u8 sHAMMER_ARMDescription[] = _(
-    "A swinging fist attack\n"
-    "that also lowers Speed.");
+    "An accurate, swinging fist\n"
+    "attack that lowers Speed.");
 
 static const u8 sGYRO_BALLDescription[] = _(
     "A high-speed spin that does\n"
@@ -1502,7 +1502,7 @@ static const u8 sU_TURNDescription[] = _(
     "out the user.");
 
 static const u8 sCLOSE_COMBATDescription[] = _(
-    "A strong attack but lowers\n"
+    "Can't miss but lowers\n"
     "the defensive stats.");
 
 static const u8 sPAYBACKDescription[] = _(
@@ -1626,8 +1626,8 @@ static const u8 sNIGHT_SLASHDescription[] = _(
     "High critical-hit ratio.");
 
 static const u8 sAQUA_TAILDescription[] = _(
-    "The user swings its tail\n"
-    "like a wave to attack.");
+    "Swings its tail to\n"
+    "attack. May paralyze.");
 
 static const u8 sSEED_BOMBDescription[] = _(
     "A barrage of hard seeds\n"
@@ -1804,11 +1804,11 @@ static const u8 sJUDGMENTDescription[] = _(
     "kind of Plate held.");
 
 static const u8 sCHARGE_BEAMDescription[] = _(
-    "Fires a beam of electricity.\n"
-    "May raise Sp. Atk.");
+    "Fires a beam of electricity\n"
+    "that raises Sp. Atk.");
 
 static const u8 sWOOD_HAMMERDescription[] = _(
-    "Slams the body into a foe\n"
+    "Slams the body into the foe\n"
     "The user gets hurt too.");
 
 static const u8 sAQUA_JETDescription[] = _(
@@ -2069,15 +2069,15 @@ static const u8 sINFERNODescription[] = _(
 
 static const u8 sWATER_PLEDGEDescription[] = _(
     "Attacks with a column of\n"
-    "water. May make a rainbow.");
+    "water. May lower Speed.");
 
 static const u8 sFIRE_PLEDGEDescription[] = _(
     "Attacks with a column of\n"
-    "fire. May burn the grass.");
+    "fire. May cause a burn.");
 
 static const u8 sGRASS_PLEDGEDescription[] = _(
     "Attacks with a column of\n"
-    "grass. May create a swamp.");
+    "grass. May lower Sp. Def.");
 
 static const u8 sSTRUGGLE_BUGDescription[] = _(
     "Resisting, the user attacks\n"
@@ -2580,8 +2580,8 @@ static const u8 sCLANGING_SCALESDescription[] = _(
     "its scales. Drops Defense.");
 
 static const u8 sDRAGON_HAMMERDescription[] = _(
-    "Swings its whole body\n"
-    "like a hammer to damage.");
+    "An accurate, swinging\n"
+    "body slam. Drops Speed.");
 
 static const u8 sBRUTAL_SWINGDescription[] = _(
     "Violently swings around\n"
@@ -2974,11 +2974,11 @@ static const u8 sTHUNDEROUS_KICKDescription[] = _(
 
 static const u8 sGLACIAL_LANCEDescription[] = _(
     "Strikes by hurling a blizzard-\n"
-    "cloaked icicle lance at a foe.");
+    "cloaked icicle lance.");
 
 static const u8 sASTRAL_BARRAGEDescription[] = _(
     "Strikes by sending a frightful\n"
-    "amount of ghosts at a foe.");
+    "amount of ghosts. Can't miss.");
 
 static const u8 sEERIE_SPELLDescription[] = _(
     "Attacks with psychic power.\n"
@@ -3059,7 +3059,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_LOW_KICK - 1] = sLowKickDescription,
     [MOVE_COUNTER - 1] = sCounterDescription,
     [MOVE_SEISMIC_TOSS - 1] = sSeismicTossDescription,
-    [MOVE_STRENGTH - 1] = sStrengthDescription,
+    [MOVE_STRENGTH - 1] = sCLOSE_COMBATDescription,
     [MOVE_ABSORB - 1] = sAbsorbDescription,
     [MOVE_MEGA_DRAIN - 1] = sMegaDrainDescription,
     [MOVE_LEECH_SEED - 1] = sLeechSeedDescription,
@@ -3607,8 +3607,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_THOUSAND_WAVES - 1] = sTHOUSAND_WAVESDescription,
     [MOVE_LANDS_WRATH - 1] = sLANDS_WRATHDescription,
     [MOVE_LIGHT_OF_RUIN - 1] = sLIGHT_OF_RUINDescription,
-    [MOVE_ORIGIN_PULSE - 1] = sORIGIN_PULSEDescription,
-    [MOVE_PRECIPICE_BLADES - 1] = sPRECIPICE_BLADESDescription,
+    [MOVE_ORIGIN_PULSE - 1] = sCLOSE_COMBATDescription,
+    [MOVE_PRECIPICE_BLADES - 1] = sCLOSE_COMBATDescription,
     [MOVE_DRAGON_ASCENT - 1] = sCLOSE_COMBATDescription,
     [MOVE_HYPERSPACE_FURY - 1] = sHYPERSPACE_HOLEDescription,
     [MOVE_SHORE_UP - 1] = sSHORE_UPDescription,
@@ -3617,7 +3617,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SPIRIT_SHACKLE - 1] = sSPIRIT_SHACKLEDescription,
     [MOVE_DARKEST_LARIAT - 1] = sDARKEST_LARIATDescription,
     [MOVE_SPARKLING_ARIA - 1] = sSPARKLING_ARIADescription,
-    [MOVE_ICE_HAMMER - 1] = sICE_HAMMERDescription,
+    [MOVE_ICE_HAMMER - 1] = sHAMMER_ARMDescription,
     [MOVE_FLORAL_HEALING - 1] = sFLORAL_HEALINGDescription,
     [MOVE_HIGH_HORSEPOWER - 1] = sHIGH_HORSEPOWERDescription,
     [MOVE_STRENGTH_SAP - 1] = sSTRENGTH_SAPDescription,
