@@ -1106,7 +1106,7 @@ BattleScript_VCreateStatAnim:
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_VCreateTrySpDef:
 	setstatchanger STAT_SPDEF, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateTrySpeed
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateTryAtk
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VCreateTryAtk
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
@@ -1640,10 +1640,10 @@ BattleScript_AutotomizeWeightLoss::
 
 BattleScript_EffectFinalGambit:
 	attackcanceler
+	jumpifability BS_ATTACKER, ABILITY_WONDER_GUARD, BattleScript_ButItFailedPpReduce
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
-    jumpifability, BS_ATTACKER, ABILITY_WONDER_GUARD, BattleScript_ButItFailed
 	critcalc
 	typecalc
 	bichalfword gMoveResultFlags, MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE
@@ -3800,7 +3800,7 @@ BattleScript_EffectTwoTurnsAttackFreezeShock:
 	goto BattleScript_EffectTwoTurnsAttackContinue	
 
 BattleScript_EffectTwoTurnsAttackChargeAbility::
-    B_WAIT_TIME_SHORT
+    pause B_WAIT_TIME_SHORT
     call BattleScript_AbilityPopUp
 	goto BattleScript_TwoTurnMovesSecondTurn
 	
@@ -3848,7 +3848,7 @@ BattleScript_GeomancyEnd::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectGeomancyChargeAbility:
-    B_WAIT_TIME_SHORT
+    pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	goto BattleScript_GeomancySecondTurn
 
@@ -4939,7 +4939,7 @@ BattleScript_SemiInvulnerableMiss::
 	goto BattleScript_PrintMoveMissed
 
 BattleScript_EffectSemiInvulnerableChargeAbility::
-    B_WAIT_TIME_SHORT
+    pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	goto BattleScript_SemiInvulnerableTryHit
 

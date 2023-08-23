@@ -445,7 +445,7 @@ static const u8 sConfuseRayDescription[] = _(
 
 static const u8 sWithdrawDescription[] = _(
     "Withdraws the body into its\n"
-    "hard shell to raise Defense.");
+    "hard shell to raise Defenses.");
 
 static const u8 sDefenseCurlDescription[] = _(
     "Curls up to conceal weak\n"

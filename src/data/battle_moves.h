@@ -1739,7 +1739,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_WITHDRAW] =
     {
-        .effect = EFFECT_DEFENSE_UP_2,
+        .effect = EFFECT_COSMIC_POWER,
         .power = 0,
         .type = TYPE_ROCK,
         .accuracy = 0,
