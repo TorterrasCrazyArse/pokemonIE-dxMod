@@ -1095,7 +1095,7 @@ BattleScript_EffectVCreate:
 BattleScript_VCreateStatLoss::
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_DEF, MIN_STAT_STAGE, BattleScript_VCreateStatAnim
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPDEF, MIN_STAT_STAGE, BattleScript_VCreateStatAnim
-	jumpifstat BS_ATTACKER, CMP_NOT_EQUAL, STAT_ATK, MIN_STAT_STAGE, BattleScript_VCreateStatLossRet
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_ATK, MIN_STAT_STAGE, BattleScript_VCreateStatLossRet
 BattleScript_VCreateStatAnim:
 	setbyte sSTAT_ANIM_PLAYED, FALSE
 	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF | BIT_ATK, STAT_CHANGE_NEGATIVE | STAT_CHANGE_CANT_PREVENT

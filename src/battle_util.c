@@ -8639,8 +8639,8 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         usesDefStat = FALSE;
     }
 	
-    // Self-destruct / Explosion / Superpower cuts defense in half
-    if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION || gBattleMoves[gCurrentMove].effect == EFFECT_SUPERPOWER)
+    // Self-destruct / Explosion cuts defense in half
+    if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
         defStat /= 2;
 
     // critical hits ignore positive stat changes

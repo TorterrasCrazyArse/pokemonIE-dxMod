@@ -3195,7 +3195,6 @@ extern const u8 gText_Snatch[];
 extern const u8 gText_Mimic[];
 extern const u8 gText_MudSlap[];
 extern const u8 gText_Metronome[];
-extern const u8 gText_OminousWind[];
 extern const u8 gText_SuperFang[];
 extern const u8 gText_HoneClaws[];
 extern const u8 gText_PsychUp[];
@@ -3306,6 +3305,7 @@ extern const u8 gText_HydroPump[];
 extern const u8 gText_DragonDance[];
 extern const u8 gText_Outrage[];
 extern const u8 gText_KnockOff[];
+extern const u8 gText_OminousWind[];
 extern const u8 gText_QuiverDance[];
 
 // Pokemon Center move tutor strings
@@ -3323,7 +3323,6 @@ extern const u8 PokemonCenterMoveTutor_Text_SnatchDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_MimicDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_MudSlapDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_MetronomeDesc[];
-extern const u8 PokemonCenterMoveTutor_Text_OminousWindDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_SuperFangDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_HoneClawsDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_PsychUpDesc[];
@@ -3446,6 +3445,7 @@ extern const u8 PokemonCenterMoveTutor_Text_HydroPumpDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_DragonDanceDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_OutrageDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_KnockOffDesc[];
+extern const u8 PokemonCenterMoveTutor_Text_OminousWindDesc[];
 extern const u8 PokemonCenterMoveTutor_Text_QuiverDanceDesc[];
 
 // Options used to select a set of tutor moves

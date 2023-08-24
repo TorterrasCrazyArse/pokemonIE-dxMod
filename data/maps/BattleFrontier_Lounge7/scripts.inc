@@ -540,11 +540,6 @@ PokemonCenterMoveTutor_Text_MetronomeDesc::
 	.string "to use any move\n"
 	.string "at random.$"
 
-PokemonCenterMoveTutor_Text_OminousWindDesc::
-	.string "A repulsive gust\n"
-	.string "of wind that may\n"
-	.string "raise all stats.$"
-
 PokemonCenterMoveTutor_Text_SuperFangDesc::
 	.string "Bites with sharp\n"
 	.string "fangs and halves\n"
@@ -1101,9 +1096,15 @@ PokemonCenterMoveTutor_Text_KnockOffDesc::
 	.string "foe's held item to\n"
 	.string "prevent its use.$"
 
+PokemonCenterMoveTutor_Text_OminousWindDesc::
+	.string "A repulsive gust\n"
+	.string "of wind that may\n"
+	.string "raise all stats.$"
+
 PokemonCenterMoveTutor_Text_QuiverDanceDesc::
 	.string "A mystic dance\n"
 	.string "that ups Sp. Atk,\n"
 	.string "Sp. Def & Speed.$"
+
 
 

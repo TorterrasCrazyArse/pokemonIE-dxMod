@@ -608,6 +608,10 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
                 if (moveType == TYPE_WATER)
                     RETURN_SCORE_MINUS(20);
                 break;
+            case ABILITY_POISON_HEAL:
+                if (moveType == TYPE_POISON)
+                    RETURN_SCORE_MINUS(20);
+                break;
             case ABILITY_FLASH_FIRE:
                 if (moveType == TYPE_FIRE)
                     RETURN_SCORE_MINUS(20);
@@ -2670,6 +2674,12 @@ static s16 AI_DoubleBattle(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
                 switch (atkPartnerAbility)
                 {
                 case ABILITY_VOLT_ABSORB:
+                    if (!(AI_THINKING_STRUCT->aiFlags & AI_FLAG_HP_AWARE))
+                    {
+                        RETURN_SCORE_MINUS(10);
+                    }
+                    break;  // handled in AI_HPAware
+                case ABILITY_POISON_HEAL:
                     if (!(AI_THINKING_STRUCT->aiFlags & AI_FLAG_HP_AWARE))
                     {
                         RETURN_SCORE_MINUS(10);
@@ -4894,6 +4904,7 @@ static s16 AI_HPAware(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
     {
         if ((effect == EFFECT_HEAL_PULSE || effect == EFFECT_HIT_ENEMY_HEAL_ALLY)
          || (moveType == TYPE_ELECTRIC && AI_DATA->atkPartnerAbility == ABILITY_VOLT_ABSORB)
+         || (moveType == TYPE_POISON && AI_DATA->atkPartnerAbility == ABILITY_POISON_HEAL)
          || (moveType == TYPE_WATER && (AI_DATA->atkPartnerAbility == ABILITY_DRY_SKIN || AI_DATA->atkPartnerAbility == ABILITY_WATER_ABSORB)))
         {
             if (CanTargetFaintAi(FOE(battlerAtk), AI_DATA->battlerAtkPartner)

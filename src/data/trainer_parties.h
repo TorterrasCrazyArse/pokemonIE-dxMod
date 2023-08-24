@@ -4305,7 +4305,7 @@ static const struct TrainerMonItemCustomMoves sParty_Eddie[] = {
     .lvl = -2,
     .species = SPECIES_DARTRIX,
     .spread = SPREAD_10_IV_0_EV,
-    .moves = MOVE_RAZOR_LEAF, MOVE_PLUCK, MOVE_OMINOUS_WIND, MOVE_SYNTHESIS
+    .moves = MOVE_RAZOR_LEAF, MOVE_PLUCK, MOVE_SUCKER_PUNCH, MOVE_SYNTHESIS
     }
 };
 
