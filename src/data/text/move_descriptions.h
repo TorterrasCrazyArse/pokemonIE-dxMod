@@ -2097,7 +2097,7 @@ static const u8 sELECTROWEBDescription[] = _(
 
 static const u8 sWILD_CHARGEDescription[] = _(
     "An electrical tackle that\n"
-    "also hurts the user.");
+    "may paralyze the foe.");
 
 static const u8 sDRILL_RUNDescription[] = _(
     "Spins its body like a drill.\n"

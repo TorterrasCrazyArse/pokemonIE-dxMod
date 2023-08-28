@@ -8639,10 +8639,6 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         usesDefStat = FALSE;
     }
 	
-    // Self-destruct / Explosion cuts defense in half
-    if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
-        defStat /= 2;
-
     // critical hits ignore positive stat changes
     if (isCrit && defStage > DEFAULT_STAT_STAGE)
         defStage = DEFAULT_STAT_STAGE;
@@ -9022,12 +9018,14 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
         mod = UQ_4_12(2.0);
     if (gBattleMoves[move].effect == EFFECT_FALSE_SWIPE && defType == TYPE_GHOST)
         mod = UQ_4_12(1.0);
-    if ((gBattleMoves[move].effect == EFFECT_FALSE_SWIPE || EFFECT_EXPLOSION) && defType == TYPE_ROCK)
+    if (gBattleMoves[move].effect == EFFECT_FALSE_SWIPE && defType == TYPE_ROCK)
         mod = UQ_4_12(1.0);
     if (gBattleMoves[move].effect == EFFECT_FALSE_SWIPE && defType == TYPE_STEEL)
         mod = UQ_4_12(1.0);
     if (gBattleMoves[move].effect == EFFECT_EXPLOSION && defType == TYPE_STEEL)
         mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_EXPLOSION && defType == TYPE_ROCK)
+        mod = UQ_4_12(1.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (moveType == TYPE_FIRE && gDisableStructs[battlerDef].tarShot)

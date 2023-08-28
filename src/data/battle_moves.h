@@ -1138,7 +1138,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 100,
         .type = TYPE_ROCK,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -1621,7 +1621,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MIMIC,
         .power = 0,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_NORMAL,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -4389,7 +4389,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ROLE_PLAY,
         .power = 0,
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_NORMAL,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -4447,7 +4447,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SUPERPOWER] =
     {
-        .effect = EFFECT_V_CREATE,
+        .effect = EFFECT_SUPERPOWER,
         .power = 180,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
@@ -5532,15 +5532,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_VOLT_TACKLE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .effect = EFFECT_RECOIL_50_STATUS,
+            .effect = EFFECT_RECOIL_33_STATUS,
             .argument = STATUS1_PARALYSIS,
         #else
             .effect = EFFECT_RECOIL_33,
         #endif
-        .power = 150,
+        .power = 120,
         .type = TYPE_ELECTRIC,
-        .accuracy = 90,
-        .pp = 10,
+        .accuracy = 100,
+        .pp = 15,
         .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -5958,7 +5958,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 120,
         .type = TYPE_FIGHTING,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -6564,10 +6564,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 80,
             .pp = 20,
         #endif
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SPATK_UP_HIT,
         .type = TYPE_ROCK,
         .accuracy = 100,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -8402,8 +8402,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_WILD_CHARGE] =
     {
-        .effect = EFFECT_RECOIL_33_STATUS,
-        .power = 120,
+        .effect = EFFECT_PARALYZE_HIT,
+        .power = 95,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 15,
@@ -8412,7 +8412,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_RECKLESS_BOOST,
         .split = SPLIT_PHYSICAL,
-        .argument = STATUS1_PARALYSIS,
     },
 
     [MOVE_DRILL_RUN] =
@@ -9756,7 +9755,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 120,
         .type = TYPE_WATER,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
@@ -9770,7 +9769,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 120,
         .type = TYPE_GROUND,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
@@ -9784,7 +9783,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 120,
         .type = TYPE_FLYING,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

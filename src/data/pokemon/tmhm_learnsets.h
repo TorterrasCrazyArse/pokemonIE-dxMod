@@ -4591,6 +4591,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM58_ENDURE)
                         | TMHM(TM61_WILL_O_WISP),
                           TMHM(TM68_GIGA_IMPACT)
+                        | TMHM(TM75_SWORDS_DANCE)
                         | TMHM(TM83_FLAME_CHARGE)
                         | TMHM(TM90_SUBSTITUTE)
                         | TMHM(TM100_CURSE)
@@ -7533,6 +7534,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM45_ATTRACT)
                         | TMHM(TM49_SLEEP_TALK)
                         | TMHM(TM50_OVERHEAT)
+                        | TMHM(TM57_CHARGE_BEAM)
                         | TMHM(TM58_ENDURE)
                         | TMHM(TM61_WILL_O_WISP)
                         | TMHM(TM63_ROCK_SLIDE)
@@ -21052,6 +21054,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM30_SHADOW_BALL)
                         | TMHM(TM32_DOUBLE_TEAM)
                         | TMHM(TM33_REFLECT)
+                        | TMHM(TM35_FLAMETHROWER)
                         | TMHM(TM39_ROCK_TOMB)
                         | TMHM(TM42_FACADE)
                         | TMHM(TM43_SECRET_POWER)

@@ -2085,8 +2085,8 @@ static const u8 sTM92Desc[] = _(
 
 static const u8 sTM93Desc[] = _(
     "An electric charge\n"
-    "attack that also\n"
-    "hurts the user.");
+    "attack that may\n"
+    "paralyze.");
 
 static const u8 sTM94Desc[] = _(
     "Strikes first if\n"

@@ -10948,6 +10948,7 @@ static void Cmd_weatherdamage(void)
             else if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_WATER)
                 && ability != ABILITY_SNOW_CLOAK
                 && ability != ABILITY_OVERCOAT
                 && ability != ABILITY_ICE_BODY
