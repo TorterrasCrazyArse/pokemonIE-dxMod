@@ -59,6 +59,7 @@
 #include "data.h"
 #include "constants/party_menu.h"
 #include "battle_util.h"
+#include "mgba_printf/mgba.h"
 
 extern struct MusicPlayerInfo gMPlayInfo_BGM;
 
