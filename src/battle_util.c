@@ -8148,6 +8148,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_VICTORY_STAR:
+    case ABILITY_STALL:
         MulModifier(&modifier, UQ_4_12(1.3));
         break;
     }

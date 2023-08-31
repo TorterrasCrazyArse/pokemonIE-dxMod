@@ -41,7 +41,7 @@ LavaridgeTown_House_EventScript_ReceivedTM94::
 	end
 
 LavaridgeTown_House_Text_HaveTM94::
-	.string "TM94 teaches Sucker Punch.\p"
+	.string "TM94 teaches Cheap Shot.\p"
 	.string "It's a move that may go first if the\n"
 	.string "target Pokémon is about to attack.$"
 
@@ -57,3 +57,4 @@ LavaridgeTown_House_Text_WifeWarmingEggInHotSprings:
 
 LavaridgeTown_House_Text_Zigzagoon: @ 81FF9BB
 	.string "Zigzagoon: Pshoo!$"
+
