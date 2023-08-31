@@ -5346,6 +5346,15 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
         else if (gBattleMons[battlerAtk].type3 != TYPE_MYSTERY)
             gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type3 | 0x80;
     }
+    else if (gBattleMoves[move].effect == EFFECT_EXPLOSION)
+    {
+        if (gBattleMons[battlerAtk].type1 != TYPE_MYSTERY)
+            gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type1 | 0x80;
+        else if (gBattleMons[battlerAtk].type2 != TYPE_MYSTERY)
+            gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type2 | 0x80;
+        else if (gBattleMons[battlerAtk].type3 != TYPE_MYSTERY)
+            gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type3 | 0x80;
+    }
     else if (gBattleMoves[move].effect == EFFECT_NATURAL_GIFT)
     {
         if (ItemId_GetPocket(gBattleMons[battlerAtk].item) == POCKET_BERRIES)
@@ -5378,12 +5387,13 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
     else if (gBattleMoves[move].type == TYPE_NORMAL
              && gBattleMoves[move].effect != EFFECT_HIDDEN_POWER
              && gBattleMoves[move].effect != EFFECT_WEATHER_BALL
+             && gBattleMoves[move].effect != EFFECT_EXPLOSION
              && gBattleMoves[move].effect != EFFECT_CHANGE_TYPE_ON_ITEM
              && gBattleMoves[move].effect != EFFECT_NATURAL_GIFT
              && ((attackerAbility == ABILITY_PIXILATE && (ateType = TYPE_FAIRY))
                  || (attackerAbility == ABILITY_REFRIGERATE && (ateType = TYPE_ICE))
                  || (attackerAbility == ABILITY_AERILATE && (ateType = TYPE_FLYING))
-                 || ((attackerAbility == ABILITY_GALVANIZE) && (ateType = TYPE_ELECTRIC))
+                 || (attackerAbility == ABILITY_GALVANIZE && (ateType = TYPE_ELECTRIC))
                 )
              )
     {
@@ -5392,6 +5402,7 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
     }
     else if (gBattleMoves[move].type != TYPE_NORMAL
              && gBattleMoves[move].effect != EFFECT_HIDDEN_POWER
+             && gBattleMoves[move].effect != EFFECT_WEATHER_BALL
              && gBattleMoves[move].effect != EFFECT_WEATHER_BALL
              && attackerAbility == ABILITY_NORMALIZE)
     {

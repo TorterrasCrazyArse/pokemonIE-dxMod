@@ -1095,10 +1095,10 @@ BattleScript_EffectVCreate:
 BattleScript_VCreateStatLoss::
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_DEF, MIN_STAT_STAGE, BattleScript_VCreateStatAnim
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPDEF, MIN_STAT_STAGE, BattleScript_VCreateStatAnim
-	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_ATK, MIN_STAT_STAGE, BattleScript_VCreateStatLossRet
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MIN_STAT_STAGE, BattleScript_VCreateStatLossRet
 BattleScript_VCreateStatAnim:
 	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF | BIT_ATK, STAT_CHANGE_NEGATIVE | STAT_CHANGE_CANT_PREVENT
+	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF | BIT_SPEED, STAT_CHANGE_NEGATIVE | STAT_CHANGE_CANT_PREVENT
 	setstatchanger STAT_DEF, 1, TRUE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateTrySpDef
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VCreateTrySpDef
@@ -1106,12 +1106,12 @@ BattleScript_VCreateStatAnim:
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_VCreateTrySpDef:
 	setstatchanger STAT_SPDEF, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateTryAtk
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VCreateTryAtk
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateTrySpeed
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VCreateTrySpeed
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
-BattleScript_VCreateTryAtk:
-	setstatchanger STAT_ATK, 1, TRUE
+BattleScript_VCreateTrySpeed:
+	setstatchanger STAT_SPEED, 1, TRUE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_VCreateStatLossRet
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VCreateStatLossRet
 	printfromtable gStatUpStringIds
@@ -7008,20 +7008,28 @@ BattleScript_PrintMonIsRooted::
 	goto BattleScript_MoveEnd
 
 BattleScript_AtkDefDown::
+	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_DEF, MIN_STAT_STAGE, BattleScript_AtkDefDownAnim
+	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPDEF, MIN_STAT_STAGE, BattleScript_AtkDefDownAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_ATK, MIN_STAT_STAGE, BattleScript_AtkDefDownRet
+BattleScript_AtkDefDownAnim:
 	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_ATK, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_MULTIPLE_STATS
-	playstatchangeanimation BS_ATTACKER, BIT_ATK, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
-	setstatchanger STAT_ATK, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_BUFF_ALLOW_PTR, BattleScript_AtkDefDownTryDef
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_AtkDefDownTryDef
-	printfromtable gStatDownStringIds
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_AtkDefDownTryDef:
-	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
+	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF | BIT_ATK, STAT_CHANGE_NEGATIVE | STAT_CHANGE_CANT_PREVENT
 	setstatchanger STAT_DEF, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_BUFF_ALLOW_PTR, BattleScript_AtkDefDownRet
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_AtkDefDownRet
-	printfromtable gStatDownStringIds
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_AtkDefDownTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AtkDefDownTrySpDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AtkDefDownTrySpDef:
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_AtkDefDownTrySpeed
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AtkDefDownTryAtk
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AtkDefDownTryAtk:
+	setstatchanger STAT_ATK, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, BattleScript_AtkDefDownRet
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AtkDefDownRet
+	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_AtkDefDownRet:
 	return

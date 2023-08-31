@@ -4954,15 +4954,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_METEOR_MASH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 100,
-            .accuracy = 90,
+            .power = 90,
+            .accuracy = 100,
         #else
             .power = 100,
             .accuracy = 85,
         #endif
         .effect = EFFECT_ATTACK_UP_HIT,
         .type = TYPE_STEEL,
-        .pp = 10,
+        .pp = 15,
         .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -6564,7 +6564,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 80,
             .pp = 20,
         #endif
-        .effect = EFFECT_SPATK_UP_HIT,
+        .effect = EFFECT_SP_ATTACK_UP_HIT,
         .type = TYPE_ROCK,
         .accuracy = 100,
         .secondaryEffectChance = 20,
@@ -7673,7 +7673,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_STORM_THROW] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 70,
+            .power = 60,
         #else
             .power = 40,
         #endif
@@ -8343,7 +8343,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FROST_BREATH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 70,
+            .power = 60,
         #else
             .power = 40,
         #endif
@@ -8841,7 +8841,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_V_CREATE] =
     {
         .effect = EFFECT_V_CREATE,
-        .power = 180,
+        .power = 120,
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 5,
@@ -11640,11 +11640,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SURGING_STRIKES] =
     {
-        .effect = EFFECT_ALWAYS_CRIT,
+        .effect = EFFECT_MULTI_HIT,
         .power = 25,
         .type = TYPE_WATER,
         .accuracy = 90,
-        .pp = 15,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

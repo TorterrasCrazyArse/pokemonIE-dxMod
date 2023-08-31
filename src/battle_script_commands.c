@@ -1721,6 +1721,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
 {
     u32 calc, moveAcc, atkHoldEffect, atkParam, defHoldEffect, defParam, atkAbility, defAbility;
     s8 buff, accStage, evasionStage;
+    bool8 isHitSuperEffective = GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
+                    || GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0)
+                    || GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type3) >= UQ_4_12(2.0);
 
     atkAbility = GetBattlerAbility(battlerAtk);
     atkHoldEffect = GetBattlerHoldEffect(battlerAtk, TRUE);
@@ -1780,11 +1783,11 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
     else if (defAbility == ABILITY_SNOW_CLOAK && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY)
         calc = (calc * 80) / 100; // 1.2 snow cloak loss
     else if (defAbility == ABILITY_TANGLED_FEET && gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
-        calc = (calc * 50) / 100; // 1.5 tangled feet loss
+        calc = (calc * 70) / 100; // 1.3 tangled feet loss
     else if (defAbility == ABILITY_KLUTZ)
         calc = (calc * 90) / 100; // 1.1 klutz loss
-    else if (defAbility == ABILITY_ANTICIPATION)
-        calc = (calc * 90) / 100; // 1.1 anticiption loss
+    else if (defAbility == ABILITY_ANTICIPATION && isHitSuperEffective)
+        calc = (calc * 70) / 100; // 1.3 anticiption loss
 
     if (atkAbility == ABILITY_HUSTLE && (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)))
         calc = (calc * 80) / 100; // 1.2 hustle loss
@@ -1973,6 +1976,7 @@ s32 CalcCritChanceStage(u8 battlerAtk, u8 battlerDef, u32 move, bool32 recordAbi
     else if (gStatuses3[battlerAtk] & STATUS3_LASER_FOCUS
              || gBattleMoves[move].effect == EFFECT_ALWAYS_CRIT
              || gBattleMoves[move].effect == EFFECT_EXPLOSION
+             || gBattleMoves[move].effect == EFFECT_V_CREATE
              || (abilityAtk == ABILITY_MERCILESS && gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY)
              || move == MOVE_SURGING_STRIKES
             #if B_LEEK_ALWAYS_CRIT >= GEN_6
