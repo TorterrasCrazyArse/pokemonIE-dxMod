@@ -1138,7 +1138,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 100,
         .type = TYPE_ROCK,
         .accuracy = 0,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -1889,7 +1889,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SELF_DESTRUCT] =
     {
         .effect = EFFECT_EXPLOSION,
-        .power = 200,
+        .power = 140,
         .type = TYPE_NORMAL,
         .accuracy = 0,
         .pp = 5,
@@ -2453,7 +2453,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_EXPLOSION] =
     {
         .effect = EFFECT_EXPLOSION,
-        .power = 250,
+        .power = 170,
         .type = TYPE_NORMAL,
         .accuracy = 0,
         .pp = 5,
@@ -6400,7 +6400,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_POISON_JAB] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
