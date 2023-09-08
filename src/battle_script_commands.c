@@ -1721,8 +1721,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
 {
     u32 calc, moveAcc, atkHoldEffect, atkParam, defHoldEffect, defParam, atkAbility, defAbility;
     s8 buff, accStage, evasionStage;
-    bool8 isHitSuperEffective = GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
-                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0);
+    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
+                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
 
     atkAbility = GetBattlerAbility(battlerAtk);
     atkHoldEffect = GetBattlerHoldEffect(battlerAtk, TRUE);
@@ -1782,7 +1784,7 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
     else if (defAbility == ABILITY_SNOW_CLOAK && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY)
         calc = (calc * 80) / 100; // 1.2 snow cloak loss
     else if (defAbility == ABILITY_TANGLED_FEET && gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
-        calc = (calc * 50) / 100; // 1.3 tangled feet loss
+        calc = (calc * 50) / 100; // 1.5 tangled feet loss
     else if (defAbility == ABILITY_ANTICIPATION && isHitSuperEffective && (IS_MOVE_PHYSICAL(move) || IS_MOVE_SPECIAL(move)))
         calc = (calc * 70) / 100; // 1.3 anticiption loss
 

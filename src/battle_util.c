@@ -8101,7 +8101,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_MULTISCALE:
-        if (moveType == TYPE_WATER)
+        if (moveType == TYPE_WATER && (gBattleMons[battlerAtk].type1 != TYPE_WATER || gBattleMons[battlerAtk].type2 != TYPE_WATER))
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PIXILATE:
