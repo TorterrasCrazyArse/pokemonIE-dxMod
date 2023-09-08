@@ -1640,10 +1640,10 @@ BattleScript_AutotomizeWeightLoss::
 
 BattleScript_EffectFinalGambit:
 	attackcanceler
-	jumpifability BS_ATTACKER, ABILITY_WONDER_GUARD, BattleScript_ButItFailedPpReduce
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
+	jumpifability BS_ATTACKER, ABILITY_WONDER_GUARD, BattleScript_ButItFailedPpReduce
 	critcalc
 	typecalc
 	bichalfword gMoveResultFlags, MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE

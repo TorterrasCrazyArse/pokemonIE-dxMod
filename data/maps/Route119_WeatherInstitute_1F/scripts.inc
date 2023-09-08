@@ -128,7 +128,7 @@ Route119_WeatherInstitute_1F_Text_WowYoureStrong:
 Route119_WeatherInstitute_1F_Text_Rocks:
 	.string "We've got lots of these rocks here!\p"
 	.string "They make weather from moves like\n"
-	.string "Rain Dance last longer.$"
+	.string "Rain Prayer last longer.$"
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain: @ 826FD2E
 	.string "The Professor loves rain.\n"
@@ -158,4 +158,5 @@ Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
 Route119_WeatherInstitute_1F_Text_TakeRestInBed: @ 826FEFC
 	.string "There's a bed…\n"
 	.string "Let's take a rest.$"
+
 

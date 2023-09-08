@@ -2438,7 +2438,7 @@ static const u8 sHeatRockDesc[] = _(
 
 static const u8 sDampRockDesc[] = _(
     "Extends the length\n"
-    "of Rain Dance if\n"
+    "of Rain Prayer if\n"
     "used by the holder.");
 
 static const u8 sGripClawDesc[] = _(
