@@ -161,7 +161,7 @@ const union AffineAnimCmd *const gAffineAnims_SpinningHandOrFoot[] =
     sAffineAnim_SpinningHandOrFoot,
 };
 
-// Blaze Kick / Meteor Mash
+// Blaze Kick / Meteor Punch
 const struct SpriteTemplate gSpinningHandOrFootSpriteTemplate =
 {
     .tileTag = ANIM_TAG_HANDS_AND_FEET,

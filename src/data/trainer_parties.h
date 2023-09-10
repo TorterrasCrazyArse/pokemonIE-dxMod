@@ -12695,11 +12695,11 @@ static const struct TrainerMonItemCustomMoves sParty_Darius[] = {
 static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
 {
     .lvl = 1,
-    .species = SPECIES_GYARADOS,
-    .heldItem = ITEM_WACAN_BERRY,
-    .ability = 0, // Intimidate
-    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
-    .moves = MOVE_WATERFALL, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_POWER_WHIP
+    .species = SPECIES_TALONFLAME,
+    .heldItem = ITEM_LIFE_ORB,
+    .ability = 2, // Gale Wings
+    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
+    .moves = MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_ROOST, MOVE_TAILWIND
     },
     {
     .lvl = 1,
@@ -12762,11 +12762,11 @@ static const struct TrainerMonItemCustomMoves sParty_Winona2[] = { // singles
     },
     {
     .lvl = 0,
-    .species = SPECIES_GYARADOS,
+    .species = SPECIES_TALONFLAME,
     .heldItem = ITEM_LEFTOVERS,
-    .ability = 0, // Intimidate
+    .ability = 2, // Gale Wings
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
-    .moves = MOVE_WATERFALL, MOVE_EARTHQUAKE, MOVE_SUBSTITUTE, MOVE_DRAGON_DANCE
+    .moves = MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_ROOST, MOVE_FACADE
     },
     {
     .lvl = 0,
@@ -12774,7 +12774,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona2[] = { // singles
     .heldItem = ITEM_CHOICE_SCARF,
     .ability = 1, // Serene Grace
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_FIRE_BLAST, MOVE_AURA_SPHERE
+    .moves = MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_AURA_SPHERE, MOVE_HYPER_VOICE
     },
     {
     .lvl = 0,
@@ -12797,9 +12797,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona2[] = { // singles
 static const struct TrainerMonItemCustomMoves sParty_Winona3[] = { // Doubles
 {
     .lvl = 1,
-    .species = SPECIES_GYARADOS,
+    .species = SPECIES_TALONFLAME,
     .heldItem = ITEM_WACAN_BERRY,
-    .ability = 0, // Intimidate
+    .ability = 2, // Gale Wings
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_WATERFALL, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_POWER_WHIP
     },

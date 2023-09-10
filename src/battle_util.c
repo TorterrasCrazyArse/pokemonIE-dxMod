@@ -8047,9 +8047,14 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_SAND_FORCE:
-        if ((moveType == TYPE_STEEL || moveType == TYPE_ROCK || moveType == TYPE_GROUND)
+        if ((moveType == TYPE_STEEL || moveType == TYPE_ROCK || moveType == TYPE_GROUND || moveType == TYPE_GHOST)
             && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_SANDSTORM_ANY)
            MulModifier(&modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_WHITEOUT:
+        if ((moveType == TYPE_ICE || moveType == TYPE_WATER || moveType == TYPE_GHOST || moveType == TYPE_STEEL)
+            && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY)
+            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_RIVALRY:
         if (GetGenderFromSpeciesAndPersonality(gBattleMons[battlerAtk].species, gBattleMons[battlerAtk].personality) != MON_GENDERLESS
@@ -8517,10 +8522,6 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
         if (gDisableStructs[battlerDef].isFirstTurn == 2) // just switched in
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
-    case ABILITY_WHITEOUT: // Boosts damage of Ice-type moves in hail
-        if (moveType == TYPE_ICE && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY)
-            MulModifier(&modifier, UQ_4_12(1.5));
-        break;
     case ABILITY_GUTS:
         if (gBattleMons[battlerAtk].status1 & STATUS1_ANY)
             MulModifier(&modifier, UQ_4_12(1.5));
@@ -8746,8 +8747,16 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ROCK) && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_SANDSTORM_ANY && !usesDefStat)
         MulModifier(&modifier, UQ_4_12(1.5));
 
+    // sandstorm def boost for ground types
+    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GROUND) && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_SANDSTORM_ANY && usesDefStat)
+        MulModifier(&modifier, UQ_4_12(1.5));
+
     // Hail Defense boost for ice types
     if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE) && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY && usesDefStat)
+        MulModifier(&modifier, UQ_4_12(1.5));
+
+    // Hail Special Defense boost for water types
+    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_WATER) && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_HAIL_ANY && !usesDefStat)
         MulModifier(&modifier, UQ_4_12(1.5));
 
     return ApplyModifier(modifier, defStat);
@@ -8784,7 +8793,7 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
         if (moveType == TYPE_FIRE)
             dmg = ApplyModifier(UQ_4_12(0.5), dmg);
         else if (moveType == TYPE_WATER)
-            dmg = ApplyModifier(UQ_4_12(1.2), dmg);
+            dmg = ApplyModifier(UQ_4_12(1.3), dmg);
     }
     else if (IsBattlerWeatherAffected(battlerAtk, WEATHER_RAIN_TEMPORARY))
     {
@@ -8796,7 +8805,7 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     else if (IsBattlerWeatherAffected(battlerAtk, WEATHER_SUN_PERMANENT))
     {
         if (moveType == TYPE_FIRE)
-            dmg = ApplyModifier(UQ_4_12(1.2), dmg);
+            dmg = ApplyModifier(UQ_4_12(1.3), dmg);
         else if (moveType == TYPE_WATER)
             dmg = ApplyModifier(UQ_4_12(0.5), dmg);
     }

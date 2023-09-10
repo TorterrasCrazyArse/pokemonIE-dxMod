@@ -16833,7 +16833,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_DEFIANT, ABILITY_INNER_FOCUS, ABILITY_PRESSURE},
+        .abilities = {ABILITY_DEFIANT, ABILITY_INNER_FOCUS, ABILITY_KEEN_EDGE},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -17802,9 +17802,9 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_TALONFLAME] =
     {
         .baseHP        = 78,
-        .baseAttack    = 103,
-        .baseDefense   = 87,
-        .baseSpeed     = 134,
+        .baseAttack    = 91,
+        .baseDefense   = 71,
+        .baseSpeed     = 126,
         .baseSpAttack  = 74,
         .baseSpDefense = 70,
         .type1 = TYPE_FIRE,

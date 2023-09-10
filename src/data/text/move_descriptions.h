@@ -15,7 +15,7 @@ static const u8 sDoubleSlapDescription[] = _(
 
 static const u8 sCometPunchDescription[] = _(
     "Repeatedly punches the foe\n"
-    "2 to 5 times.");
+    "2 to 5 times and goes first.");
 
 static const u8 sMegaPunchDescription[] = _(
     "A strong punch thrown with\n"
@@ -1925,7 +1925,7 @@ static const u8 sFLAME_BURSTDescription[] = _(
 
 static const u8 sSLUDGE_WAVEDescription[] = _(
     "Swamps the foe with a wave\n"
-    "of sludge. May also poison.");
+    "of sludge. May also paralyze.");
 
 static const u8 sQUIVER_DANCEDescription[] = _(
     "Dances to raise Sp. Atk\n"

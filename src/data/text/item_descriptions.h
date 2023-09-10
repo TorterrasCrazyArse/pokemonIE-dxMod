@@ -1791,7 +1791,7 @@ static const u8 sTM33Desc[] = _(
 static const u8 sTM34Desc[] = _(
     "Swamps the foe with\n"
     "a wave of sludge.\n"
-    "May also poison.");
+    "May also paralyze.");
 
 static const u8 sTM35Desc[] = _(
     "Looses a stream of\n"
