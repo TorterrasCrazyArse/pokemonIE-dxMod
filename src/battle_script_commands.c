@@ -1722,10 +1722,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
     u32 calc, moveAcc, atkHoldEffect, atkParam, defHoldEffect, defParam, atkAbility, defAbility;
     s8 buff, accStage, evasionStage;
     u8 moveType;
-    bool8 isHitSE;
-
-    GET_MOVE_TYPE(move, moveType);
-    isHitSE = (CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, TRUE) >= UQ_4_12(2.0));
+    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
+                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
 
     atkAbility = GetBattlerAbility(battlerAtk);
     atkHoldEffect = GetBattlerHoldEffect(battlerAtk, TRUE);
