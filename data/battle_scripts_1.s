@@ -4941,7 +4941,7 @@ BattleScript_SemiInvulnerableMiss::
 BattleScript_EffectSemiInvulnerableChargeAbility::
     pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
-	goto BattleScript_SemiInvulnerableTryHit
+	goto BattleScript_SecondTurnSemiInvulnerable
 
 BattleScript_EffectDefenseCurl::
 	attackcanceler

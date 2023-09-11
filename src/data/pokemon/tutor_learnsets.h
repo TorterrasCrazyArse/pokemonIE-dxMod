@@ -16424,6 +16424,7 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(HONE_CLAWS)
                         | TUTOR(TAILWIND)
                         | TUTOR(ZEN_HEADBUTT)
+                        | TUTOR(BODY_SLAM)
                         | TUTOR(SWAGGER)
                         | TUTOR(SKY_ATTACK)
                         | TUTOR(DOUBLE_EDGE),

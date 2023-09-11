@@ -8017,7 +8017,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     switch (GetBattlerAbility(battlerAtk))
     {
     case ABILITY_TECHNICIAN:
-        if (basePower <= 65)
+        if (basePower <= 60)
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_FLARE_BOOST:
@@ -8523,7 +8523,7 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
     case ABILITY_GUTS:
-        if (gBattleMons[battlerAtk].status1 & STATUS1_ANY)
+        if (gBattleMons[battlerAtk].status1 & STATUS1_ANY && IS_MOVE_PHYSICAL(move))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     }

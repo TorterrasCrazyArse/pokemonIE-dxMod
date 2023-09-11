@@ -3403,7 +3403,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_SLOW,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
-        .abilities = {ABILITY_HYPER_CUTTER, ABILITY_MOLD_BREAKER, ABILITY_MOXIE},
+        .abilities = {ABILITY_HYPER_CUTTER, ABILITY_MOLD_BREAKER, ABILITY_INTIMIDATE},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -12818,7 +12818,7 @@ const struct BaseStats gBaseStats[] =
         #ifdef REBALANCED_VERSION
             .type1 = TYPE_NORMAL,
             .type2 = TYPE_ELECTRIC,
-            .abilities = {ABILITY_SLOW_START, ABILITY_HUSTLE, ABILITY_RAMPAGE},
+            .abilities = {ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER, ABILITY_RAMPAGE},
         #else
             .type1 = TYPE_NORMAL,
             .type2 = TYPE_NORMAL,

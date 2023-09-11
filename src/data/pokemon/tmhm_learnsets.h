@@ -12385,7 +12385,8 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM51_ROOST)
                         | TMHM(TM53_ENERGY_BALL)
                         | TMHM(TM58_ENDURE)
-                        | TMHM(TM59_DRAGON_PULSE),
+                        | TMHM(TM59_DRAGON_PULSE)
+                        | TMHM(TM62_ACROBATICS),
                           TMHM(TM68_GIGA_IMPACT)
                         | TMHM(TM75_SWORDS_DANCE)
                         | TMHM(TM78_BULLDOZE)
@@ -21843,6 +21844,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM49_SLEEP_TALK)
                         | TMHM(TM51_ROOST)
                         | TMHM(TM58_ENDURE)
+                        | TMHM(TM62_ACROBATICS)
                         | TMHM(TM63_ROCK_SLIDE),
                           TMHM(TM65_SHADOW_CLAW)
                         | TMHM(TM68_GIGA_IMPACT)
