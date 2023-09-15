@@ -1722,10 +1722,13 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
     u32 calc, moveAcc, atkHoldEffect, atkParam, defHoldEffect, defParam, atkAbility, defAbility;
     s8 buff, accStage, evasionStage;
     u8 moveType;
-    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
-                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
-                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
-                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
+    bool8 isHitSuperEffective = (CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, TRUE) >= UQ_4_12(2.0));
+//    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
+//                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
+//                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
+//                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
+
+    GET_MOVE_TYPE(move, moveType);
 
     atkAbility = GetBattlerAbility(battlerAtk);
     atkHoldEffect = GetBattlerHoldEffect(battlerAtk, TRUE);
@@ -6436,29 +6439,6 @@ static void Cmd_switchineffects(void)
         SET_STATCHANGER(STAT_SPEED, 1, TRUE);
         BattleScriptPushCursor();
         gBattlescriptCurrInstr = BattleScript_StickyWebOnSwitchIn;
-    }
-    else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & (SIDE_STATUS_TOXIC_SPIKES_DAMAGED 
-         || SIDE_STATUS_SPIKES_DAMAGED 
-         || SIDE_STATUS_STEALTH_ROCK_DAMAGED 
-         || SIDE_STATUS_STICKY_WEB_DAMAGED))
-        && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_HAZARDS_ANY)
-        && IsBattlerGrounded(gActiveBattler))
-    {
-        gSideStatuses[GetBattlerSide(gActiveBattler)] |= (SIDE_STATUS_TOXIC_SPIKES_DAMAGED
-         || SIDE_STATUS_SPIKES_DAMAGED 
-         || SIDE_STATUS_STEALTH_ROCK_DAMAGED 
-         || SIDE_STATUS_STICKY_WEB_DAMAGED);
-        if (GetBattlerAbility(gActiveBattler) == ABILITY_HEAVY_METAL) // Crush the hazards.
-        {
-            gSideStatuses[GetBattlerSide(gActiveBattler)] &= ~(SIDE_STATUS_HAZARDS_ANY);
-            gSideTimers[GetBattlerSide(gActiveBattler)].toxicSpikesAmount = 0;
-            gSideTimers[GetBattlerSide(gActiveBattler)].spikesAmount = 0;
-            gSideTimers[GetBattlerSide(gActiveBattler)].stickyWebAmount = 0;
-            gSideTimers[GetBattlerSide(gActiveBattler)].stealthRockAmount = 0;
-            gBattleScripting.battler = gActiveBattler;
-            BattleScriptPushCursor();
-            gBattlescriptCurrInstr = BattleScript_HazardsCrushed;
-        }
     }
     else
     {

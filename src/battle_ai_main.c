@@ -3000,6 +3000,41 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         }
     }
 
+    // check poison
+    if (gBattleMons[battlerAtk].status1 & STATUS1_POISON)
+    {
+        switch (AI_DATA->atkAbility)
+        {
+        case ABILITY_POISON_HEAL:
+            break;
+        case ABILITY_NATURAL_CURE:
+            if (AI_THINKING_STRUCT->aiFlags & AI_FLAG_SMART_SWITCHING
+             && HasOnlyMovesWithSplit(battlerAtk, SPLIT_SPECIAL, TRUE))
+                score = 90; // Force switch if all your attacking moves are special and you have Natural Cure.
+            break;
+        default:
+            if (IS_MOVE_SPECIAL(move)) // && gBattleMoves[move].effect != EFFECT_FACADE)
+                score -= 2;
+            break;
+        }
+    }
+
+    // check toxic
+    if (gBattleMons[battlerAtk].status1 & STATUS1_TOXIC_POISON)
+    {
+        switch (AI_DATA->atkAbility)
+        {
+        case ABILITY_POISON_HEAL:
+        case ABILITY_TOXIC_BOOST:
+        case ABILITY_GUTS:
+            break;
+        default:
+            if (gBattleMoves[move].effect != EFFECT_FACADE)
+                score -= 2;
+            break;
+        }
+    }
+
     if (HOLD_EFFECT_CHOICE(AI_DATA->atkHoldEffect))
     {
         // If AI can't 2HKO foe OR foe can KO AI and is faster, force it to switch

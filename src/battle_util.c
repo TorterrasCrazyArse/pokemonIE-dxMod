@@ -8017,7 +8017,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     switch (GetBattlerAbility(battlerAtk))
     {
     case ABILITY_TECHNICIAN:
-        if (basePower <= 60)
+        if (basePower <= 65)
            MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_FLARE_BOOST:
@@ -8350,10 +8350,15 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && !(gStatuses3[battlerDef] & STATUS3_SEMI_INVULNERABLE))
             MulModifier(&modifier, UQ_4_12(0.5));
         break;
+    case EFFECT_HIDDEN_POWER:
+        if (gBattleMons[battlerAtk].ability == ABILITY_TECHNICIAN)
+            MulModifier(&modifier, UQ_4_12(1.3));
+        break;
     case EFFECT_KNOCK_OFF:
         #if B_KNOCK_OFF_DMG >= GEN_6
         if (gBattleMons[battlerDef].item != ITEM_NONE
-            && CanBattlerGetOrLoseItem(battlerDef, gBattleMons[battlerDef].item))
+            && CanBattlerGetOrLoseItem(battlerDef, gBattleMons[battlerDef].item)
+            && GetBattlerAbility(battlerDef) != ABILITY_STICKY_HOLD)
             MulModifier(&modifier, UQ_4_12(1.5));
         #endif
         break;
@@ -8676,6 +8681,14 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
                 RecordAbilityBattle(battlerDef, ABILITY_FUR_COAT);
         }
         break;
+    case ABILITY_HEAVY_METAL:
+        if (usesDefStat)
+        {
+            MulModifier(&modifier, UQ_4_12(1.3));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_HEAVY_METAL);
+        }
+        break;
     case ABILITY_BIG_PECKS:
         if (usesDefStat)
         {
@@ -8786,6 +8799,16 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     if (gBattleMons[battlerAtk].status1 & STATUS1_BURN && IS_MOVE_PHYSICAL(move)
         && gBattleMoves[move].effect != EFFECT_FACADE && abilityAtk != ABILITY_GUTS)
         dmg = ApplyModifier(UQ_4_12(0.5), dmg);
+
+    // check poison
+    if (gBattleMons[battlerAtk].status1 & STATUS1_POISON && IS_MOVE_SPECIAL(move)
+        && gBattleMoves[move].effect != EFFECT_FACADE && abilityAtk != ABILITY_POISON_HEAL)
+        dmg = ApplyModifier(UQ_4_12(0.5), dmg);
+    
+    // check toxic
+    if (gBattleMons[battlerAtk].status1 & STATUS1_TOXIC_POISON
+        && gBattleMoves[move].effect != EFFECT_FACADE && abilityAtk != ABILITY_GUTS && abilityAtk != ABILITY_POISON_HEAL && abilityAtk != ABILITY_TOXIC_BOOST)
+        dmg = ApplyModifier(UQ_4_12(0.75), dmg);
 
     // check sunny/rain weather
     if (IsBattlerWeatherAffected(battlerAtk, WEATHER_RAIN_PERMANENT))

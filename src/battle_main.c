@@ -4445,7 +4445,7 @@ u32 GetBattlerTotalSpeedStat(u8 battlerId)
     else if (ability == ABILITY_SLOW_START && gDisableStructs[battlerId].slowStartTimer != 0)
         speed /= 2;
     else if (ability == ABILITY_LIGHT_METAL)
-        speed *= 2;
+        speed = (speed * 130) / 100;
 
     // stat stages
     speed *= gStatStageRatios[gBattleMons[battlerId].statStages[STAT_SPEED]][0];
