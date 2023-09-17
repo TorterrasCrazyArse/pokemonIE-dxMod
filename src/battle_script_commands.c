@@ -6385,11 +6385,20 @@ static void Cmd_switchineffects(void)
     }
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK)
-        && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
         || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD))
+        && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
+        && IsBattlerGrounded(gActiveBattler)
     {
         gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_STEALTH_ROCK_DAMAGED;
+        if (IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_ROCK)) // Crush those pesky pebbles.
+        {
+            gSideStatuses[GetBattlerSide(gActiveBattler)] &= ~(SIDE_STATUS_STEALTH_ROCK);
+            gSideTimers[GetBattlerSide(gActiveBattler)].stealthRockAmount = 0;
+            gBattleScripting.battler = gActiveBattler;
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_HazardsCrushed;
+        }
         gBattleMoveDamage = GetStealthHazardDamage(gBattleMoves[MOVE_STEALTH_ROCK].type, gActiveBattler);
 
         if (gBattleMoveDamage != 0)

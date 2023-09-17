@@ -1508,7 +1508,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PSYCHIC] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
-        .power = 90,
+        .power = 95,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 15,
@@ -1524,7 +1524,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_SLEEP,
         .power = 0,
         .type = TYPE_PSYCHIC,
-        .accuracy = 60,
+        .accuracy = 65,
         .pp = 25,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -3018,7 +3018,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SLUDGE_BOMB] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 95,
+        .power = 90,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
@@ -6520,7 +6520,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAGON_PULSE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 85,
+            .power = 90,
         #else
             .power = 90,
         #endif
@@ -6656,7 +6656,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_EARTH_POWER] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
-        .power = 90,
+        .power = 95,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 15,
@@ -9932,12 +9932,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_HIGH_HORSEPOWER] =
     {
-        .effect = EFFECT_FLINCH_HIT,
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 95,
         .type = TYPE_GROUND,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,

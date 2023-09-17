@@ -3000,8 +3000,8 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         }
     }
 
-    // check poison
-    if (gBattleMons[battlerAtk].status1 & STATUS1_POISON)
+    // check poison/toxic
+    if (gBattleMons[battlerAtk].status1 & STATUS1_PSN_ANY)
     {
         switch (AI_DATA->atkAbility)
         {
@@ -3014,22 +3014,6 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             break;
         default:
             if (IS_MOVE_SPECIAL(move)) // && gBattleMoves[move].effect != EFFECT_FACADE)
-                score -= 2;
-            break;
-        }
-    }
-
-    // check toxic
-    if (gBattleMons[battlerAtk].status1 & STATUS1_TOXIC_POISON)
-    {
-        switch (AI_DATA->atkAbility)
-        {
-        case ABILITY_POISON_HEAL:
-        case ABILITY_TOXIC_BOOST:
-        case ABILITY_GUTS:
-            break;
-        default:
-            if (gBattleMoves[move].effect != EFFECT_FACADE)
                 score -= 2;
             break;
         }

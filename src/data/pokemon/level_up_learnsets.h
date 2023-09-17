@@ -1375,6 +1375,7 @@ static const struct LevelUpMove sMachokeLevelUpLearnset[] = {
 static const struct LevelUpMove sMachampLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_STRENGTH),
     LEVEL_UP_MOVE( 1, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE( 1, MOVE_MACH_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
@@ -8655,7 +8656,7 @@ static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_VENOM_DRENCH),
 	LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
 	LEVEL_UP_MOVE( 1, MOVE_WEATHER_BALL),
-	LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
+	LEVEL_UP_MOVE( 1, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),

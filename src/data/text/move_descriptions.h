@@ -2481,7 +2481,7 @@ static const u8 sFLORAL_HEALINGDescription[] = _(
 
 static const u8 sHIGH_HORSEPOWERDescription[] = _(
     "Slams hard into the foe with\n"
-    "its entire body.");
+    "its body. May lower Defense.");
 
 static const u8 sSTRENGTH_SAPDescription[] = _(
     "Saps the foe's Attack to\n"

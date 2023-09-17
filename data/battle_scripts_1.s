@@ -6618,8 +6618,6 @@ BattleScript_ToxicSpikesAbsorbed::
 	return
 
 BattleScript_HazardsCrushed::
-	pause B_WAIT_TIME_SHORT
-	call BattleScript_AbilityPopUp
 	printstring STRINGID_HAZARDSCRUSHED
 	waitmessage B_WAIT_TIME_LONG
 	return
