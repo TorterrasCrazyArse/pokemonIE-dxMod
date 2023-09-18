@@ -5593,7 +5593,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_LEAF_BLADE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 90,
+            .power = 80,
         #else
             .power = 70,
         #endif
@@ -7447,7 +7447,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT_2,
         .power = 120,
         .type = TYPE_GRASS,
-        .accuracy = 85,
+        .accuracy = 80,
         .pp = 10,
         .secondaryEffectChance = 40,
         .target = MOVE_TARGET_SELECTED,

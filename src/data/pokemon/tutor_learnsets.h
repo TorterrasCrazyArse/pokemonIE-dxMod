@@ -2368,9 +2368,6 @@ static const u32 sTutorLearnsets[][5] = {
                           TUTOR(PAIN_SPLIT)
                         | TUTOR(UPROAR)
                         | TUTOR(PSYCH_UP)
-                        | TUTOR(THUNDER_PUNCH)
-                        | TUTOR(FIRE_PUNCH)
-                        | TUTOR(ICE_PUNCH)
                         | TUTOR(ICY_WIND)
                         | TUTOR(SWAGGER)
                         | TUTOR(TRICK)
@@ -5011,12 +5008,10 @@ static const u32 sTutorLearnsets[][5] = {
 
    [SPECIES_WOOPER] = TUTORLEARNSET(TUTOR(ROLLOUT)
                         | TUTOR(MIMIC)
-                        | TUTOR(MUD_SLAP),
-                          TUTOR(DYNAMIC_PUNCH)
-                        | TUTOR(ICE_PUNCH)
+                        | TUTOR(MUD_SLAP)
                         | TUTOR(ICY_WIND)
-                        | TUTOR(BODY_SLAM)
-                        | TUTOR(SWAGGER)
+                        | TUTOR(BODY_SLAM),
+                          TUTOR(SWAGGER)
                         | TUTOR(AQUA_TAIL)
                         | TUTOR(DOUBLE_EDGE),
                           TUTOR(EARTH_POWER)
