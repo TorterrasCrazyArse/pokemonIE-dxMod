@@ -1721,14 +1721,14 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
 {
     u32 calc, moveAcc, atkHoldEffect, atkParam, defHoldEffect, defParam, atkAbility, defAbility;
     s8 buff, accStage, evasionStage;
-    u8 moveType;
-    bool8 isHitSuperEffective = (CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, TRUE) >= UQ_4_12(2.0));
-//    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
-//                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
-//                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
-//                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
+//    u8 moveType;
+//    bool8 isHitSuperEffective = (CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, TRUE) >= UQ_4_12(2.0));
+    bool8 isHitSuperEffective = (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(2.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(1.0))
+                    || (GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type1) >= UQ_4_12(1.0)
+                    && GetTypeModifier(gBattleMoves[move].type, gBattleMons[battlerDef].type2) >= UQ_4_12(2.0));
 
-    GET_MOVE_TYPE(move, moveType);
+//    GET_MOVE_TYPE(move, moveType);
 
     atkAbility = GetBattlerAbility(battlerAtk);
     atkHoldEffect = GetBattlerHoldEffect(battlerAtk, TRUE);
@@ -6385,9 +6385,9 @@ static void Cmd_switchineffects(void)
     }
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK)
+        && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
         || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD)
-        && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && IsBattlerGrounded(gActiveBattler))
     {
         gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_STEALTH_ROCK_DAMAGED;

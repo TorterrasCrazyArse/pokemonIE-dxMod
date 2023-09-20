@@ -1598,7 +1598,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_ARCANINE] =
     {
         .baseHP        = 90,
-        .baseAttack    = 110,
+        .baseAttack    = 115,
         .baseDefense   = 80,
         .baseSpeed     = 110,
         .baseSpAttack  = 100,
@@ -3025,9 +3025,9 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 250,
         .baseAttack    = 5,
-        .baseDefense   = 5,
+        .baseDefense   = 35,
         .baseSpeed     = 50,
-        .baseSpAttack  = 35,
+        .baseSpAttack  = 5,
         .baseSpDefense = 105,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
@@ -6452,9 +6452,9 @@ const struct BaseStats gBaseStats[] =
         .baseDefense   = 105,
         .baseSpeed     = 100,
         .baseSpAttack  = 40,
-        .baseSpDefense = 70,
+        .baseSpDefense = 90,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 80,
+            .baseAttack    = 100,
         #else
             .baseAttack    = 100,
         #endif
@@ -6479,11 +6479,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_BLISSEY] =
     {
         .baseHP        = 255,
-        .baseAttack    = 10,
-        .baseDefense   = 10,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 135,
+        .baseAttack    = 5,
+        .baseDefense   = 90,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 5,
+        .baseSpDefense = 140,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
         .catchRate = 30,
@@ -9034,7 +9034,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_IMMUNITY, ABILITY_IMMUNITY, ABILITY_TOXIC_BOOST},
+        .abilities = {ABILITY_IMMUNITY, ABILITY_KEEN_EDGE, ABILITY_TOXIC_BOOST},
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
     },
@@ -9048,13 +9048,13 @@ const struct BaseStats gBaseStats[] =
         .baseSpDefense = 60,
         #ifdef REBALANCED_VERSION
             .baseSpeed     = 100,
-            .abilities = {ABILITY_SHED_SKIN, ABILITY_MERCILESS, ABILITY_INFILTRATOR},
+            .abilities = {ABILITY_BATTLE_ARMOR, ABILITY_SHED_SKIN, ABILITY_MERCILESS},
         #else
             .baseSpeed     = 65,
             .abilities = {ABILITY_SHED_SKIN, ABILITY_SHED_SKIN, ABILITY_INFILTRATOR},
         #endif
         .type1 = TYPE_POISON,
-        .type2 = TYPE_POISON,
+        .type2 = TYPE_DARK,
         .catchRate = 90,
         .expYield = 160,
         .evYield_Attack    = 1,
@@ -9421,9 +9421,9 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MILOTIC] =
     {
-        .baseHP        = 95,
+        .baseHP        = 105,
         .baseAttack    = 60,
-        .baseDefense   = 79,
+        .baseDefense   = 112,
         .baseSpeed     = 81,
         .baseSpAttack  = 100,
         .baseSpDefense = 125,
@@ -11906,9 +11906,9 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 100,
         .baseAttack    = 5,
-        .baseDefense   = 5,
+        .baseDefense   = 15,
         .baseSpeed     = 30,
-        .baseSpAttack  = 15,
+        .baseSpAttack  = 5,
         .baseSpDefense = 65,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
@@ -11965,7 +11965,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 35,
         .baseSpDefense = 108,
         #ifdef REBALANCED_VERSION
-            .baseHP        = 70,
+            .baseHP        = 108,
         #else
             .baseHP        = 50,
         #endif
@@ -16477,10 +16477,10 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 100,
         .baseAttack    = 150,
-        .baseDefense   = 100,
+        .baseDefense   = 90,
         .baseSpeed     = 90,
         .baseSpAttack  = 60,
-        .baseSpDefense = 100,
+        .baseSpDefense = 85,
         .type1 = TYPE_DRAGON,
         .type2 = TYPE_DRAGON,
         .catchRate = 45,
@@ -19145,11 +19145,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_NOIVERN] =
     {
-        .baseHP        = 85,
+        .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 80,
         .baseSpeed     = 123,
-        .baseSpAttack  = 97,
+        .baseSpAttack  = 127,
         .baseSpDefense = 80,
         .type1 = TYPE_FLYING,
         .type2 = TYPE_DRAGON,
@@ -25043,9 +25043,9 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MILOTIC_MEGA] =
     {
-        .baseHP        = 95,
+        .baseHP        = 105,
         .baseAttack    = 70,
-        .baseDefense   = 109,
+        .baseDefense   = 142,
         .baseSpeed     = 81,
         .baseSpAttack  = 130,
         .baseSpDefense = 155,

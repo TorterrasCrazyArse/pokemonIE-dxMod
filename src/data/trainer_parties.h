@@ -1728,7 +1728,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winston3[] = {
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_NUGGET,
     .spread = SPREAD_31_IV_80_EV,
-    .moves = MOVE_WILD_CHARGE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_ICE_FANG
+    .moves = MOVE_WILD_CHARGE, MOVE_PSYCHIC_FANGS, MOVE_PLAY_ROUGH, MOVE_ICE_FANG
     }
 };
 
@@ -1752,7 +1752,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winston4[] = {
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_NUGGET,
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
-    .moves = MOVE_WILD_CHARGE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_ICE_FANG
+    .moves = MOVE_WILD_CHARGE, MOVE_PSYCHIC_FANGS, MOVE_PLAY_ROUGH, MOVE_ICE_FANG
     },
     {
     .lvl = -2,
@@ -8924,7 +8924,7 @@ static const struct TrainerMonItemCustomMoves sParty_Julio[] = {
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_0_EV,
-    .moves = MOVE_THUNDER_FANG, MOVE_NIGHT_SLASH, MOVE_FIRE_FANG, MOVE_ICE_FANG
+    .moves = MOVE_THUNDER_FANG, MOVE_PSYCHO_CUT, MOVE_FIRE_FANG, MOVE_ICE_FANG
     }
 };
 
@@ -10866,7 +10866,7 @@ static const struct TrainerMonItemCustomMoves sParty_Demetrius[] = { // Double w
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_60_EV,
-    .moves = MOVE_WILD_CHARGE, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_SCARY_FACE
+    .moves = MOVE_WILD_CHARGE, MOVE_PSYCHIC_FANGS, MOVE_ICE_FANG, MOVE_SCARY_FACE
     },
     {
     .lvl = -2,
@@ -13204,7 +13204,7 @@ static const struct TrainerMonItemCustomMoves sParty_Walter1[] = {
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_80_EV,
-    .moves = MOVE_CRUNCH, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
+    .moves = MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
     },
     {
     .lvl = -2,
@@ -13225,7 +13225,7 @@ static const struct TrainerMonItemCustomMoves sParty_Walter2[] = {
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_CRUNCH, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
+    .moves = MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
     },
     {
     .lvl = -2,
@@ -13246,7 +13246,7 @@ static const struct TrainerMonItemCustomMoves sParty_Walter3[] = {
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_CRUNCH, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
+    .moves = MOVE_PSYCHIC_FANGS, MOVE_WILD_CHARGE, MOVE_PLAY_ROUGH, MOVE_ROAR
     },
     {
     .lvl = -2,
@@ -13274,7 +13274,7 @@ static const struct TrainerMonItemCustomMoves sParty_Walter4[] = {
     .lvl = -2,
     .species = SPECIES_LUXRAY,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_CRUNCH, MOVE_VOLT_TACKLE, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG
+    .moves = MOVE_PSYCHIC_FANGS, MOVE_VOLT_TACKLE, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG
     },
     {
     .lvl = -2,
@@ -16950,7 +16950,7 @@ static const struct TrainerMonItemCustomMoves sParty_Paxton[] = { // with Darcy
     .species = SPECIES_LUXRAY,
     .heldItem = ITEM_EXPERT_BELT,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_THUNDER_FANG, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_ICE_FANG
+    .moves = MOVE_THUNDER_FANG, MOVE_PSYCHIC_FANGS, MOVE_FIRE_FANG, MOVE_ICE_FANG
     }
 };
 
@@ -20284,13 +20284,13 @@ static const struct TrainerMonItemCustomMoves sParty_LucyLavaridge[] = {
     .heldItem = ITEM_LEFTOVERS,
     .ability = 0, // Intimidate
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_WATERFALL, MOVE_BOUNCE, MOVE_DRAGON_DANCE, MOVE_SUBSTITUTE
+    .moves = MOVE_WATERFALL, MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_SUBSTITUTE
     },
     {
     .lvl = 1,
     .species = SPECIES_SEVIPER,
     .heldItem = ITEM_LIFE_ORB,
-    .ability = 1, // Merciless
+    .ability = 2, // Merciless
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
     .moves = MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_FLAMETHROWER, MOVE_DARK_PULSE
     }

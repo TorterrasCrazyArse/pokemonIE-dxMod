@@ -8196,7 +8196,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     case ABILITY_HEATPROOF:
         if (moveType == TYPE_FIRE)
         {
-            MulModifier(&modifier, UQ_4_12(0.0));
+            MulModifier(&modifier, UQ_4_12(0.5));
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, ability);
         }
@@ -8204,7 +8204,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     case ABILITY_MAGMA_ARMOR:
         if (moveType == TYPE_WATER)
         {
-            MulModifier(&modifier, UQ_4_12(0.0));
+            MulModifier(&modifier, UQ_4_12(0.5));
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, ability);
         }
