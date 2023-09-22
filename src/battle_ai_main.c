@@ -1680,11 +1680,11 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
                 score -= 4;
             break;
         case EFFECT_RECOIL_IF_MISS:
-            if ((AI_DATA->atkAbility != ABILITY_MAGIC_GUARD || AI_DATA->atkAbility != ABILITY_WONDER_GUARD) && accuracy < 75)
+            if (AI_DATA->atkAbility != ABILITY_MAGIC_GUARD && AI_DATA->atkAbility != ABILITY_WONDER_GUARD && accuracy < 75)
                 score -= 6;
             break;
         case EFFECT_RECOIL_25:
-            if ((AI_DATA->atkAbility != ABILITY_MAGIC_GUARD || AI_DATA->atkAbility != ABILITY_WONDER_GUARD) && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
+            if (AI_DATA->atkAbility != ABILITY_MAGIC_GUARD && AI_DATA->atkAbility != ABILITY_WONDER_GUARD && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
             {
                 u32 recoilDmg = max(1, AI_THINKING_STRUCT->simulatedDmg[battlerAtk][battlerDef][AI_THINKING_STRUCT->movesetIndex] / 4);
                 if (!ShouldUseRecoilMove(battlerAtk, battlerDef, recoilDmg, AI_THINKING_STRUCT->movesetIndex))
@@ -1694,7 +1694,7 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             break;
         case EFFECT_RECOIL_33:
         case EFFECT_RECOIL_33_STATUS:
-            if ((AI_DATA->atkAbility != ABILITY_MAGIC_GUARD || AI_DATA->atkAbility != ABILITY_WONDER_GUARD) && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
+            if (AI_DATA->atkAbility != ABILITY_MAGIC_GUARD && AI_DATA->atkAbility != ABILITY_WONDER_GUARD && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
             {
                 u32 recoilDmg = max(1, AI_THINKING_STRUCT->simulatedDmg[battlerAtk][battlerDef][AI_THINKING_STRUCT->movesetIndex] / 3);
                 if (!ShouldUseRecoilMove(battlerAtk, battlerDef, recoilDmg, AI_THINKING_STRUCT->movesetIndex))
@@ -1704,7 +1704,7 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             break;
         case EFFECT_RECOIL_50:
         case EFFECT_RECOIL_50_STATUS:
-            if ((AI_DATA->atkAbility != ABILITY_MAGIC_GUARD || AI_DATA->atkAbility != ABILITY_WONDER_GUARD) && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
+            if (AI_DATA->atkAbility != ABILITY_MAGIC_GUARD && AI_DATA->atkAbility != ABILITY_WONDER_GUARD && AI_DATA->atkAbility != ABILITY_ROCK_HEAD)
             {
                 u32 recoilDmg = max(1, AI_THINKING_STRUCT->simulatedDmg[battlerAtk][battlerDef][AI_THINKING_STRUCT->movesetIndex] / 2);
                 if (!ShouldUseRecoilMove(battlerAtk, battlerDef, recoilDmg, AI_THINKING_STRUCT->movesetIndex))
@@ -3322,8 +3322,8 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
     case EFFECT_DOUBLE_HIT:
     case EFFECT_TRIPLE_KICK:
         if (AI_MoveMakesContact(AI_DATA->atkAbility, AI_DATA->atkHoldEffect, move)
-          && (AI_DATA->atkAbility != ABILITY_MAGIC_GUARD
-          || AI_DATA->atkAbility != ABILITY_WONDER_GUARD)
+          && AI_DATA->atkAbility != ABILITY_MAGIC_GUARD
+          && AI_DATA->atkAbility != ABILITY_WONDER_GUARD
           && AI_DATA->defHoldEffect == HOLD_EFFECT_ROCKY_HELMET)
             score -= 2;
         break;
@@ -3672,8 +3672,8 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         }
         break;
     case EFFECT_NIGHTMARE:
-        if ((AI_DATA->defAbility != ABILITY_MAGIC_GUARD
-          || AI_DATA->defAbility != ABILITY_WONDER_GUARD)
+        if (AI_DATA->defAbility != ABILITY_MAGIC_GUARD
+          && AI_DATA->defAbility != ABILITY_WONDER_GUARD
           && !(gBattleMons[battlerDef].status2 & STATUS2_NIGHTMARE)
           && (AI_DATA->defAbility == ABILITY_COMATOSE || gBattleMons[battlerDef].status1 & STATUS1_SLEEP))
         {
@@ -4089,7 +4089,7 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
                 score += 2;
             break;
         case HOLD_EFFECT_BLACK_SLUDGE:
-            if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON) && (AI_DATA->defAbility != ABILITY_MAGIC_GUARD || AI_DATA->defAbility != ABILITY_WONDER_GUARD))
+            if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON) && AI_DATA->defAbility != ABILITY_MAGIC_GUARD && AI_DATA->defAbility != ABILITY_WONDER_GUARD)
                 score += 3;
             break;
         case HOLD_EFFECT_IRON_BALL:
@@ -4590,8 +4590,8 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         {
             if (IsBattlerAlive(AI_DATA->battlerDefPartner)
               && GetHealthPercentage(AI_DATA->battlerDefPartner) < 12
-              && (AI_DATA->defPartnerAbility != ABILITY_MAGIC_GUARD
-              || AI_DATA->defPartnerAbility != ABILITY_WONDER_GUARD)
+              && AI_DATA->defPartnerAbility != ABILITY_MAGIC_GUARD
+              && AI_DATA->defPartnerAbility != ABILITY_WONDER_GUARD
               && !IS_BATTLER_OF_TYPE(AI_DATA->battlerDefPartner, TYPE_FIRE))
                 score++;
         }

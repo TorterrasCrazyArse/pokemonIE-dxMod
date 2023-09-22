@@ -163,7 +163,7 @@ PKMN_Center_Move_Tutor_MoveTutorMenu::
 PKMN_Center_Move_Tutor_MoveList1::
 	setvar VAR_TEMP_C, SCROLL_MULTI_PC_TUTOR_SET_1
 	setvar VAR_TEMP_E, 0
-	setvar VAR_TEMP_F, 20
+	setvar VAR_TEMP_F, 19
 	setvar VAR_0x8004, SCROLL_MULTI_PC_TUTOR_SET_1
 	setvar VAR_0x8006, 0
 	goto PKMN_Center_Move_Tutor_ChooseMove
@@ -211,7 +211,7 @@ PKMN_Center_Move_Tutor_MoveList6::
 PKMN_Center_Move_Tutor_MoveList7::
 	setvar VAR_TEMP_C, SCROLL_MULTI_PC_TUTOR_SET_7
 	setvar VAR_TEMP_E, 6
-	setvar VAR_TEMP_F, 15
+	setvar VAR_TEMP_F, 16
 	setvar VAR_0x8004, SCROLL_MULTI_PC_TUTOR_SET_7
 	setvar VAR_0x8006, 0
 	goto PKMN_Center_Move_Tutor_ChooseMove
@@ -586,3 +586,4 @@ PKMN_Center_Text_Mystery_Gift_WouldYouLikeGift::
 	.string "a special {STR_VAR_1}!\p"
 	.string "Would you like to receive\n"
 	.string "{STR_VAR_1}?$"
+

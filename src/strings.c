@@ -1922,7 +1922,6 @@ const u8 gText_Snatch[] = _("Snatch");
 const u8 gText_Mimic[] = _("Mimic");
 const u8 gText_MudSlap[] = _("Mud-Slap");
 const u8 gText_Metronome[] = _("Metronome");
-const u8 gText_OminousWind[] = _("Ominous Wind");
 const u8 gText_SuperFang[] = _("Super Fang");
 const u8 gText_HoneClaws[] = _("Hone Claws");
 const u8 gText_PsychUp[] = _("Psych Up");
@@ -2045,6 +2044,7 @@ const u8 gText_HydroPump[] = _("Hydro Pump");
 const u8 gText_DragonDance[] = _("Dragon Dance");
 const u8 gText_Outrage[] = _("Outrage");
 const u8 gText_KnockOff[] = _("Knock Off");
+const u8 gText_OminousWind[] = _("Ominous Wind");
 const u8 gText_QuiverDance[] = _("Quiver Dance");
 
 // Multichoice strings when selecting a set of tutor moves to choose from

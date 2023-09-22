@@ -931,8 +931,8 @@ PokemonCenterMoveTutor_Text_ToxicSpikesDesc::
 
 PokemonCenterMoveTutor_Text_HighHorsepowerDesc::
 	.string "Slams hard into\n"
-	.string "the foe with its\n"
-	.string "entire body.$"
+	.string "the foe. May\n"
+	.string "lower Defense.$"
 
 @ Set 6
 PokemonCenterMoveTutor_Text_MegahornDesc::

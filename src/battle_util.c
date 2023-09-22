@@ -1222,7 +1222,7 @@ static const u16 sTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPE
     {X(1.0), X(1.0), X(2.0), X(1.0), X(0.0), X(1.0), X(2.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(0.5), X(0.5), X(1.0), X(0.5), X(0.5), X(1.0), X(1.0)}, // electric
     {X(1.0), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(1.0), X(0.0), X(2.0)}, // psychic
     {X(1.0), X(0.5), X(2.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5), X(1.0), X(0.5), X(0.5), X(2.0), X(1.0), X(1.0), X(0.5), X(2.0), X(1.0), X(1.0)}, // ice
-    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.5)}, // dragon
+    {X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(0.5), X(1.0), X(2.0), X(2.0), X(2.0), X(2.0), X(1.0), X(0.5), X(2.0), X(1.0), X(0.0)}, // dragon
     #if B_STEEL_RESISTANCES >= GEN_6
     {X(1.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(0.0), X(2.0), X(0.5), X(1.0), X(1.0), X(1.0), X(1.0), X(1.0), X(2.0), X(1.0), X(1.0), X(0.5), X(0.5)}, // dark
     #else
@@ -6942,8 +6942,8 @@ case ITEMEFFECT_KINGSROCK:
         case HOLD_EFFECT_LIFE_ORB:
             if (gSpecialStatuses[gBattlerAttacker].damagedMons
                 && !(TestSheerForceFlag(gBattlerAttacker, gCurrentMove))
-                && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
-                || GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD) 
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_WONDER_GUARD
                 && gBattlerAttacker != gBattlerTarget
                 && gBattleMons[gBattlerAttacker].hp != 0)
             {
@@ -8166,7 +8166,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (IsAbilityOnField(ABILITY_AURA_BREAK))
             MulModifier(&modifier, UQ_4_12(0.75));
         else
-            MulModifier(&modifier, UQ_4_12(1.33));
+            MulModifier(&modifier, UQ_4_12(1.3));
     }
 
     // attacker partner's abilities

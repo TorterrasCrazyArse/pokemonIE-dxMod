@@ -1673,7 +1673,10 @@ static bool32 AccuracyCalcHelper(u16 move)
     }
     else if (B_TOXIC_NEVER_MISS >= GEN_6
             && gBattleMoves[move].effect == EFFECT_TOXIC
-            && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_POISON))
+            && (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_POISON)
+            || GetBattlerAbility(gBattlerAttacker) == ABILITY_POISON_HEAL
+            || GetBattlerAbility(gBattlerAttacker) == ABILITY_POISON_TOUCH
+            || GetBattlerAbility(gBattlerAttacker) == ABILITY_POISON_POINT))
     {
         JumpIfMoveFailed(7, move);
         return TRUE;
@@ -3367,7 +3370,7 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 }
                 break;
             case MOVE_EFFECT_FLAME_BURST:
-                if (IsBattlerAlive(BATTLE_PARTNER(gBattlerTarget)) && (GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_MAGIC_GUARD || GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_WONDER_GUARD))
+                if (IsBattlerAlive(BATTLE_PARTNER(gBattlerTarget)) && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) != ABILITY_MAGIC_GUARD)
                 {
                     gBattleScripting.savedBattler = BATTLE_PARTNER(gBattlerTarget);
                     gBattleMoveDamage = gBattleMons[BATTLE_PARTNER(gBattlerTarget)].hp / 16;
@@ -6370,8 +6373,8 @@ static void Cmd_switchineffects(void)
     }
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_SPIKES)
-        && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
-        || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD)
+        && GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
+        && GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD
         && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && IsBattlerGrounded(gActiveBattler))
     {
@@ -6387,7 +6390,7 @@ static void Cmd_switchineffects(void)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK)
         && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
         && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
-        || GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD)
+        && GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD
         && IsBattlerGrounded(gActiveBattler))
     {
         gSideStatuses[GetBattlerSide(gActiveBattler)] |= SIDE_STATUS_STEALTH_ROCK_DAMAGED;
@@ -10907,7 +10910,7 @@ static void Cmd_weatherdamage(void)
     u32 ability = GetBattlerAbility(gBattlerAttacker);
 
     gBattleMoveDamage = 0;
-    if (IsBattlerAlive(gBattlerAttacker) && WEATHER_HAS_EFFECT && (ability != ABILITY_MAGIC_GUARD || ability != ABILITY_WONDER_GUARD))
+    if (IsBattlerAlive(gBattlerAttacker) && WEATHER_HAS_EFFECT && ability != ABILITY_MAGIC_GUARD && ability != ABILITY_WONDER_GUARD)
     {
         if (gBattleWeather & WEATHER_SANDSTORM_ANY)
         {
