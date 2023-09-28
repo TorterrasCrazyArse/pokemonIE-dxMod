@@ -6642,11 +6642,11 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 }
                 break;
             case HOLD_EFFECT_BLACK_SLUDGE:
-                if (IS_BATTLER_OF_TYPE(battlerId, TYPE_POISON))
+                if (IS_BATTLER_OF_TYPE(battlerId, TYPE_POISON) || GetBattlerAbility(battlerId) == ABILITY_POISON_HEAL)
                 {
                     goto LEFTOVERS;
                 }
-                else if ((GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD || GetBattlerAbility(battlerId) != ABILITY_WONDER_GUARD) && !moveTurn)
+                else if (GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD && GetBattlerAbility(battlerId) != ABILITY_WONDER_GUARD && !moveTurn)
                 {
                     gBattleMoveDamage = gBattleMons[battlerId].maxHP / 8;
                     if (gBattleMoveDamage == 0)
@@ -7682,25 +7682,25 @@ static const u8 sFlailHpScaleToPowerTable[] =
     1, 200,
     4, 150,
     9, 100,
-    16, 80,
-    32, 40,
-    48, 20
+    16, 90,
+    32, 60,
+    48, 30
 };
 
 // format: min. weight (hectograms), base power
 static const u16 sWeightToDamageTable[] =
 {
-    100, 20,
-    250, 40,
-    500, 60,
-    1000, 80,
-    2000, 100,
+    100, 30,
+    250, 50,
+    500, 70,
+    1000, 90,
+    2000, 120,
     0xFFFF, 0xFFFF
 };
 
 static const u8 sSpeedDiffPowerTable[] = {40, 60, 80, 120, 150};
 static const u8 sHeatCrashPowerTable[] = {40, 40, 60, 80, 100, 120};
-static const u8 sTrumpCardPowerTable[] = {200, 80, 60, 50, 40};
+static const u8 sTrumpCardPowerTable[] = {200, 100, 90, 70, 60};
 
 const struct TypePower gNaturalGiftTable[] =
 {

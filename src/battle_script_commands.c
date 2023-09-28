@@ -6389,7 +6389,7 @@ static void Cmd_switchineffects(void)
     else if (!(gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK_DAMAGED)
         && (gSideStatuses[GetBattlerSide(gActiveBattler)] & SIDE_STATUS_STEALTH_ROCK)
         && IsBattlerAffectedByHazards(gActiveBattler, FALSE)
-        && (GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
+        && GetBattlerAbility(gActiveBattler) != ABILITY_MAGIC_GUARD
         && GetBattlerAbility(gActiveBattler) != ABILITY_WONDER_GUARD
         && IsBattlerGrounded(gActiveBattler))
     {

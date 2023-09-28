@@ -1222,7 +1222,8 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(TM53_ENERGY_BALL)
                         | TMHM(TM54_PSYSHOCK)
                         | TMHM(TM58_ENDURE)
-                        | TMHM(TM61_WILL_O_WISP),
+                        | TMHM(TM61_WILL_O_WISP)
+                        | TMHM(TM65_SHADOW_CLAW),
                           TMHM(TM66_PAYBACK)
                         | TMHM(TM68_GIGA_IMPACT)
                         | TMHM(TM83_FLAME_CHARGE)
@@ -21801,6 +21802,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(HM06_ROCK_SMASH)),
    [SPECIES_RUFFLET] = TMHM_LEARNSET(TMHM(TM06_TOXIC)
                         | TMHM(TM08_BULK_UP)
+                        | TMHM(TM09_BULLET_SEED)
                         | TMHM(TM10_HIDDEN_POWER)
                         | TMHM(TM11_SUNNY_DAY)
                         | TMHM(TM17_PROTECT)
@@ -21829,6 +21831,7 @@ const u32 gTMHMLearnsets[][4] =
                         | TMHM(HM06_ROCK_SMASH)),
    [SPECIES_BRAVIARY] = TMHM_LEARNSET(TMHM(TM06_TOXIC)
                         | TMHM(TM08_BULK_UP)
+                        | TMHM(TM09_BULLET_SEED)
                         | TMHM(TM10_HIDDEN_POWER)
                         | TMHM(TM11_SUNNY_DAY)
                         | TMHM(TM15_HYPER_BEAM)
