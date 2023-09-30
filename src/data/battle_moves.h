@@ -11640,7 +11640,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SURGING_STRIKES] =
     {
-        .effect = EFFECT_MULTI_HIT,
+        .effect = EFFECT_ALWAYS_CRIT,
         .power = 25,
         .type = TYPE_WATER,
         .accuracy = 90,
